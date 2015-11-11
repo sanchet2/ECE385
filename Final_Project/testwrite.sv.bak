@@ -1,0 +1,27 @@
+module testwrite (input clk, reset,
+						output r, w);
+		
+		enum logic {start, next}, state, next_state; 
+	
+	always_comb
+	begin
+		case(state)
+				start: begin
+						next_state = next;
+						r <= 1'b1;
+						w <= 1'b0;
+						end 
+				next: begin
+					 next_state = next;
+					 r <= 1'b0;
+					 w <= 1'b1;
+				end 
+	end
+	
+	always_ff @ (posedge clk or posedge reset)
+	begin
+			if(reset)
+				state <= start;
+			else
+			state <= next_state;
+	end 
