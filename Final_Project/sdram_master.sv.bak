@@ -1,0 +1,1 @@
+module sdram_master( input Clk, Reset, read_req, write_req, )

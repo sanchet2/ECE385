@@ -1,4 +1,13 @@
 
+State Machine - |Final_Project|sdram_master:master|state
+Name state.WRITE_LOOP state.WRITE state.READ_LOOP state.READ state.WAIT state.RESET 
+state.RESET 0 0 0 0 0 0 
+state.WAIT 0 0 0 0 1 1 
+state.READ 0 0 0 1 0 1 
+state.READ_LOOP 0 0 1 0 0 1 
+state.WRITE 0 1 0 0 0 1 
+state.WRITE_LOOP 1 0 0 0 0 1 
+
 State Machine - |Final_Project|nios_system:nios_system|nios_system_sdram:sdram|m_next
 Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
 m_next.000000001 0 0 0 0 
@@ -43,9 +52,9 @@ DRsize.011 0 0 1 0 0 1
 DRsize.100 0 1 0 0 0 1 
 DRsize.101 1 0 0 0 0 1 
 
-State Machine - |Final_Project|testwrite:test|state
-Name state.read state.write2 state.write1 state.start 
-state.start 0 0 0 0 
-state.write1 0 0 1 1 
-state.write2 0 1 0 1 
-state.read 1 0 0 1 
+State Machine - |Final_Project|spritetest:test|state
+Name state.WAIT state.INC state.READ state.RESET 
+state.RESET 0 0 0 0 
+state.READ 0 0 1 1 
+state.INC 0 1 0 1 
+state.WAIT 1 0 0 1 

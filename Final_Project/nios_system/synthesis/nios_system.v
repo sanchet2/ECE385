@@ -4,10 +4,30 @@
 
 `timescale 1 ps / 1 ps
 module nios_system (
-		input  wire  clk_clk,       //   clk.clk
-		input  wire  reset_reset_n  // reset.reset_n
+		input  wire        clk_clk,                //        clk.clk
+		input  wire        reset_reset_n,          //      reset.reset_n
+		output wire        sdram_clk_clk,          //  sdram_clk.clk
+		input  wire [24:0] sdram_mm_address,       //   sdram_mm.address
+		input  wire [3:0]  sdram_mm_byteenable_n,  //           .byteenable_n
+		input  wire        sdram_mm_chipselect,    //           .chipselect
+		input  wire [31:0] sdram_mm_writedata,     //           .writedata
+		input  wire        sdram_mm_read_n,        //           .read_n
+		input  wire        sdram_mm_write_n,       //           .write_n
+		output wire [31:0] sdram_mm_readdata,      //           .readdata
+		output wire        sdram_mm_readdatavalid, //           .readdatavalid
+		output wire        sdram_mm_waitrequest,   //           .waitrequest
+		output wire [12:0] sdram_wire_addr,        // sdram_wire.addr
+		output wire [1:0]  sdram_wire_ba,          //           .ba
+		output wire        sdram_wire_cas_n,       //           .cas_n
+		output wire        sdram_wire_cke,         //           .cke
+		output wire        sdram_wire_cs_n,        //           .cs_n
+		inout  wire [31:0] sdram_wire_dq,          //           .dq
+		output wire [3:0]  sdram_wire_dqm,         //           .dqm
+		output wire        sdram_wire_ras_n,       //           .ras_n
+		output wire        sdram_wire_we_n         //           .we_n
 	);
 
+	wire         sdram_pll_c0_clk;                                            // sdram_pll:c0 -> [rst_controller_001:clk, sdram:clk]
 	wire  [31:0] nios2_qsys_0_data_master_readdata;                           // mm_interconnect_0:nios2_qsys_0_data_master_readdata -> nios2_qsys_0:d_readdata
 	wire         nios2_qsys_0_data_master_waitrequest;                        // mm_interconnect_0:nios2_qsys_0_data_master_waitrequest -> nios2_qsys_0:d_waitrequest
 	wire         nios2_qsys_0_data_master_debugaccess;                        // nios2_qsys_0:debug_mem_slave_debugaccess_to_roms -> mm_interconnect_0:nios2_qsys_0_data_master_debugaccess
@@ -37,6 +57,11 @@ module nios_system (
 	wire   [3:0] mm_interconnect_0_nios2_qsys_0_debug_mem_slave_byteenable;   // mm_interconnect_0:nios2_qsys_0_debug_mem_slave_byteenable -> nios2_qsys_0:debug_mem_slave_byteenable
 	wire         mm_interconnect_0_nios2_qsys_0_debug_mem_slave_write;        // mm_interconnect_0:nios2_qsys_0_debug_mem_slave_write -> nios2_qsys_0:debug_mem_slave_write
 	wire  [31:0] mm_interconnect_0_nios2_qsys_0_debug_mem_slave_writedata;    // mm_interconnect_0:nios2_qsys_0_debug_mem_slave_writedata -> nios2_qsys_0:debug_mem_slave_writedata
+	wire  [31:0] mm_interconnect_0_sdram_pll_pll_slave_readdata;              // sdram_pll:readdata -> mm_interconnect_0:sdram_pll_pll_slave_readdata
+	wire   [1:0] mm_interconnect_0_sdram_pll_pll_slave_address;               // mm_interconnect_0:sdram_pll_pll_slave_address -> sdram_pll:address
+	wire         mm_interconnect_0_sdram_pll_pll_slave_read;                  // mm_interconnect_0:sdram_pll_pll_slave_read -> sdram_pll:read
+	wire         mm_interconnect_0_sdram_pll_pll_slave_write;                 // mm_interconnect_0:sdram_pll_pll_slave_write -> sdram_pll:write
+	wire  [31:0] mm_interconnect_0_sdram_pll_pll_slave_writedata;             // mm_interconnect_0:sdram_pll_pll_slave_writedata -> sdram_pll:writedata
 	wire         mm_interconnect_0_onchip_memory2_0_s1_chipselect;            // mm_interconnect_0:onchip_memory2_0_s1_chipselect -> onchip_memory2_0:chipselect
 	wire  [31:0] mm_interconnect_0_onchip_memory2_0_s1_readdata;              // onchip_memory2_0:readdata -> mm_interconnect_0:onchip_memory2_0_s1_readdata
 	wire  [13:0] mm_interconnect_0_onchip_memory2_0_s1_address;               // mm_interconnect_0:onchip_memory2_0_s1_address -> onchip_memory2_0:address
@@ -46,8 +71,9 @@ module nios_system (
 	wire         mm_interconnect_0_onchip_memory2_0_s1_clken;                 // mm_interconnect_0:onchip_memory2_0_s1_clken -> onchip_memory2_0:clken
 	wire         irq_mapper_receiver0_irq;                                    // jtag_uart_0:av_irq -> irq_mapper:receiver0_irq
 	wire  [31:0] nios2_qsys_0_irq_irq;                                        // irq_mapper:sender_irq -> nios2_qsys_0:irq
-	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_qsys_0_reset_reset_bridge_in_reset_reset, nios2_qsys_0:reset_n, onchip_memory2_0:reset, rst_translator:in_reset, sysid_qsys_0:reset_n]
+	wire         rst_controller_reset_out_reset;                              // rst_controller:reset_out -> [irq_mapper:reset, jtag_uart_0:rst_n, mm_interconnect_0:nios2_qsys_0_reset_reset_bridge_in_reset_reset, nios2_qsys_0:reset_n, onchip_memory2_0:reset, rst_translator:in_reset, sdram_pll:reset, sysid_qsys_0:reset_n]
 	wire         rst_controller_reset_out_reset_req;                          // rst_controller:reset_req -> [nios2_qsys_0:reset_req, onchip_memory2_0:reset_req, rst_translator:reset_req_in]
+	wire         rst_controller_001_reset_out_reset;                          // rst_controller_001:reset_out -> sdram:reset_n
 
 	nios_system_jtag_uart_0 jtag_uart_0 (
 		.clk            (clk_clk),                                                     //               clk.clk
@@ -104,6 +130,44 @@ module nios_system (
 		.reset_req  (rst_controller_reset_out_reset_req)                //       .reset_req
 	);
 
+	nios_system_sdram sdram (
+		.clk            (sdram_pll_c0_clk),                    //   clk.clk
+		.reset_n        (~rst_controller_001_reset_out_reset), // reset.reset_n
+		.az_addr        (sdram_mm_address),                    //    s1.address
+		.az_be_n        (sdram_mm_byteenable_n),               //      .byteenable_n
+		.az_cs          (sdram_mm_chipselect),                 //      .chipselect
+		.az_data        (sdram_mm_writedata),                  //      .writedata
+		.az_rd_n        (sdram_mm_read_n),                     //      .read_n
+		.az_wr_n        (sdram_mm_write_n),                    //      .write_n
+		.za_data        (sdram_mm_readdata),                   //      .readdata
+		.za_valid       (sdram_mm_readdatavalid),              //      .readdatavalid
+		.za_waitrequest (sdram_mm_waitrequest),                //      .waitrequest
+		.zs_addr        (sdram_wire_addr),                     //  wire.export
+		.zs_ba          (sdram_wire_ba),                       //      .export
+		.zs_cas_n       (sdram_wire_cas_n),                    //      .export
+		.zs_cke         (sdram_wire_cke),                      //      .export
+		.zs_cs_n        (sdram_wire_cs_n),                     //      .export
+		.zs_dq          (sdram_wire_dq),                       //      .export
+		.zs_dqm         (sdram_wire_dqm),                      //      .export
+		.zs_ras_n       (sdram_wire_ras_n),                    //      .export
+		.zs_we_n        (sdram_wire_we_n)                      //      .export
+	);
+
+	nios_system_sdram_pll sdram_pll (
+		.clk       (clk_clk),                                         //       inclk_interface.clk
+		.reset     (rst_controller_reset_out_reset),                  // inclk_interface_reset.reset
+		.read      (mm_interconnect_0_sdram_pll_pll_slave_read),      //             pll_slave.read
+		.write     (mm_interconnect_0_sdram_pll_pll_slave_write),     //                      .write
+		.address   (mm_interconnect_0_sdram_pll_pll_slave_address),   //                      .address
+		.readdata  (mm_interconnect_0_sdram_pll_pll_slave_readdata),  //                      .readdata
+		.writedata (mm_interconnect_0_sdram_pll_pll_slave_writedata), //                      .writedata
+		.c0        (sdram_pll_c0_clk),                                //                    c0.clk
+		.c1        (sdram_clk_clk),                                   //                    c1.clk
+		.areset    (),                                                //        areset_conduit.export
+		.locked    (),                                                //        locked_conduit.export
+		.phasedone ()                                                 //     phasedone_conduit.export
+	);
+
 	nios_system_sysid_qsys_0 sysid_qsys_0 (
 		.clock    (clk_clk),                                               //           clk.clk
 		.reset_n  (~rst_controller_reset_out_reset),                       //         reset.reset_n
@@ -148,6 +212,11 @@ module nios_system (
 		.onchip_memory2_0_s1_byteenable                 (mm_interconnect_0_onchip_memory2_0_s1_byteenable),            //                                         .byteenable
 		.onchip_memory2_0_s1_chipselect                 (mm_interconnect_0_onchip_memory2_0_s1_chipselect),            //                                         .chipselect
 		.onchip_memory2_0_s1_clken                      (mm_interconnect_0_onchip_memory2_0_s1_clken),                 //                                         .clken
+		.sdram_pll_pll_slave_address                    (mm_interconnect_0_sdram_pll_pll_slave_address),               //                      sdram_pll_pll_slave.address
+		.sdram_pll_pll_slave_write                      (mm_interconnect_0_sdram_pll_pll_slave_write),                 //                                         .write
+		.sdram_pll_pll_slave_read                       (mm_interconnect_0_sdram_pll_pll_slave_read),                  //                                         .read
+		.sdram_pll_pll_slave_readdata                   (mm_interconnect_0_sdram_pll_pll_slave_readdata),              //                                         .readdata
+		.sdram_pll_pll_slave_writedata                  (mm_interconnect_0_sdram_pll_pll_slave_writedata),             //                                         .writedata
 		.sysid_qsys_0_control_slave_address             (mm_interconnect_0_sysid_qsys_0_control_slave_address),        //               sysid_qsys_0_control_slave.address
 		.sysid_qsys_0_control_slave_readdata            (mm_interconnect_0_sysid_qsys_0_control_slave_readdata)        //                                         .readdata
 	);
@@ -189,6 +258,69 @@ module nios_system (
 		.clk            (clk_clk),                            //       clk.clk
 		.reset_out      (rst_controller_reset_out_reset),     // reset_out.reset
 		.reset_req      (rst_controller_reset_out_reset_req), //          .reset_req
+		.reset_req_in0  (1'b0),                               // (terminated)
+		.reset_in1      (1'b0),                               // (terminated)
+		.reset_req_in1  (1'b0),                               // (terminated)
+		.reset_in2      (1'b0),                               // (terminated)
+		.reset_req_in2  (1'b0),                               // (terminated)
+		.reset_in3      (1'b0),                               // (terminated)
+		.reset_req_in3  (1'b0),                               // (terminated)
+		.reset_in4      (1'b0),                               // (terminated)
+		.reset_req_in4  (1'b0),                               // (terminated)
+		.reset_in5      (1'b0),                               // (terminated)
+		.reset_req_in5  (1'b0),                               // (terminated)
+		.reset_in6      (1'b0),                               // (terminated)
+		.reset_req_in6  (1'b0),                               // (terminated)
+		.reset_in7      (1'b0),                               // (terminated)
+		.reset_req_in7  (1'b0),                               // (terminated)
+		.reset_in8      (1'b0),                               // (terminated)
+		.reset_req_in8  (1'b0),                               // (terminated)
+		.reset_in9      (1'b0),                               // (terminated)
+		.reset_req_in9  (1'b0),                               // (terminated)
+		.reset_in10     (1'b0),                               // (terminated)
+		.reset_req_in10 (1'b0),                               // (terminated)
+		.reset_in11     (1'b0),                               // (terminated)
+		.reset_req_in11 (1'b0),                               // (terminated)
+		.reset_in12     (1'b0),                               // (terminated)
+		.reset_req_in12 (1'b0),                               // (terminated)
+		.reset_in13     (1'b0),                               // (terminated)
+		.reset_req_in13 (1'b0),                               // (terminated)
+		.reset_in14     (1'b0),                               // (terminated)
+		.reset_req_in14 (1'b0),                               // (terminated)
+		.reset_in15     (1'b0),                               // (terminated)
+		.reset_req_in15 (1'b0)                                // (terminated)
+	);
+
+	altera_reset_controller #(
+		.NUM_RESET_INPUTS          (1),
+		.OUTPUT_RESET_SYNC_EDGES   ("deassert"),
+		.SYNC_DEPTH                (2),
+		.RESET_REQUEST_PRESENT     (0),
+		.RESET_REQ_WAIT_TIME       (1),
+		.MIN_RST_ASSERTION_TIME    (3),
+		.RESET_REQ_EARLY_DSRT_TIME (1),
+		.USE_RESET_REQUEST_IN0     (0),
+		.USE_RESET_REQUEST_IN1     (0),
+		.USE_RESET_REQUEST_IN2     (0),
+		.USE_RESET_REQUEST_IN3     (0),
+		.USE_RESET_REQUEST_IN4     (0),
+		.USE_RESET_REQUEST_IN5     (0),
+		.USE_RESET_REQUEST_IN6     (0),
+		.USE_RESET_REQUEST_IN7     (0),
+		.USE_RESET_REQUEST_IN8     (0),
+		.USE_RESET_REQUEST_IN9     (0),
+		.USE_RESET_REQUEST_IN10    (0),
+		.USE_RESET_REQUEST_IN11    (0),
+		.USE_RESET_REQUEST_IN12    (0),
+		.USE_RESET_REQUEST_IN13    (0),
+		.USE_RESET_REQUEST_IN14    (0),
+		.USE_RESET_REQUEST_IN15    (0),
+		.ADAPT_RESET_REQUEST       (0)
+	) rst_controller_001 (
+		.reset_in0      (~reset_reset_n),                     // reset_in0.reset
+		.clk            (sdram_pll_c0_clk),                   //       clk.clk
+		.reset_out      (rst_controller_001_reset_out_reset), // reset_out.reset
+		.reset_req      (),                                   // (terminated)
 		.reset_req_in0  (1'b0),                               // (terminated)
 		.reset_in1      (1'b0),                               // (terminated)
 		.reset_req_in1  (1'b0),                               // (terminated)

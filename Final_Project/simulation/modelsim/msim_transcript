@@ -1,0 +1,2179 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Final_Project_run_msim_rtl_systemverilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlib nios_system
+# vmap nios_system nios_system
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet nios_system nios_system 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:43 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v 
+# -- Compiling module nios_system
+# 
+# Top level modules:
+# 	nios_system
+# End time: 18:21:44 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:44 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 18:21:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:44 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 18:21:45 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:45 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v 
+# -- Compiling module nios_system_mm_interconnect_0
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0
+# End time: 18:21:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:45 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module nios_system_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_avalon_st_adapter
+# End time: 18:21:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:45 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 18:21:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:45 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v 
+# -- Compiling module nios_system_sysid_qsys_0
+# 
+# Top level modules:
+# 	nios_system_sysid_qsys_0
+# End time: 18:21:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:45 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v 
+# -- Compiling module nios_system_sdram_pll_dffpipe_l2c
+# -- Compiling module nios_system_sdram_pll_stdsync_sv6
+# -- Compiling module nios_system_sdram_pll_altpll_lqa2
+# -- Compiling module nios_system_sdram_pll
+# 
+# Top level modules:
+# 	nios_system_sdram_pll
+# End time: 18:21:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:45 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram.v 
+# -- Compiling module nios_system_sdram_input_efifo_module
+# -- Compiling module nios_system_sdram
+# 
+# Top level modules:
+# 	nios_system_sdram
+# End time: 18:21:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:45 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v 
+# -- Compiling module nios_system_onchip_memory2_0
+# 
+# Top level modules:
+# 	nios_system_onchip_memory2_0
+# End time: 18:21:46 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:46 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v 
+# -- Compiling module nios_system_nios2_qsys_0
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0
+# End time: 18:21:46 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:46 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_register_bank_a_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_register_bank_b_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_debug
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_break
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_xbrk
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_dbrk
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_td_mode
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_dtrace
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_pib
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_im
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_performance_monitors
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_avalon_reg
+# -- Compiling module nios_system_nios2_qsys_0_cpu_ociram_sp_ram_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_ocimem
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci
+# -- Compiling module nios_system_nios2_qsys_0_cpu
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_nios2_performance_monitors
+# 	nios_system_nios2_qsys_0_cpu
+# End time: 18:21:46 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:46 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# End time: 18:21:46 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:46 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# End time: 18:21:46 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:46 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# End time: 18:21:46 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:46 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_test_bench
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_test_bench
+# End time: 18:21:46 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v 
+# -- Compiling module nios_system_jtag_uart_0_sim_scfifo_w
+# -- Compiling module nios_system_jtag_uart_0_scfifo_w
+# -- Compiling module nios_system_jtag_uart_0_sim_scfifo_r
+# -- Compiling module nios_system_jtag_uart_0_scfifo_r
+# -- Compiling module nios_system_jtag_uart_0
+# 
+# Top level modules:
+# 	nios_system_jtag_uart_0
+# End time: 18:21:47 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/Final_Project.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/Final_Project.sv 
+# -- Compiling module Final_Project
+# 
+# Top level modules:
+# 	Final_Project
+# End time: 18:21:47 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 18:21:47 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_irq_mapper.sv 
+# -- Compiling module nios_system_irq_mapper
+# 
+# Top level modules:
+# 	nios_system_irq_mapper
+# End time: 18:21:47 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 18:21:47 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 18:21:47 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_mux_001
+# End time: 18:21:47 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_mux
+# End time: 18:21:47 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:47 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_demux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_demux_001
+# End time: 18:21:48 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:48 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_demux
+# End time: 18:21:48 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:48 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_mux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_mux_001
+# End time: 18:21:48 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:48 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_mux
+# End time: 18:21:48 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:48 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_demux_001
+# End time: 18:21:48 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:48 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_demux
+# End time: 18:21:48 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:48 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_003_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_003
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_003
+# End time: 18:21:48 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:48 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_002_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_002
+# End time: 18:21:48 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:48 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_001_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_001
+# End time: 18:21:49 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:49 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router
+# End time: 18:21:49 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:49 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 18:21:49 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:49 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 18:21:49 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:49 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 18:21:49 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:49 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 18:21:49 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:49 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 18:21:50 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:21:50 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 18:21:50 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L nios_system -voptargs="+acc"  testbench
+# vsim -gui "+altera" -l msim_transcript -do "Final_Project_run_msim_rtl_systemverilog.do" 
+# Start time: 18:21:50 on Nov 14,2015
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Final_Project
+# Loading nios_system.nios_system
+# Loading nios_system.nios_system_jtag_uart_0
+# Loading nios_system.nios_system_jtag_uart_0_scfifo_w
+# Loading nios_system.nios_system_jtag_uart_0_sim_scfifo_w
+# Loading nios_system.nios_system_jtag_uart_0_scfifo_r
+# Loading nios_system.nios_system_jtag_uart_0_sim_scfifo_r
+# Loading nios_system.nios_system_nios2_qsys_0
+# Loading nios_system.nios_system_nios2_qsys_0_cpu
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_test_bench
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_register_bank_a_module
+# Loading altera_mf_ver.altsyncram
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_register_bank_b_module
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_debug
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_break
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_xbrk
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_dbrk
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_dtrace
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_td_mode
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_pib
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_im
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_avalon_reg
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_ocimem
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_ociram_sp_ram_module
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# Loading nios_system.nios_system_onchip_memory2_0
+# Loading nios_system.nios_system_sdram
+# Loading nios_system.nios_system_sdram_input_efifo_module
+# Loading nios_system.nios_system_sdram_pll
+# Loading nios_system.nios_system_sdram_pll_stdsync_sv6
+# Loading nios_system.nios_system_sdram_pll_dffpipe_l2c
+# Loading nios_system.nios_system_sdram_pll_altpll_lqa2
+# Loading cycloneive_ver.cycloneive_pll
+# Loading cycloneive_ver.cycloneive_m_cntr
+# Loading cycloneive_ver.cycloneive_n_cntr
+# Loading cycloneive_ver.cycloneive_scale_cntr
+# Loading nios_system.nios_system_sysid_qsys_0
+# Loading nios_system.nios_system_mm_interconnect_0
+# Loading nios_system.altera_merlin_master_translator
+# Loading nios_system.altera_merlin_slave_translator
+# Loading nios_system.altera_merlin_master_agent
+# Loading nios_system.altera_merlin_slave_agent
+# Loading nios_system.altera_merlin_burst_uncompressor
+# Loading nios_system.altera_avalon_sc_fifo
+# Loading nios_system.nios_system_mm_interconnect_0_router
+# Loading nios_system.nios_system_mm_interconnect_0_router_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_001
+# Loading nios_system.nios_system_mm_interconnect_0_router_001_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_002
+# Loading nios_system.nios_system_mm_interconnect_0_router_002_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_003
+# Loading nios_system.nios_system_mm_interconnect_0_router_003_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_demux
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_demux_001
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_mux
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_mux_001
+# Loading nios_system.altera_merlin_arbitrator
+# Loading nios_system.altera_merlin_arb_adder
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_demux
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_demux_001
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_mux
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_mux_001
+# Loading nios_system.nios_system_mm_interconnect_0_avalon_st_adapter
+# Loading nios_system.nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading nios_system.nios_system_irq_mapper
+# Loading nios_system.altera_reset_controller
+# Loading work.HexDriver
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading nios_system.altera_reset_synchronizer
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# 
+# ** Error: (vsim-8885) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv(31): Illegal inout port connection for port 'DRAM_DQ' to reg type. 
+# 
+#         Region: /testbench/test
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Too few port connections. Expected 12, found 10.
+# 
+#         Region: /testbench/test/nios_system/jtag_uart_0
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Missing connection for port 'dataavailable'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Missing connection for port 'readyfordata'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/nios_system_nios2_qsys_0_cpu_register_bank_a/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/nios_system_nios2_qsys_0_cpu_register_bank_b/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3015) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2757): [PCDPC] - Port size (16) does not match connection size (38) for port 'jdo'. The port definition is at: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(981).
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/the_nios_system_nios2_qsys_0_cpu_nios2_oci/the_nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Too few port connections. Expected 23, found 7.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/the_nios_system_nios2_qsys_0_cpu_nios2_oci/the_nios_system_nios2_qsys_0_cpu_nios2_ocimem/nios_system_nios2_qsys_0_cpu_ociram_sp_ram/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Too few port connections. Expected 23, found 7.
+# 
+#         Region: /testbench/test/nios_system/onchip_memory2_0/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3016) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v(112): Port type is incompatible with connection (port 'clock').
+# 
+#         Region: /testbench/test/nios_system/sdram_pll/stdsync2/dffpipe3
+# ** Warning: (vsim-3016) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v(266): Port type is incompatible with connection (port 'inclk').
+# 
+#         Region: /testbench/test/nios_system/sdram_pll/sd1
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Final_Project_run_msim_rtl_systemverilog.do PAUSED at line 52
+do Final_Project_run_msim_rtl_systemverilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlib nios_system
+# ** Warning: (vlib-34) Library already exists at "nios_system".
+# 
+# vmap nios_system nios_system
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet nios_system nios_system 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:27 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v 
+# -- Compiling module nios_system
+# 
+# Top level modules:
+# 	nios_system
+# End time: 18:26:27 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:27 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 18:26:27 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:27 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 18:26:28 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:28 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v 
+# -- Compiling module nios_system_mm_interconnect_0
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0
+# End time: 18:26:28 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:28 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module nios_system_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_avalon_st_adapter
+# End time: 18:26:28 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:28 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 18:26:28 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:28 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v 
+# -- Compiling module nios_system_sysid_qsys_0
+# 
+# Top level modules:
+# 	nios_system_sysid_qsys_0
+# End time: 18:26:28 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:28 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v 
+# -- Compiling module nios_system_sdram_pll_dffpipe_l2c
+# -- Compiling module nios_system_sdram_pll_stdsync_sv6
+# -- Compiling module nios_system_sdram_pll_altpll_lqa2
+# -- Compiling module nios_system_sdram_pll
+# 
+# Top level modules:
+# 	nios_system_sdram_pll
+# End time: 18:26:29 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:29 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram.v 
+# -- Compiling module nios_system_sdram_input_efifo_module
+# -- Compiling module nios_system_sdram
+# 
+# Top level modules:
+# 	nios_system_sdram
+# End time: 18:26:29 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:29 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v 
+# -- Compiling module nios_system_onchip_memory2_0
+# 
+# Top level modules:
+# 	nios_system_onchip_memory2_0
+# End time: 18:26:29 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:29 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v 
+# -- Compiling module nios_system_nios2_qsys_0
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0
+# End time: 18:26:29 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:29 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_register_bank_a_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_register_bank_b_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_debug
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_break
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_xbrk
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_dbrk
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_td_mode
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_dtrace
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_pib
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_im
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_performance_monitors
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_avalon_reg
+# -- Compiling module nios_system_nios2_qsys_0_cpu_ociram_sp_ram_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_ocimem
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci
+# -- Compiling module nios_system_nios2_qsys_0_cpu
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_nios2_performance_monitors
+# 	nios_system_nios2_qsys_0_cpu
+# End time: 18:26:29 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:30 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# End time: 18:26:30 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:30 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# End time: 18:26:30 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:30 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# End time: 18:26:30 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:30 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_test_bench
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_test_bench
+# End time: 18:26:30 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:31 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v 
+# -- Compiling module nios_system_jtag_uart_0_sim_scfifo_w
+# -- Compiling module nios_system_jtag_uart_0_scfifo_w
+# -- Compiling module nios_system_jtag_uart_0_sim_scfifo_r
+# -- Compiling module nios_system_jtag_uart_0_scfifo_r
+# -- Compiling module nios_system_jtag_uart_0
+# 
+# Top level modules:
+# 	nios_system_jtag_uart_0
+# End time: 18:26:31 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/Final_Project.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:31 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/Final_Project.sv 
+# -- Compiling module Final_Project
+# 
+# Top level modules:
+# 	Final_Project
+# End time: 18:26:31 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:31 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 18:26:31 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:31 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_irq_mapper.sv 
+# -- Compiling module nios_system_irq_mapper
+# 
+# Top level modules:
+# 	nios_system_irq_mapper
+# End time: 18:26:31 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:31 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 18:26:31 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:31 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 18:26:31 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:31 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_mux_001
+# End time: 18:26:31 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:31 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_mux
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_demux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_demux_001
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_demux
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_mux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_mux_001
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_mux
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_demux_001
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_demux
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_003_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_003
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_003
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_002_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_002
+# End time: 18:26:32 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:32 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_001_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_001
+# End time: 18:26:33 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:33 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router
+# End time: 18:26:33 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:33 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 18:26:33 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:33 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 18:26:33 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:33 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 18:26:33 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:33 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 18:26:33 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:34 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 18:26:34 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:26:34 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 18:26:34 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L nios_system -voptargs="+acc"  testbench
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Final_Project
+# Loading nios_system.nios_system
+# Loading nios_system.nios_system_jtag_uart_0
+# Loading nios_system.nios_system_jtag_uart_0_scfifo_w
+# Loading nios_system.nios_system_jtag_uart_0_sim_scfifo_w
+# Loading nios_system.nios_system_jtag_uart_0_scfifo_r
+# Loading nios_system.nios_system_jtag_uart_0_sim_scfifo_r
+# Loading nios_system.nios_system_nios2_qsys_0
+# Loading nios_system.nios_system_nios2_qsys_0_cpu
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_test_bench
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_register_bank_a_module
+# Loading altera_mf_ver.altsyncram
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_register_bank_b_module
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_debug
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_break
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_xbrk
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_dbrk
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_dtrace
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_td_mode
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_pib
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_im
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_avalon_reg
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_ocimem
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_ociram_sp_ram_module
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# Loading nios_system.nios_system_onchip_memory2_0
+# Loading nios_system.nios_system_sdram
+# Loading nios_system.nios_system_sdram_input_efifo_module
+# Loading nios_system.nios_system_sdram_pll
+# Loading nios_system.nios_system_sdram_pll_stdsync_sv6
+# Loading nios_system.nios_system_sdram_pll_dffpipe_l2c
+# Loading nios_system.nios_system_sdram_pll_altpll_lqa2
+# Loading cycloneive_ver.cycloneive_pll
+# Loading cycloneive_ver.cycloneive_m_cntr
+# Loading cycloneive_ver.cycloneive_n_cntr
+# Loading cycloneive_ver.cycloneive_scale_cntr
+# Loading nios_system.nios_system_sysid_qsys_0
+# Loading nios_system.nios_system_mm_interconnect_0
+# Loading nios_system.altera_merlin_master_translator
+# Loading nios_system.altera_merlin_slave_translator
+# Loading nios_system.altera_merlin_master_agent
+# Loading nios_system.altera_merlin_slave_agent
+# Loading nios_system.altera_merlin_burst_uncompressor
+# Loading nios_system.altera_avalon_sc_fifo
+# Loading nios_system.nios_system_mm_interconnect_0_router
+# Loading nios_system.nios_system_mm_interconnect_0_router_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_001
+# Loading nios_system.nios_system_mm_interconnect_0_router_001_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_002
+# Loading nios_system.nios_system_mm_interconnect_0_router_002_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_003
+# Loading nios_system.nios_system_mm_interconnect_0_router_003_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_demux
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_demux_001
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_mux
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_mux_001
+# Loading nios_system.altera_merlin_arbitrator
+# Loading nios_system.altera_merlin_arb_adder
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_demux
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_demux_001
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_mux
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_mux_001
+# Loading nios_system.nios_system_mm_interconnect_0_avalon_st_adapter
+# Loading nios_system.nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading nios_system.nios_system_irq_mapper
+# Loading nios_system.altera_reset_controller
+# Loading work.HexDriver
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading nios_system.altera_reset_synchronizer
+# ** Error: (vsim-8885) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv(31): Illegal inout port connection for port 'DRAM_DQ' to reg type. 
+# 
+#         Region: /testbench/test
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Too few port connections. Expected 12, found 10.
+# 
+#         Region: /testbench/test/nios_system/jtag_uart_0
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Missing connection for port 'dataavailable'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Missing connection for port 'readyfordata'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/nios_system_nios2_qsys_0_cpu_register_bank_a/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/nios_system_nios2_qsys_0_cpu_register_bank_b/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3015) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2757): [PCDPC] - Port size (16) does not match connection size (38) for port 'jdo'. The port definition is at: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(981).
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/the_nios_system_nios2_qsys_0_cpu_nios2_oci/the_nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Too few port connections. Expected 23, found 7.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/the_nios_system_nios2_qsys_0_cpu_nios2_oci/the_nios_system_nios2_qsys_0_cpu_nios2_ocimem/nios_system_nios2_qsys_0_cpu_ociram_sp_ram/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Too few port connections. Expected 23, found 7.
+# 
+#         Region: /testbench/test/nios_system/onchip_memory2_0/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3016) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v(112): Port type is incompatible with connection (port 'clock').
+# 
+#         Region: /testbench/test/nios_system/sdram_pll/stdsync2/dffpipe3
+# ** Warning: (vsim-3016) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v(266): Port type is incompatible with connection (port 'inclk').
+# 
+#         Region: /testbench/test/nios_system/sdram_pll/sd1
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Final_Project_run_msim_rtl_systemverilog.do PAUSED at line 52
+do Final_Project_run_msim_rtl_systemverilog.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlib nios_system
+# ** Warning: (vlib-34) Library already exists at "nios_system".
+# 
+# vmap nios_system nios_system
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet nios_system nios_system 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:40 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v 
+# -- Compiling module nios_system
+# 
+# Top level modules:
+# 	nios_system
+# End time: 18:28:40 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:40 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 18:28:40 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:40 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 18:28:40 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:40 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0.v 
+# -- Compiling module nios_system_mm_interconnect_0
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0
+# End time: 18:28:40 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:40 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module nios_system_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_avalon_st_adapter
+# End time: 18:28:40 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:40 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 18:28:40 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:40 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sysid_qsys_0.v 
+# -- Compiling module nios_system_sysid_qsys_0
+# 
+# Top level modules:
+# 	nios_system_sysid_qsys_0
+# End time: 18:28:41 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:41 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v 
+# -- Compiling module nios_system_sdram_pll_dffpipe_l2c
+# -- Compiling module nios_system_sdram_pll_stdsync_sv6
+# -- Compiling module nios_system_sdram_pll_altpll_lqa2
+# -- Compiling module nios_system_sdram_pll
+# 
+# Top level modules:
+# 	nios_system_sdram_pll
+# End time: 18:28:41 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:41 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram.v 
+# -- Compiling module nios_system_sdram_input_efifo_module
+# -- Compiling module nios_system_sdram
+# 
+# Top level modules:
+# 	nios_system_sdram
+# End time: 18:28:41 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:41 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v 
+# -- Compiling module nios_system_onchip_memory2_0
+# 
+# Top level modules:
+# 	nios_system_onchip_memory2_0
+# End time: 18:28:41 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:41 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0.v 
+# -- Compiling module nios_system_nios2_qsys_0
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0
+# End time: 18:28:41 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:41 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_register_bank_a_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_register_bank_b_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_debug
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_break
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_xbrk
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_dbrk
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_td_mode
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_dtrace
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_fifo
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_pib
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci_im
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_performance_monitors
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_avalon_reg
+# -- Compiling module nios_system_nios2_qsys_0_cpu_ociram_sp_ram_module
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_ocimem
+# -- Compiling module nios_system_nios2_qsys_0_cpu_nios2_oci
+# -- Compiling module nios_system_nios2_qsys_0_cpu
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_nios2_performance_monitors
+# 	nios_system_nios2_qsys_0_cpu
+# End time: 18:28:41 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:42 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_sysclk.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# End time: 18:28:42 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:42 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_tck.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# End time: 18:28:42 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:42 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_debug_slave_wrapper.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# End time: 18:28:42 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:42 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu_test_bench.v 
+# -- Compiling module nios_system_nios2_qsys_0_cpu_test_bench
+# 
+# Top level modules:
+# 	nios_system_nios2_qsys_0_cpu_test_bench
+# End time: 18:28:42 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:42 on Nov 14,2015
+# vlog -reportprogress 300 -vlog01compat -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_jtag_uart_0.v 
+# -- Compiling module nios_system_jtag_uart_0_sim_scfifo_w
+# -- Compiling module nios_system_jtag_uart_0_scfifo_w
+# -- Compiling module nios_system_jtag_uart_0_sim_scfifo_r
+# -- Compiling module nios_system_jtag_uart_0_scfifo_r
+# -- Compiling module nios_system_jtag_uart_0
+# 
+# Top level modules:
+# 	nios_system_jtag_uart_0
+# End time: 18:28:42 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/Final_Project.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:42 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/Final_Project.sv 
+# -- Compiling module Final_Project
+# 
+# Top level modules:
+# 	Final_Project
+# End time: 18:28:42 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:42 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/HexDriver.sv 
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# End time: 18:28:42 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_irq_mapper.sv 
+# -- Compiling module nios_system_irq_mapper
+# 
+# Top level modules:
+# 	nios_system_irq_mapper
+# End time: 18:28:43 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 18:28:43 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 18:28:43 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_mux_001
+# End time: 18:28:43 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_mux
+# End time: 18:28:43 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_demux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_demux_001
+# End time: 18:28:43 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_rsp_demux
+# End time: 18:28:43 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_mux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_mux_001
+# End time: 18:28:43 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:43 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_mux
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_demux_001
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module nios_system_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_cmd_demux
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_003.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_003_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_003
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_003
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_002.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_002_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_002
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router_001.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_001_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router_001
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_mm_interconnect_0_router.sv 
+# -- Compiling module nios_system_mm_interconnect_0_router_default_decode
+# -- Compiling module nios_system_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	nios_system_mm_interconnect_0_router
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# ** Warning: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# 
+# (randomization, coverage or assertion) detected in the design.
+# 
+# These features are only supported in Questasim.
+# 
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:44 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_agent.sv 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 18:28:44 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:45 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 18:28:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work nios_system +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:45 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work nios_system "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/altera_merlin_master_translator.sv 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 18:28:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project {C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:28:45 on Nov 14,2015
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 18:28:45 on Nov 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -L nios_system -voptargs="+acc"  testbench
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.Final_Project
+# Loading nios_system.nios_system
+# Loading nios_system.nios_system_jtag_uart_0
+# Loading nios_system.nios_system_jtag_uart_0_scfifo_w
+# Loading nios_system.nios_system_jtag_uart_0_sim_scfifo_w
+# Loading nios_system.nios_system_jtag_uart_0_scfifo_r
+# Loading nios_system.nios_system_jtag_uart_0_sim_scfifo_r
+# Loading nios_system.nios_system_nios2_qsys_0
+# Loading nios_system.nios_system_nios2_qsys_0_cpu
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_test_bench
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_register_bank_a_module
+# Loading altera_mf_ver.altsyncram
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_register_bank_b_module
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_debug
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_break
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_xbrk
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_dbrk
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_dtrace
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_td_mode
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_compute_input_tm_cnt
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_wrptr_inc
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_fifo_cnt_inc
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_pib
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_oci_im
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_avalon_reg
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_nios2_ocimem
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_ociram_sp_ram_module
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_wrapper
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_tck
+# Loading nios_system.nios_system_nios2_qsys_0_cpu_debug_slave_sysclk
+# Loading nios_system.nios_system_onchip_memory2_0
+# Loading nios_system.nios_system_sdram
+# Loading nios_system.nios_system_sdram_input_efifo_module
+# Loading nios_system.nios_system_sdram_pll
+# Loading nios_system.nios_system_sdram_pll_stdsync_sv6
+# Loading nios_system.nios_system_sdram_pll_dffpipe_l2c
+# Loading nios_system.nios_system_sdram_pll_altpll_lqa2
+# Loading cycloneive_ver.cycloneive_pll
+# Loading cycloneive_ver.cycloneive_m_cntr
+# Loading cycloneive_ver.cycloneive_n_cntr
+# Loading cycloneive_ver.cycloneive_scale_cntr
+# Loading nios_system.nios_system_sysid_qsys_0
+# Loading nios_system.nios_system_mm_interconnect_0
+# Loading nios_system.altera_merlin_master_translator
+# Loading nios_system.altera_merlin_slave_translator
+# Loading nios_system.altera_merlin_master_agent
+# Loading nios_system.altera_merlin_slave_agent
+# Loading nios_system.altera_merlin_burst_uncompressor
+# Loading nios_system.altera_avalon_sc_fifo
+# Loading nios_system.nios_system_mm_interconnect_0_router
+# Loading nios_system.nios_system_mm_interconnect_0_router_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_001
+# Loading nios_system.nios_system_mm_interconnect_0_router_001_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_002
+# Loading nios_system.nios_system_mm_interconnect_0_router_002_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_router_003
+# Loading nios_system.nios_system_mm_interconnect_0_router_003_default_decode
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_demux
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_demux_001
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_mux
+# Loading nios_system.nios_system_mm_interconnect_0_cmd_mux_001
+# Loading nios_system.altera_merlin_arbitrator
+# Loading nios_system.altera_merlin_arb_adder
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_demux
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_demux_001
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_mux
+# Loading nios_system.nios_system_mm_interconnect_0_rsp_mux_001
+# Loading nios_system.nios_system_mm_interconnect_0_avalon_st_adapter
+# Loading nios_system.nios_system_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading nios_system.nios_system_irq_mapper
+# Loading nios_system.altera_reset_controller
+# Loading work.HexDriver
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading nios_system.altera_reset_synchronizer
+# ** Error: (vsim-8885) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/testbench.sv(31): Illegal inout port connection for port 'DRAM_DQ' to reg type. 
+# 
+#         Region: /testbench/test
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Too few port connections. Expected 12, found 10.
+# 
+#         Region: /testbench/test/nios_system/jtag_uart_0
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Missing connection for port 'dataavailable'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/nios_system.v(78): [TFMPC] - Missing connection for port 'readyfordata'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/nios_system_nios2_qsys_0_cpu_register_bank_a/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(49): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Too few port connections. Expected 23, found 6.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/nios_system_nios2_qsys_0_cpu_register_bank_b/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'byteena_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'q_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(114): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3015) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2757): [PCDPC] - Port size (16) does not match connection size (38) for port 'jdo'. The port definition is at: C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(981).
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/the_nios_system_nios2_qsys_0_cpu_nios2_oci/the_nios_system_nios2_qsys_0_cpu_nios2_oci_itrace
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Too few port connections. Expected 23, found 7.
+# 
+#         Region: /testbench/test/nios_system/nios2_qsys_0/cpu/the_nios_system_nios2_qsys_0_cpu_nios2_oci/the_nios_system_nios2_qsys_0_cpu_nios2_ocimem/nios_system_nios2_qsys_0_cpu_ociram_sp_ram/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_nios2_qsys_0_cpu.v(2299): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3017) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Too few port connections. Expected 23, found 7.
+# 
+#         Region: /testbench/test/nios_system/onchip_memory2_0/the_altsyncram
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'wren_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'rden_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'rden_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'data_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'address_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clock1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken2'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'clocken3'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'aclr0'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'aclr1'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'byteena_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'addressstall_a'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'addressstall_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'q_b'.
+# 
+# ** Warning: (vsim-3722) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_onchip_memory2_0.v(57): [TFMPC] - Missing connection for port 'eccstatus'.
+# 
+# ** Warning: (vsim-3016) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v(112): Port type is incompatible with connection (port 'clock').
+# 
+#         Region: /testbench/test/nios_system/sdram_pll/stdsync2/dffpipe3
+# ** Warning: (vsim-3016) C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/nios_system/synthesis/submodules/nios_system_sdram_pll.v(266): Port type is incompatible with connection (port 'inclk').
+# 
+#         Region: /testbench/test/nios_system/sdram_pll/sd1
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Final_Project_run_msim_rtl_systemverilog.do PAUSED at line 52
+# End time: 18:37:20 on Nov 14,2015, Elapsed time: 0:15:30
+# Errors: 3, Warnings: 229
