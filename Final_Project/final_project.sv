@@ -54,8 +54,11 @@ module  Final_Project ( input logic         CLOCK_50,
 	 vga_controller vgasync_instance( .Clk(Clk), .Reset(Reset_h), .hs(VGA_HS), .vs(VGA_VS), .pixel_clk(VGA_CLK), .blank(VGA_BLANK_N),
 													.sync(VGA_SYNC_N), .DrawX(drawxsig), .DrawY(drawysig));
 													
-	 spritetest test(.x_pos(drawxsig), .y_pos(drawysig), .data(data), .Clk(Clk), .Reset(Reset_h), .ready(ready), 
-						  .red(VGA_R), .green(VGA_G), .blue(VGA_B), .address(a), .read_req(read_req));
+	 //spritetest test(.x_pos(drawxsig), .y_pos(drawysig), .data(data), .Clk(Clk), .Reset(Reset_h), .ready(ready), 
+		//				  .red(VGA_R), .green(VGA_G), .blue(VGA_B), .address(a), .read_req(read_req));
+		
+	frame_reader test1(.Clk(Clk), .Reset(Reset_h), .data_in(data), .x_pos(drawxsig), .y_pos(drawysig),
+							 .read_req(read_req), .address(a), .red(VGA_R), .green(VGA_G), .blue(VGA_B), .ready(ready));
 	 	 
 	 //The connections for nios_system might be named different depending on how you set up Qsys
 	 nios_system nios_system(

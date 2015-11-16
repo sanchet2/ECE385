@@ -29,14 +29,12 @@ module sdram_master(input Clk, Reset, read_req, write_req, valid, wait_req,
 								address <= address_in;
 						end 
 						READ: begin
-								address <= address_in;
 								data <= data_from_mem;
 						end 
 						READ_LOOP: begin
 								data <= data_from_mem;
 						end 
 						WRITE: begin
-								address <= address_in;
 								data <= write_data;
 						end 
 						WRITE_LOOP: begin
@@ -63,7 +61,10 @@ module sdram_master(input Clk, Reset, read_req, write_req, valid, wait_req,
 				end 
 				WAIT: begin
 						if(read_req == 1'b1)
+						begin
 							next_state = READ;
+							read_out = 1'b0;
+						end
 						else if(write_req == 1'b1)
 							next_state = WRITE;
 						else

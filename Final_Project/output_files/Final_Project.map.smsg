@@ -14,3 +14,4 @@ Warning (10273): Verilog HDL warning at HexDriver.sv(23): extended using "x" or 
 Info (10281): Verilog HDL Declaration information at spritetest.sv(3): object "Reset" differs only in case from object "RESET" in the same scope
 Info (10281): Verilog HDL Declaration information at sdram_master.sv(1): object "Reset" differs only in case from object "RESET" in the same scope
 Info (10281): Verilog HDL Declaration information at test_read.sv(1): object "Reset" differs only in case from object "RESET" in the same scope
+Info (10281): Verilog HDL Declaration information at frame_reader.sv(1): object "Reset" differs only in case from object "RESET" in the same scope
