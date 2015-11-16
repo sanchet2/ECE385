@@ -52,7 +52,7 @@ DRsize.011 0 0 1 0 0 1
 DRsize.100 0 1 0 0 0 1 
 DRsize.101 1 0 0 0 0 1 
 
-State Machine - |Final_Project|spritetest:test|state
+State Machine - |Final_Project|frame_reader:test1|state
 Name state.WAIT state.INC state.READ state.RESET 
 state.RESET 0 0 0 0 
 state.READ 0 0 1 1 
