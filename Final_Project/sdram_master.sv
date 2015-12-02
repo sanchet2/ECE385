@@ -1,10 +1,10 @@
-module sdram_master(input Clk, Reset, read_req, write_req, valid, wait_req,
-						  input [24:0] address_in,
-						  input [31:0] write_data, data_from_mem,
-						  output write_out, read_out, ready,
-						  output [3:0] byte_enable,
-						  output [24:0] address_out,
-						  output [31:0] data_to_sdram, data_to_fpga);
+module sdram_master(input 				Clk, Reset, read_req, write_req, valid, wait_req,
+						  input [24:0] 	address_in,
+						  input [31:0] 	write_data, data_from_mem,
+						  output 			write_out, read_out, ready,
+						  output [3:0] 	byte_enable,
+						  output [24:0] 	address_out,
+						  output [31:0] 	data_to_sdram, data_to_fpga);
 						  
 		logic [31:0] data;
 		logic [24:0] address;
@@ -63,7 +63,6 @@ module sdram_master(input Clk, Reset, read_req, write_req, valid, wait_req,
 						if(read_req == 1'b1)
 						begin
 							next_state = READ;
-							read_out = 1'b0;
 						end
 						else if(write_req == 1'b1)
 							next_state = WRITE;

@@ -1,0 +1,9 @@
+module sdram_master_test   (input Clk, VGA_Clk, Reset, wait_req, valid,
+								    input [24:0] address_in,
+								    input [31:0] data_from_mem,
+								    output write_out, read_out,
+								    output [3:0] byte_enable,
+								    output [24:0] address_out,
+								    output [31:0] data_to_sdram, data_to_fpga,
+								    output [8:0] counter
+								    );

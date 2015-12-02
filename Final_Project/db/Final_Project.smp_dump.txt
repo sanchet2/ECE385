@@ -1,5 +1,5 @@
 
-State Machine - |Final_Project|sdram_master:master|state
+State Machine - |Final_Project|burst_control:burst|sdram_master:master|state
 Name state.WRITE_LOOP state.WRITE state.READ_LOOP state.READ state.WAIT state.RESET 
 state.RESET 0 0 0 0 0 0 
 state.WAIT 0 0 0 0 1 1 
@@ -51,10 +51,3 @@ DRsize.010 0 0 0 1 0 1
 DRsize.011 0 0 1 0 0 1 
 DRsize.100 0 1 0 0 0 1 
 DRsize.101 1 0 0 0 0 1 
-
-State Machine - |Final_Project|frame_reader:test1|state
-Name state.WAIT state.INC state.READ state.RESET 
-state.RESET 0 0 0 0 
-state.READ 0 0 1 1 
-state.INC 0 1 0 1 
-state.WAIT 1 0 0 1 

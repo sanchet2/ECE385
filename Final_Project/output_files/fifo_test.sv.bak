@@ -1,0 +1,10 @@
+module fifo_test(input Clk, reset, load, read,
+					  input [17:0] write_data,
+					  output [31:0] read_data
+					  );
+			
+
+		
+
+			
+endmodule 

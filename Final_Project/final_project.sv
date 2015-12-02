@@ -3,6 +3,9 @@ module  Final_Project ( input logic         CLOCK_50,
                        input logic [3:0]    KEY, //bit 0 is set up as Reset
 							  output logic [6:0]  HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7,						
 							  // VGA Interface 
+							  output [8:0] LEDG,
+							  output [17:0] LEDR,
+							 // input [17:0] SW,
                        output [7:0]  VGA_R,					//VGA Red
 							                VGA_G,					//VGA Green
 												 VGA_B,					//VGA Blue
@@ -11,7 +14,7 @@ module  Final_Project ( input logic         CLOCK_50,
 												 VGA_BLANK_N,			//VGA Blank signal
 												 VGA_VS,					//VGA virtical sync signal	
 												 VGA_HS,					//VGA horizontal sync signal
-							  // CY7C67200 Interface
+							  // CY7C67200 Interface 
 							 /* inout [15:0]  OTG_DATA,						//	CY7C67200 Data bus 16 Bits
 							  output [1:0]  OTG_ADDR,						//	CY7C67200 Address 2 Bits
 							  output        OTG_CS_N,						//	CY7C67200 Chip Select
@@ -34,14 +37,14 @@ module  Final_Project ( input logic         CLOCK_50,
     
     logic sdram_cs, sdram_r, sdram_w;
 	 logic sdram_rvalid, sdram_wait;
-	 logic [24:0] sdram_address;
+	 logic [24:0] sdram_address, address;
 	 logic [31:0] sdram_datain;
 	 logic [31:0] sdram_dataout;
 	 logic [3:0] sdram_byteen;
 	 
-	 logic ready, read_req;
-			logic [25:0] a;
-			logic [31:0] data;
+	 logic ready, read_ok;
+			logic [24:0] a;
+			logic [31:0] data, write_data;
 	 
 	 logic [9:0] drawxsig, drawysig;
 	 
@@ -52,13 +55,12 @@ module  Final_Project ( input logic         CLOCK_50,
     assign {Reset_h}=~ (KEY[0]);  // The push buttons are active low
 	 
 	 vga_controller vgasync_instance( .Clk(Clk), .Reset(Reset_h), .hs(VGA_HS), .vs(VGA_VS), .pixel_clk(VGA_CLK), .blank(VGA_BLANK_N),
-													.sync(VGA_SYNC_N), .DrawX(drawxsig), .DrawY(drawysig));
-													
-	 //spritetest test(.x_pos(drawxsig), .y_pos(drawysig), .data(data), .Clk(Clk), .Reset(Reset_h), .ready(ready), 
-		//				  .red(VGA_R), .green(VGA_G), .blue(VGA_B), .address(a), .read_req(read_req));
+													.sync(VGA_SYNC_N), .DrawX(drawxsig), .DrawY(drawysig)); 
 		
-	frame_reader test1(.Clk(Clk), .Reset(Reset_h), .data_in(data), .x_pos(drawxsig), .y_pos(drawysig),
-							 .read_req(read_req), .address(a), .red(VGA_R), .green(VGA_G), .blue(VGA_B), .ready(ready));
+//	frame_control test1(.Clk(Clk), .Reset(Reset_h), .x_pos(drawxsig), .y_pos(drawysig), .read_ok(read_ok));
+
+	frame_control test1(.x_pos(drawxsig), .y_pos(drawysig), .read_ok(read_ok));
+
 	 	 
 	 //The connections for nios_system might be named different depending on how you set up Qsys
 	 nios_system nios_system(
@@ -84,16 +86,17 @@ module  Final_Project ( input logic         CLOCK_50,
                                .sdram_mm_readdatavalid(sdram_rvalid),      
                                .sdram_mm_waitrequest(sdram_wait));
 			
-			
-			
-			//test_read test(.Clk(Clk), .Reset(Reset_h), .cont(KEY[1]), .complete(ready), .read_req(read_req), .address(a));
-			
-			sdram_master master(.Clk(Clk), .Reset(Reset_h), .read_req(read_req), .write_req(1'b0), .valid(sdram_rvalid), .wait_req(sdram_wait),
-									  .address_in(a), .write_data(32'b1), .data_from_mem(sdram_dataout), .write_out(sdram_w),
-									  .read_out(sdram_r), .ready(ready), .byte_enable(sdram_byteen), .address_out(sdram_address), 
-									  .data_to_sdram(sdram_datain), .data_to_fpga(data));
-										 
-										 
+		
+									  
+		burst_control burst(.Clk(Clk), .Reset(Reset_h), .VGA_read(read_ok), .VGA_Clk(VGA_CLK),
+									  .valid(sdram_rvalid), .wait_req(sdram_wait), .red(VGA_R), .green(VGA_G), .blue(VGA_B),
+									  .address_in(a), .data_from_mem(sdram_dataout), .write_out(sdram_w),
+									  .read_out(sdram_r), .byte_enable(sdram_byteen), .address_out(sdram_address), .address_test(address),
+									  .data_to_sdram(sdram_datain), .data_to_fpga(data), .x_pos(drawxsig), .y_pos(drawysig)); 
+									  
+		
+									  
+			assign LEDR = 	address[17:0];						 
 			HexDriver Hexd0( .In0(data[3:0]), .Out0(HEX0));
 			HexDriver Hexd1( .In0(data[7:4]), .Out0(HEX1));
 			HexDriver Hexd2( .In0(data[11:8]), .Out0(HEX2));
@@ -101,5 +104,5 @@ module  Final_Project ( input logic         CLOCK_50,
 			HexDriver Hexd4( .In0(data[19:16]), .Out0(HEX4));
 			HexDriver Hexd5( .In0(data[23:20]), .Out0(HEX5));
 			HexDriver Hexd6( .In0(data[27:24]), .Out0(HEX6));
-			HexDriver Hexd7( .In0(data[31:28]), .Out0(HEX7));
+			HexDriver Hexd7( .In0({3'b0, address[24]}), .Out0(HEX7));
 endmodule 

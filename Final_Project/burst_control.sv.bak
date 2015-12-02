@@ -1,0 +1,2 @@
+module burst_control(input Clk, Reset, read_req, write_req,
+							input [24:0] address,

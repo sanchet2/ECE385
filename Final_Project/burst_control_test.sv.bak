@@ -1,0 +1,94 @@
+module burst_control_test(input Clk, VGA_Clk, Reset, VGA_read, wait_req, valid, sync,
+							input [24:0] address_in,
+							input [31:0] data_from_mem,
+							output write_out, read_out,
+							output [3:0] byte_enable,
+							output [24:0] address_out, address_test,
+							output [31:0] data_to_sdram, data_to_fpga,
+							output [7:0] red, green, blue);
+							
+		logic master_ready, fifo_write, fifo_read, wrfull, rdempty, sdram_read;
+		logic [31:0] data, q;
+		logic [24:0] address;
+		
+		assign address_test = address;
+		assign num_words_test = num_words;
+				
+		assign red [3:0] = data[7:4];
+		assign red [7:4] = data[3:0];
+		assign green [3:0] = data[15:12];
+		assign green [7:4] = data[11:8];
+		assign blue [3:0] = data[23:20];
+		assign blue [7:4] = data[19:16];
+		
+		sdram_master master(.Clk(Clk), .Reset(Reset), .read_req(sdram_read), .write_req(1'b0), .valid(valid), .wait_req(wait_req),
+								  .address_in(address), .write_data(32'b1), .data_from_mem(data_from_mem), .write_out(write_out),
+								  .read_out(read_out), .ready(master_ready), .byte_enable(byte_enable), .address_out(address_out), 
+								  .data_to_sdram(data_to_sdram), .data_to_fpga(data_to_fpga));		
+		
+		enum logic [2:0] {RESET, WAIT, READ1, READ2, INC} state, next_state;
+		
+		always_ff @ (posedge Clk or posedge Reset)
+		begin
+				if(Reset)
+				begin
+						address <= 25'b0;
+						state <= RESET;
+				end 
+				else begin
+						state <= next_state;
+						unique case(state)
+						RESET: ;
+						WAIT: ;
+						READ1: ;
+						endcase
+				end 
+		end 
+		
+		always_comb
+		begin
+				fifo_write = 1'b0;
+				sdram_read = 1'b0;
+				fifo_read = VGA_read & (~rdempty); 
+					
+				unique case(state)
+				RESET: begin
+						next_state = WAIT;
+				end 
+				WAIT: begin
+						if((num_words <= 9'b001100100))
+						begin
+								next_state = BURST_READ;
+						end 
+						else begin
+							next_state = WAIT;
+						end 
+						
+				end 
+				BURST_READ: begin
+						sdram_read = 1'b1;
+						if(master_ready == 1'b1)
+						begin
+								next_state = BURST_INC;
+						end
+						else begin
+								next_state = BURST_READ;
+						end 
+				end 
+				BURST_INC: begin
+						fifo_write = 1'b1; 
+						if(num_words >= 9'b111110100)
+						begin
+							next_state = WAIT;
+						end 
+						else begin
+							next_state = BURST_READ;
+						end 
+				end 
+				endcase
+		end 
+		
+		
+		
+		
+endmodule 

@@ -1,0 +1,92 @@
+module frame_control(input Clk, Reset,
+						  input [9:0] x_pos, y_pos,
+						  output read_req);
+						
+		always_ff @ (posedge Clk or posedge Reset)
+		begin
+				if(Reset)
+				begin
+						
+				end 
+				else begin
+						state <= next_state;
+						unique case(state)
+						RESET:
+						READ: begin
+								red [3:0] <= data_in[7:4];
+								red [7:4] <= data_in[3:0];
+								green [3:0] <= data_in[15:12];
+								green [7:4] <= data_in[11:8];
+								blue [3:0] <= data_in[23:20];
+								blue [7:4] <= data_in[19:16];
+						end 
+						READ2: begin
+								red [3:0] <= data_in[7:4];
+								red [7:4] <= data_in[3:0];
+								green [3:0] <= data_in[15:12];
+								green [7:4] <= data_in[11:8];
+								blue [3:0] <= data_in[23:20];
+								blue [7:4] <= data_in[19:16];
+						end 
+						READ3:
+						READ4:begin
+								if(address >= 25'd307198)
+									address <= 25'b0;
+								else
+								begin
+									address <= address + 2'd2;
+									
+								end
+						end 
+						WAIT: ;
+						endcase
+				end 
+		end 
+
+		always_comb 
+		begin
+				read_req = 1'b0;
+				unique case(state)
+				RESET: begin
+						if((x_pos < 10'd639) || x_pos == 10'd799 || (y_pos < 10'd479) || y_pos == 10'd524)
+						begin
+							next_state = READ;
+							read_req = 1'b1;
+						end
+						else	
+							next_state = WAIT;
+				end 
+				READ: begin
+						read_req = 1'b1;
+						next_state = READ2;
+				end 
+				READ2: begin
+						read_req = 1'b1;
+						next_state = READ3;
+				end
+				READ3: begin
+						next_state = READ4;
+				end
+				READ4: begin
+						if((x_pos < 10'd639) || x_pos == 10'd799 || (y_pos < 10'd479) || y_pos == 10'd524)
+						begin
+							next_state = READ;
+							read_req = 1'b1;
+						end
+						else
+							next_state = WAIT;
+				end 
+				WAIT: begin
+						if((x_pos < 10'd639) || x_pos == 10'd799 || (y_pos < 10'd479) || y_pos == 10'd524)
+						begin
+							next_state = READ;
+							read_req = 1'b1;
+						end
+						else
+							next_state = WAIT;
+				end 
+				endcase
+		end 
+			
+endmodule
+						  
