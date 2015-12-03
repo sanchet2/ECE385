@@ -680,7 +680,7 @@ CONF_DONE                    : P24       :        :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : P25       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P27       :        :                   :         : 6         :                
-~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P28       :        :                   :         : 6         :                
 DRAM_DQ[26]                  : R1        : bidir  : 2.5 V             :         : 2         : Y              
 DRAM_DQ[27]                  : R2        : bidir  : 2.5 V             :         : 2         : Y              
 DRAM_DQ[28]                  : R3        : bidir  : 2.5 V             :         : 2         : Y              

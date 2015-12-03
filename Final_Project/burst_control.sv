@@ -15,7 +15,33 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 							output [31:0] data_to_blitter
 							);
 							
-		logic master_ready, sdram_read, sdram_write;
+		/*
+		logic fifo_empty, fifo_full, fifo_read, fifo_write, sdram_read, sdram_write, sdram_ready;	
+		logic [24:0] sdram_address, frame_address;
+		logic [31:0] read_data, fifo_data, blitter_data;
+		
+		FIFO fifo(.data(read_data), .wrclk(Clk), .wrfull(fifo_full), .wrreq(fifo_write), .aclr(Reset), 
+					 .wrusedw(num_words), .q(fifo_data), .rdreq(fifo_read), .rdclk(VGA_Clk), .rdempty(fifo_empty));
+		
+		sdram_master master(.Clk(Clk), .Reset(Reset), .read_req(sdram_read), .write_req(sdram_write), .valid(valid), .wait_req(wait_req),
+								  .address_in(sdram_address), .write_data(data_from_blitter), .data_from_mem(data_from_mem), .write_out(write_out),
+								  .read_out(read_out), .ready(sdram_ready), .byte_enable(byte_enable), .address_out(address_out), 
+								  .data_to_sdram(data_to_sdram), .data_to_fpga(read_data));
+		
+		enum logic [2:0] {INITIAL_READ, INITIAL_WRITE, WAIT, READ_FRAME, LOAD_FRAME, BLITTER_READ, BLITTER_WRITE} state, next_state;
+		
+		always_ff @ (posedge Clk or posedge Reset)
+		begin
+				if(Reset)
+				begin
+						state <= INITIAL_READ;
+						frame_address <= 
+				end 
+		end */
+		
+		
+		
+		 logic master_ready, sdram_read, sdram_write;
 		logic [31:0] data;
 		logic [24:0] address, vga_address;
 		
