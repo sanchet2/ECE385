@@ -38,7 +38,7 @@ module sdram_master(input 				Clk, Reset, read_req, write_req, valid, wait_req,
 								data <= write_data;
 						end 
 						WRITE_LOOP: begin
-								
+								data <= write_data;
 						end 
 						endcase
 				end 
@@ -51,8 +51,8 @@ module sdram_master(input 				Clk, Reset, read_req, write_req, valid, wait_req,
 				ready = 1'b0;
 				byte_enable = 4'b0000;
 				data_to_fpga = data;
-				data_to_sdram = data;
-				address_out = address;
+				data_to_sdram = write_data;
+				address_out = address_in;
 				next_state = state;
 				
 				unique case(state)

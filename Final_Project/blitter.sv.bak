@@ -1,0 +1,7 @@
+module blitter(input Clk, Reset, new_sprite_valid, read_valid, write_valid,
+					input [9:0] sprite_x_pos, sprite_y_pos,
+					input [24:0] sprite_address,
+					input [31:0] data_from_sdram,
+					output wrote_sprite,
+					output [31:0] data_out,
+					output [24:0]

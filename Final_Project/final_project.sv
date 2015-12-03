@@ -48,7 +48,7 @@ module  Final_Project ( input logic         CLOCK_50,
 	 
 	 logic [9:0] drawxsig, drawysig;
 	 
-	 logic Reset_h, vssig, Clk;
+	 logic Reset_h, vssig, Clk, valid;
 
 	 assign sdram_cs = 1'b1;
 	 assign Clk = CLOCK_50;
@@ -57,9 +57,7 @@ module  Final_Project ( input logic         CLOCK_50,
 	 vga_controller vgasync_instance( .Clk(Clk), .Reset(Reset_h), .hs(VGA_HS), .vs(VGA_VS), .pixel_clk(VGA_CLK), .blank(VGA_BLANK_N),
 													.sync(VGA_SYNC_N), .DrawX(drawxsig), .DrawY(drawysig)); 
 		
-//	frame_control test1(.Clk(Clk), .Reset(Reset_h), .x_pos(drawxsig), .y_pos(drawysig), .read_ok(read_ok));
-
-	frame_control test1(.x_pos(drawxsig), .y_pos(drawysig), .read_ok(read_ok));
+//	frame_control test1(.x_pos(drawxsig), .y_pos(drawysig), .read_ok(read_ok));
 
 	 	 
 	 //The connections for nios_system might be named different depending on how you set up Qsys
@@ -85,17 +83,26 @@ module  Final_Project ( input logic         CLOCK_50,
 										 .sdram_mm_readdata(sdram_dataout),           
                                .sdram_mm_readdatavalid(sdram_rvalid),      
                                .sdram_mm_waitrequest(sdram_wait));
-			
-		
+										 
+		logic [31:0]  data_from_blitter, data_to_blitter;
+		logic [24:0] address_from_blitter;
+		logic blitter_read, blitter_valid, blitter_write;
 									  
-		burst_control burst(.Clk(Clk), .Reset(Reset_h), .VGA_read(read_ok), .VGA_Clk(VGA_CLK),
+		burst_control burst(.Clk(Clk), .Reset(Reset_h), .VGA_Clk(VGA_CLK),
 									  .valid(sdram_rvalid), .wait_req(sdram_wait), .red(VGA_R), .green(VGA_G), .blue(VGA_B),
 									  .address_in(a), .data_from_mem(sdram_dataout), .write_out(sdram_w),
 									  .read_out(sdram_r), .byte_enable(sdram_byteen), .address_out(sdram_address), .address_test(address),
-									  .data_to_sdram(sdram_datain), .data_to_fpga(data), .x_pos(drawxsig), .y_pos(drawysig)); 
+									  .data_to_sdram(sdram_datain), .data_to_fpga(data2), .x_pos(drawxsig), .y_pos(drawysig),
+									  .blitter_read(blitter_read), .blitter_write(blitter_write), .data_from_blitter(data_from_blitter),
+									  .address_from_blitter(address_from_blitter), .blitter_finished(blitter_valid), .data_to_blitter(data_to_blitter)); 
+							
+		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(~KEY[1]), .valid(blitter_valid), .sprite_x_pos(10'd250), .sprite_y_pos(10'd400),
+							 .sprite_address(25'd307200), .data_from_sdram(data_to_blitter), .wrote_sprite(LEDG[0]), .read_req(blitter_read), .write_req(blitter_write),
+							 .data_out(data_from_blitter), .address_to_sdram(address_from_blitter));
 									  
 		
-									  
+			assign data = data_from_blitter;
+			
 			assign LEDR = 	address[17:0];						 
 			HexDriver Hexd0( .In0(data[3:0]), .Out0(HEX0));
 			HexDriver Hexd1( .In0(data[7:4]), .Out0(HEX1));
@@ -104,5 +111,5 @@ module  Final_Project ( input logic         CLOCK_50,
 			HexDriver Hexd4( .In0(data[19:16]), .Out0(HEX4));
 			HexDriver Hexd5( .In0(data[23:20]), .Out0(HEX5));
 			HexDriver Hexd6( .In0(data[27:24]), .Out0(HEX6));
-			HexDriver Hexd7( .In0({3'b0, address[24]}), .Out0(HEX7));
+			HexDriver Hexd7( .In0(data[31:28]), .Out0(HEX7));
 endmodule 

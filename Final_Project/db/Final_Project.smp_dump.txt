@@ -1,4 +1,10 @@
 
+State Machine - |Final_Project|blitter:blitter|state
+Name state.WAIT state.WRITE state.READ 
+state.WAIT 0 0 0 
+state.READ 1 0 1 
+state.WRITE 1 1 0 
+
 State Machine - |Final_Project|burst_control:burst|sdram_master:master|state
 Name state.WRITE_LOOP state.WRITE state.READ_LOOP state.READ state.WAIT state.RESET 
 state.RESET 0 0 0 0 0 0 
