@@ -6,8 +6,6 @@ module sdram_master(input 				Clk, Reset, read_req, write_req, valid, wait_req,
 						  output [24:0] 	address_out,
 						  output [31:0] 	data_to_sdram, data_to_fpga);
 						  
-		logic [31:0] data;
-		logic [24:0] address;
 		
 		enum logic [4:0] {RESET, WAIT, READ, READ_LOOP, WRITE, WRITE_LOOP} state, next_state;
 		
@@ -15,28 +13,11 @@ module sdram_master(input 				Clk, Reset, read_req, write_req, valid, wait_req,
 		begin
 				if(Reset == 1'b1)
 				begin
-						data <= 32'b0;
-						address <= 25'b0;
 						state <= RESET;
 				end 
 				else begin
 						state <= next_state;
-						unique case(state)
-						RESET: begin
-								
-						end 
-						WAIT: begin
-								address <= address_in;
-						end 
-						READ: begin
-								data <= data_from_mem;
-						end 
-						READ_LOOP: begin
-								data <= data_from_mem;
-						end 
-						WRITE: ;
-						WRITE_LOOP: ;
-						endcase
+						
 				end 
 		end 
 		

@@ -96,9 +96,10 @@ module  Final_Project ( input logic         CLOCK_50,
 									  .blitter_read(blitter_read), .blitter_write(blitter_write), .data_from_blitter(data_from_blitter),
 									  .address_from_blitter(address_from_blitter), .blitter_finished(blitter_valid), .data_to_blitter(data_to_blitter)); 
 							
-		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(~KEY[1]), .valid(blitter_valid), .sprite_x_pos(10'd250), .sprite_y_pos(10'd400),
+		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(~KEY[1]), .valid(blitter_valid), .sprite_x_pos(10'd250), .sprite_y_pos(10'd200),
 							 .sprite_address(25'd307200), .data_from_sdram(data_to_blitter), .wrote_sprite(LEDG[0]), .read_req(blitter_read), .write_req(blitter_write),
-							 .data_out(data_from_blitter), .address_to_sdram(address_from_blitter));
+							 .data_out(data_from_blitter), .address_to_sdram(address_from_blitter),
+							 .sprite_dimx(10'd64), .sprite_dimy(10'd64));
 									  
 		
 			assign data = data_from_blitter;
