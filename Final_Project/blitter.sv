@@ -13,6 +13,7 @@ module blitter(input Clk, Reset, new_sprite, valid,
 		logic [9:0] x_dim, y_dim;
 		logic [31:0] data;
 		
+		
 		always_ff @ (posedge Clk or posedge Reset)
 		begin
 				if(Reset)
@@ -32,6 +33,8 @@ module blitter(input Clk, Reset, new_sprite, valid,
 						end 
 						READ: begin
 								data <= data_from_sdram;
+								if(valid && data == 32'h00F7FFE5)
+									counter <= (counter + 1'b1)%(x_dim*y_dim);
 						end 
 						WRITE: begin
 								if(valid)
@@ -60,10 +63,24 @@ module blitter(input Clk, Reset, new_sprite, valid,
 						address_to_sdram = sprite_address + counter;
 						read_req = 1'b1;
 						if(valid)
-							next_state = WRITE;
+						begin
+							if(data == 32'h00F7FFE5)
+							begin
+								if(counter >= (x_dim*y_dim - 1'b1))
+									begin
+											next_state = WAIT;
+											wrote_sprite = 1'b1;
+									end 
+									else begin
+											next_state = READ;
+									end 
+							end 
+							else
+								next_state = WRITE;
+						end 
 						else
 							next_state = READ;
-				end 
+				end	
 				WRITE: begin
 						address_to_sdram = sprite_x_pos + counter%x_dim + ((sprite_y_pos + counter/x_dim) * 10'd640);
 						data_out = data;
