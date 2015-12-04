@@ -5,7 +5,7 @@ module  Final_Project ( input logic         CLOCK_50,
 							  // VGA Interface 
 							  output [8:0] LEDG,
 							  output [17:0] LEDR,
-							 // input [17:0] SW,
+							  input [17:0] SW,
                        output [7:0]  VGA_R,					//VGA Red
 							                VGA_G,					//VGA Green
 												 VGA_B,					//VGA Blue
@@ -59,7 +59,11 @@ module  Final_Project ( input logic         CLOCK_50,
 		
 //	frame_control test1(.x_pos(drawxsig), .y_pos(drawysig), .read_ok(read_ok));
 
-	 	 
+
+	 logic blitter_finished, sprite_received, sprite_finished, new_sprite, sprite_ack;
+		logic [25:0] sprite_address;
+		logic [9:0] x_size, y_size;
+	 
 	 //The connections for nios_system might be named different depending on how you set up Qsys
 	 nios_system nios_system(
 										 .clk_clk(Clk),         
@@ -82,11 +86,24 @@ module  Final_Project ( input logic         CLOCK_50,
                                .sdram_mm_write_n(sdram_w),            
 										 .sdram_mm_readdata(sdram_dataout),           
                                .sdram_mm_readdatavalid(sdram_rvalid),      
-                               .sdram_mm_waitrequest(sdram_wait));
+                               .sdram_mm_waitrequest(sdram_wait),
+										 
+										 .hw_to_sw_export({sprite_received0, sprite_finished0}),
+										 .sprite_num_export(sprite_num0),
+										 .sw_to_hw_export({sprite_incoming, sprite_ack}),
+										 .xy_pos_export({sprite_x_pos0, sprite_y_pos0})
+										 );
 										 
 		logic [31:0]  data_from_blitter, data_to_blitter;
 		logic [24:0] address_from_blitter;
 		logic blitter_read, blitter_valid, blitter_write;
+		
+		
+		
+		communicator(.Clk(Clk), .Reset(Reset_h), .sprite_incoming(~KEY[1]), .acknowledge_finished_sprite(~KEY[2]),
+						 .blitter_finished(blitter_finished), .sprite_num(SW[1:0]), 
+						 .sprite_received(sprite_received), .sprite_finished(sprite_finished), .blitter_start(new_sprite),
+						 .sprite_address(sprite_address), .x_size(x_size), .y_size(y_size));
 									  
 		burst_control burst(.Clk(Clk), .Reset(Reset_h), .VGA_Clk(VGA_CLK),
 									  .valid(sdram_rvalid), .wait_req(sdram_wait), .red(VGA_R), .green(VGA_G), .blue(VGA_B),
@@ -96,10 +113,11 @@ module  Final_Project ( input logic         CLOCK_50,
 									  .blitter_read(blitter_read), .blitter_write(blitter_write), .data_from_blitter(data_from_blitter),
 									  .address_from_blitter(address_from_blitter), .blitter_finished(blitter_valid), .data_to_blitter(data_to_blitter)); 
 							
-		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(~KEY[1]), .valid(blitter_valid), .sprite_x_pos(10'd250), .sprite_y_pos(10'd200),
-							 .sprite_address(25'd307200), .data_from_sdram(data_to_blitter), .wrote_sprite(LEDG[0]), .read_req(blitter_read), .write_req(blitter_write),
-							 .data_out(data_from_blitter), .address_to_sdram(address_from_blitter),
-							 .sprite_dimx(10'd64), .sprite_dimy(10'd64));
+		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(new_sprite), .valid(blitter_valid), 
+							 .sprite_x_pos(SW[9:2]), .sprite_y_pos(SW[17:10]),.sprite_address(sprite_address),
+							 .data_from_sdram(data_to_blitter), .wrote_sprite(blitter_finished), .read_req(blitter_read), 
+							 .write_req(blitter_write), .data_out(data_from_blitter), .address_to_sdram(address_from_blitter),
+							 .sprite_dimx(x_size), .sprite_dimy(y_size));
 									  
 		
 			assign data = data_from_blitter;

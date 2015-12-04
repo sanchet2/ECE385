@@ -20,7 +20,11 @@ module nios_system (
 	sdram_wire_dq,
 	sdram_wire_dqm,
 	sdram_wire_ras_n,
-	sdram_wire_we_n);	
+	sdram_wire_we_n,
+	sprite_num_export,
+	xy_pos_export,
+	sw_to_hw_export,
+	hw_to_sw_export);	
 
 	input		clk_clk;
 	input		reset_reset_n;
@@ -43,4 +47,8 @@ module nios_system (
 	output	[3:0]	sdram_wire_dqm;
 	output		sdram_wire_ras_n;
 	output		sdram_wire_we_n;
+	output	[1:0]	sprite_num_export;
+	output	[19:0]	xy_pos_export;
+	output	[1:0]	sw_to_hw_export;
+	input	[1:0]	hw_to_sw_export;
 endmodule

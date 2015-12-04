@@ -19,6 +19,10 @@
 		.sdram_wire_dq          (<connected-to-sdram_wire_dq>),          //           .dq
 		.sdram_wire_dqm         (<connected-to-sdram_wire_dqm>),         //           .dqm
 		.sdram_wire_ras_n       (<connected-to-sdram_wire_ras_n>),       //           .ras_n
-		.sdram_wire_we_n        (<connected-to-sdram_wire_we_n>)         //           .we_n
+		.sdram_wire_we_n        (<connected-to-sdram_wire_we_n>),        //           .we_n
+		.sprite_num_export      (<connected-to-sprite_num_export>),      // sprite_num.export
+		.xy_pos_export          (<connected-to-xy_pos_export>),          //     xy_pos.export
+		.sw_to_hw_export        (<connected-to-sw_to_hw_export>),        //   sw_to_hw.export
+		.hw_to_sw_export        (<connected-to-hw_to_sw_export>)         //   hw_to_sw.export
 	);
 

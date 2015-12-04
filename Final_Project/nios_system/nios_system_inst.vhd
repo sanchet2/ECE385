@@ -20,7 +20,11 @@
 			sdram_wire_dq          : inout std_logic_vector(31 downto 0) := (others => 'X'); -- dq
 			sdram_wire_dqm         : out   std_logic_vector(3 downto 0);                     -- dqm
 			sdram_wire_ras_n       : out   std_logic;                                        -- ras_n
-			sdram_wire_we_n        : out   std_logic                                         -- we_n
+			sdram_wire_we_n        : out   std_logic;                                        -- we_n
+			sprite_num_export      : out   std_logic_vector(1 downto 0);                     -- export
+			xy_pos_export          : out   std_logic_vector(19 downto 0);                    -- export
+			sw_to_hw_export        : out   std_logic_vector(1 downto 0);                     -- export
+			hw_to_sw_export        : in    std_logic_vector(1 downto 0)  := (others => 'X')  -- export
 		);
 	end component nios_system;
 
@@ -46,6 +50,10 @@
 			sdram_wire_dq          => CONNECTED_TO_sdram_wire_dq,          --           .dq
 			sdram_wire_dqm         => CONNECTED_TO_sdram_wire_dqm,         --           .dqm
 			sdram_wire_ras_n       => CONNECTED_TO_sdram_wire_ras_n,       --           .ras_n
-			sdram_wire_we_n        => CONNECTED_TO_sdram_wire_we_n         --           .we_n
+			sdram_wire_we_n        => CONNECTED_TO_sdram_wire_we_n,        --           .we_n
+			sprite_num_export      => CONNECTED_TO_sprite_num_export,      -- sprite_num.export
+			xy_pos_export          => CONNECTED_TO_xy_pos_export,          --     xy_pos.export
+			sw_to_hw_export        => CONNECTED_TO_sw_to_hw_export,        --   sw_to_hw.export
+			hw_to_sw_export        => CONNECTED_TO_hw_to_sw_export         --   hw_to_sw.export
 		);
 
