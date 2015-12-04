@@ -14,12 +14,13 @@ state.READ_LOOP 0 0 1 0 0 1
 state.WRITE 0 1 0 0 0 1 
 state.WRITE_LOOP 1 0 0 0 0 1 
 
-State Machine - |Final_Project|communicator:comb_6|state
-Name state.FINISHED_SPRITE state.WRITE_SPRITE state.READ_SPRITE state.WAIT 
-state.WAIT 0 0 0 0 
-state.READ_SPRITE 0 0 1 1 
-state.WRITE_SPRITE 0 1 0 1 
-state.FINISHED_SPRITE 1 0 0 1 
+State Machine - |Final_Project|communicator:com|state
+Name state.WRITE_SPRITE state.READ_SPRITE2 state.READ_SPRITE state.WAIT state.FINISHED_SPRITE 
+state.WAIT 0 0 0 0 0 
+state.READ_SPRITE 0 0 1 1 0 
+state.READ_SPRITE2 0 1 0 1 0 
+state.WRITE_SPRITE 1 0 0 1 0 
+state.FINISHED_SPRITE 0 0 0 1 1 
 
 State Machine - |Final_Project|nios_system:nios_system|nios_system_sdram:sdram|m_next
 Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 

@@ -100,7 +100,7 @@ module  Final_Project ( input logic         CLOCK_50,
 		
 		
 		
-		communicator(.Clk(Clk), .Reset(Reset_h), .sprite_incoming(~KEY[1]), .acknowledge_finished_sprite(~KEY[2]),
+		communicator com(.Clk(Clk), .Reset(Reset_h), .sprite_incoming(~KEY[1]), .acknowledge_finished_sprite(~KEY[2]),
 						 .blitter_finished(blitter_finished), .sprite_num(SW[1:0]), 
 						 .sprite_received(sprite_received), .sprite_finished(sprite_finished), .blitter_start(new_sprite),
 						 .sprite_address(sprite_address), .x_size(x_size), .y_size(y_size));

@@ -6,19 +6,28 @@ module communicator(input Clk, Reset, sprite_incoming, acknowledge_finished_spri
 							);
 							
 							
-			sprite_table table1(.Clk(Clk), .in(sprite_num), .out({sprite_address, x_size, y_size}));				
+			sprite_table table1(.Clk(Clk), .in(sprite_num), .out({sprite_address, x_size, y_size}));
+				
+			logic blitter_done;
 			
-			enum logic [2:0] {WAIT, READ_SPRITE, WRITE_SPRITE, FINISHED_SPRITE} state, next_state;
+			enum logic [2:0] {WAIT, READ_SPRITE, READ_SPRITE2, WRITE_SPRITE, FINISHED_SPRITE} state, next_state;
 			
 			always_ff @ (posedge Clk or posedge Reset)
 			begin
 					if(Reset)
 					begin
 							state <= WAIT;
+							blitter_done = 1'b0;
 							
 					end 
 					else begin
 							state <= next_state;
+							if(state == WAIT || state == FINISHED_SPRITE)
+							begin
+									blitter_done <= 1'b0;
+							end 
+							else if(blitter_done == 1'b0)
+									blitter_done <= blitter_finished;
 					end 
 			end 
 	
@@ -40,14 +49,18 @@ module communicator(input Clk, Reset, sprite_incoming, acknowledge_finished_spri
 					end 
 					READ_SPRITE: begin
 							blitter_start = 1'b1;
-							sprite_received=1'b1;
+							sprite_received = 1'b1;
+							next_state = READ_SPRITE2;
+					end 
+					READ_SPRITE2: begin
+							sprite_received = 1'b1;
 							if(sprite_incoming == 1'b0)
-								next_state= WRITE_SPRITE;
+								next_state = WRITE_SPRITE;
 							else
-								next_state = READ_SPRITE;
+								next_state = READ_SPRITE2;
 					end 
 					WRITE_SPRITE:begin
-							if(blitter_finished)
+							if(blitter_done)
 								next_state=FINISHED_SPRITE;
 							else	
 								begin	

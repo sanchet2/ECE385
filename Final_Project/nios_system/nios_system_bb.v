@@ -1,6 +1,7 @@
 
 module nios_system (
 	clk_clk,
+	hw_to_sw_export,
 	reset_reset_n,
 	sdram_clk_clk,
 	sdram_mm_address,
@@ -22,11 +23,11 @@ module nios_system (
 	sdram_wire_ras_n,
 	sdram_wire_we_n,
 	sprite_num_export,
-	xy_pos_export,
 	sw_to_hw_export,
-	hw_to_sw_export);	
+	xy_pos_export);	
 
 	input		clk_clk;
+	input	[1:0]	hw_to_sw_export;
 	input		reset_reset_n;
 	output		sdram_clk_clk;
 	input	[24:0]	sdram_mm_address;
@@ -48,7 +49,6 @@ module nios_system (
 	output		sdram_wire_ras_n;
 	output		sdram_wire_we_n;
 	output	[1:0]	sprite_num_export;
-	output	[19:0]	xy_pos_export;
 	output	[1:0]	sw_to_hw_export;
-	input	[1:0]	hw_to_sw_export;
+	output	[19:0]	xy_pos_export;
 endmodule

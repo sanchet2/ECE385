@@ -9787,8 +9787,8 @@ address[0] => w_select_status.IN0
 address[1] => w_select_status.IN1
 address[1] => w_select_control.IN1
 areset => comb.IN1
-c0 <= nios_system_sdram_pll_altpll_lqa2:sd1.clk
-c1 <= nios_system_sdram_pll_altpll_lqa2:sd1.clk
+c0 <= nios_system_sdram_pll_altpll_mqa2:sd1.clk
+c1 <= nios_system_sdram_pll_altpll_mqa2:sd1.clk
 clk => clk.IN2
 locked <= wire_sd1_locked.DB_MAX_OUTPUT_PORT_TYPE
 phasedone <= <GND>
@@ -9882,7 +9882,7 @@ d[0] => dffe4a[0].DATAIN
 q[0] <= dffe6a[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Final_Project|nios_system:nios_system|nios_system_sdram_pll:sdram_pll|nios_system_sdram_pll_altpll_lqa2:sd1
+|Final_Project|nios_system:nios_system|nios_system_sdram_pll:sdram_pll|nios_system_sdram_pll_altpll_mqa2:sd1
 areset => pll_lock_sync.ACLR
 areset => pll7.ARESET
 clk[0] <= pll7.CLK
@@ -10189,27 +10189,29 @@ address => readdata[22].DATAIN
 address => readdata[21].DATAIN
 address => readdata[15].DATAIN
 address => readdata[14].DATAIN
-address => readdata[12].DATAIN
+address => readdata[13].DATAIN
+address => readdata[11].DATAIN
 address => readdata[10].DATAIN
-address => readdata[6].DATAIN
+address => readdata[8].DATAIN
 address => readdata[4].DATAIN
 address => readdata[3].DATAIN
+address => readdata[0].DATAIN
 clock => ~NO_FANOUT~
 reset_n => ~NO_FANOUT~
-readdata[0] <= <GND>
+readdata[0] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[1] <= <GND>
 readdata[2] <= <GND>
 readdata[3] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[4] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[5] <= <GND>
-readdata[6] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[6] <= <GND>
 readdata[7] <= <GND>
-readdata[8] <= <GND>
+readdata[8] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[9] <= <GND>
 readdata[10] <= address.DB_MAX_OUTPUT_PORT_TYPE
-readdata[11] <= <GND>
-readdata[12] <= address.DB_MAX_OUTPUT_PORT_TYPE
-readdata[13] <= <GND>
+readdata[11] <= address.DB_MAX_OUTPUT_PORT_TYPE
+readdata[12] <= <GND>
+readdata[13] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[14] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[15] <= address.DB_MAX_OUTPUT_PORT_TYPE
 readdata[16] <= <GND>
@@ -43597,21 +43599,22 @@ clk => altera_reset_synchronizer_int_chain[1].CLK
 reset_out <= altera_reset_synchronizer_int_chain_out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Final_Project|communicator:comb_6
+|Final_Project|communicator:com
 Clk => Clk.IN1
+Reset => blitter_done.ACLR
 Reset => state~3.DATAIN
-sprite_incoming => Selector1.IN2
+sprite_incoming => next_state.READ_SPRITE.DATAB
+sprite_incoming => Selector1.IN3
 sprite_incoming => Selector0.IN1
 sprite_incoming => Selector2.IN1
 acknowledge_finished_sprite => Selector0.IN3
 acknowledge_finished_sprite => Selector3.IN1
-blitter_finished => Selector3.IN3
-blitter_finished => Selector2.IN2
+blitter_finished => blitter_done.DATAA
 sprite_num[0] => sprite_num[0].IN1
 sprite_num[1] => sprite_num[1].IN1
 sprite_received <= sprite_received.DB_MAX_OUTPUT_PORT_TYPE
 sprite_finished <= sprite_finished.DB_MAX_OUTPUT_PORT_TYPE
-blitter_start <= sprite_received.DB_MAX_OUTPUT_PORT_TYPE
+blitter_start <= blitter_start.DB_MAX_OUTPUT_PORT_TYPE
 sprite_address[0] <= sprite_table:table1.out
 sprite_address[1] <= sprite_table:table1.out
 sprite_address[2] <= sprite_table:table1.out
@@ -43660,7 +43663,7 @@ y_size[8] <= sprite_table:table1.out
 y_size[9] <= sprite_table:table1.out
 
 
-|Final_Project|communicator:comb_6|sprite_table:table1
+|Final_Project|communicator:com|sprite_table:table1
 Clk => out[0]~reg0.CLK
 Clk => out[1]~reg0.CLK
 Clk => out[2]~reg0.CLK

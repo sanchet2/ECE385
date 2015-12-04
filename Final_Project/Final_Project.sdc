@@ -39,8 +39,7 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {CLOCK_50} -period 10.000 -waveform { 0.000 5.000 } [get_ports {CLOCK_50}]
-create_clock -name {altera_generated_clk} -period 100.000 -waveform { 0.000 50.000 } [get_ports {altera_reserved_tck}]
+create_clock -name {CLOCK_50} -period 20.000 -waveform { 0.000 5.000 } [get_ports {CLOCK_50}]
 
 
 #**************************************************************
@@ -49,7 +48,7 @@ create_clock -name {altera_generated_clk} -period 100.000 -waveform { 0.000 50.0
 
 create_generated_clock -name {VGA_CLK} -source [get_ports {CLOCK_50}] -divide_by 2 -master_clock {CLOCK_50} [get_ports {VGA_CLK}] 
 create_generated_clock -name {nios_system|sdram_pll|sd1|pll7|clk[0]} -source [get_pins {nios_system|sdram_pll|sd1|pll7|inclk[0]}] -duty_cycle 50.000 -multiply_by 1 -master_clock {CLOCK_50} [get_pins {nios_system|sdram_pll|sd1|pll7|clk[0]}] 
-create_generated_clock -name {nios_system|sdram_pll|sd1|pll7|clk[1]} -source [get_pins {nios_system|sdram_pll|sd1|pll7|inclk[0]}] -duty_cycle 50.000 -multiply_by 1 -phase -54.000 -master_clock {CLOCK_50} [get_pins {nios_system|sdram_pll|sd1|pll7|clk[1]}] 
+create_generated_clock -name {nios_system|sdram_pll|sd1|pll7|clk[1]} -source [get_pins {nios_system|sdram_pll|sd1|pll7|inclk[0]}] -duty_cycle 50.000 -multiply_by 2 -phase -54.000 -master_clock {CLOCK_50} [get_pins {nios_system|sdram_pll|sd1|pll7|clk[1]}] 
 
 #**************************************************************
 # Set Clock Latency
