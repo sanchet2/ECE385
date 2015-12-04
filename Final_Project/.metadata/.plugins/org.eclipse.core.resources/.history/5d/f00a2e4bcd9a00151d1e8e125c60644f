@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+
+int main()
+{
+	volatile int* sprite_number = (unsigned int*) 0x00011040;
+	volatile int* sprite_xy = (unsigned int*) 0x00011030;
+	volatile int* sw_to_hw = (unsigned int*) 0x00011020;
+	volatile int* hw_to_sw = (unsigned int*) 0x00011010;
+
+	while(1)
+	{
+
+
+	}
+
+  return 0;
+}
