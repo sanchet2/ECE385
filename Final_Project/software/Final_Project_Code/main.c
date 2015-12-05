@@ -6,8 +6,10 @@
 #define  sprite_number 	(volatile int*) 0x00081040
 #define  hw_to_sw		(volatile int*) 0x00081010
 
+
+
 #define enemy_sprite 2
-#define player_sprite1 1
+#define player_sprite1 2
 #define x_bounds 640
 #define y_bounds 480
 
@@ -16,6 +18,8 @@ typedef struct{
 	int y_pos;
 	int health;
 	int id;
+	int old_x;
+	int old_y;
 } player;
 
 typedef struct{
@@ -23,40 +27,51 @@ typedef struct{
 	int y_pos;
 	int health;
 	int id;
+	int old_x;
+	int old_y;
 	struct enemy *next;
 } enemy;
 
 
 
 
-void renderer(int x, int y, int sprite_num)
+void renderer(int x, int y, int sprite_num, int is_shadow)
 {
+	if(is_shadow==1)
+		*sw_to_hw = 4;
+	else
+		*sw_to_hw &= 0;
 	*sprite_number = sprite_num;
 	*sprite_xy = 1024*x + y;
-	*sw_to_hw = 2;
+	*sw_to_hw |= 2;
 	while(*hw_to_sw%2 != 0)
 	{}
-	*sw_to_hw = 0;
+	*sw_to_hw &= ~2;
 	while(*hw_to_sw != 1)
 	{}
-	*sw_to_hw = 1;
+	*sw_to_hw |= 1;
 	return;
 }
 
-void render_background()
-{
-	renderer(0, 0, 0);
+void render_shadows(player *first,player *second){
+	if(first==NULL || second ==NULL){
+			printf("players not instantiated");
+	}
+	else{
+		renderer(first->old_x,first->old_y,first->id,1);
+		renderer(second->old_x,second->old_y,second->id,1);
+	}
 	return;
 }
 
 void render_sprites(player *first,player *second){
-	render_background();
+	render_shadows(first,second);
 	if(first==NULL || second ==NULL){
 		printf("players not instantiated");
 	}
 	else{
-		renderer(first->x_pos,first->y_pos,first->id);
-		renderer(second->x_pos,second->y_pos,second->id);
+		renderer(first->x_pos,first->y_pos,first->id,0);
+		renderer(second->x_pos,second->y_pos,second->id,0);
 	}
 
 }
@@ -77,6 +92,21 @@ void init_players(player *first,player *second){
 	}
 }
 
+void move_player(player *current, int x_pos, int y_pos){
+	if(current==NULL)
+		{
+			printf("players not instantiated");
+		}
+	else{
+		if((x_pos+64) < x_bounds && x_pos > 0 && y_pos > 0 && (y_pos+64)<y_bounds){
+			current->old_x=current->x_pos;
+			current->old_y=current->y_pos;
+			current->x_pos = x_pos;
+			current->y_pos = y_pos;
+		}
+	}
+}
+
 int main()
 {
 	int i;
@@ -87,15 +117,9 @@ int main()
 	while(1)
 	{
 		render_sprites(first,second);
-
-		if((first->x_pos+64+32) < x_bounds){
-			first->x_pos+=32;
-		}
-		if(second->y_pos-32 > 0 ){
-			second->y_pos-=32;
-		}
-
-
+		move_player(first,first->x_pos+5,first->y_pos);
+		move_player(second,second->x_pos,second->y_pos+5);
+		for(i=0;i<100000;i++);
 	}
 	free(first);
 	free(second);

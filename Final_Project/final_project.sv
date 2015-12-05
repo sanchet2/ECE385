@@ -60,7 +60,7 @@ module  Final_Project ( input logic         CLOCK_50,
 //	frame_control test1(.x_pos(drawxsig), .y_pos(drawysig), .read_ok(read_ok));
 
 
-	 logic blitter_finished, sprite_received, sprite_finished, new_sprite, sprite_ack, sprite_incoming;
+	 logic blitter_finished, sprite_received, sprite_finished, new_sprite, sprite_ack, sprite_incoming, is_shadow;
 	 logic [1:0] sprite_num;
 		logic [25:0] sprite_address;
 		logic [9:0] x_size, y_size, sprite_x_pos, sprite_y_pos;
@@ -91,7 +91,7 @@ module  Final_Project ( input logic         CLOCK_50,
 										 
 										 .hw_to_sw_export({sprite_received, sprite_finished}),
 										 .sprite_num_export(sprite_num),
-										 .sw_to_hw_export({sprite_incoming, sprite_ack}),
+										 .sw_to_hw_export({is_shadow, sprite_incoming, sprite_ack}),
 										 .xy_pos_export({sprite_x_pos, sprite_y_pos})
 										 );
 										 
@@ -114,7 +114,7 @@ module  Final_Project ( input logic         CLOCK_50,
 									  .blitter_read(blitter_read), .blitter_write(blitter_write), .data_from_blitter(data_from_blitter),
 									  .address_from_blitter(address_from_blitter), .blitter_finished(blitter_valid), .data_to_blitter(data_to_blitter)); 
 							
-		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(new_sprite), .valid(blitter_valid), 
+		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(new_sprite), .valid(blitter_valid), .is_shadow(is_shadow),
 							 .sprite_x_pos(sprite_x_pos), .sprite_y_pos(sprite_y_pos),.sprite_address(sprite_address),
 							 .data_from_sdram(data_to_blitter), .wrote_sprite(blitter_finished), .read_req(blitter_read), 
 							 .write_req(blitter_write), .data_out(data_from_blitter), .address_to_sdram(address_from_blitter),

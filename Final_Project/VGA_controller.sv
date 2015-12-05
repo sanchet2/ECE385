@@ -1,27 +1,5 @@
 //-------------------------------------------------------------------------
 //      VGA controller                                                   --
-//      Kyle Kloepper                                                    --
-//      4-05-2005                                                        --
-//                                                                       --
-//      Modified by Stephen Kempf 04-08-2005                             --
-//                                10-05-2006                             --
-//                                03-12-2007                             --
-//      Translated by Joe Meng    07-07-2013                             --
-//      Fall 2014 Distribution                                           --
-//                                                                       --
-//      Used standard 640x480 vga found at epanorama                     --
-//                                                                       --
-//      reference: http://www.xilinx.com/bvdocs/userguides/ug130.pdf     --
-//                 http://www.epanorama.net/documents/pc/vga_timing.html --
-//                                                                       --
-//      note: The standard is changed slightly because of 25 mhz instead --
-//            of 25.175 mhz pixel clock. Refresh rate drops slightly.    --
-//                                                                       --
-//      For use with ECE 385 Lab 7 and Final Project                     --
-//      ECE Department @ UIUC                                            --
-//-------------------------------------------------------------------------
-
-
 module  vga_controller ( input        Clk,       // 50 MHz clock
                                       Reset,     // reset signal
                          output logic hs,        // Horizontal sync pulse.  Active low
@@ -47,7 +25,7 @@ module  vga_controller ( input        Clk,       // 50 MHz clock
 	 
     //Disable Composite Sync
     assign sync = 1'b0;
-     
+	  
 	//This cuts the 50 Mhz clock in half to generate a 25 MHz pixel clock  
     always_ff @ (posedge Clk or posedge Reset )
     begin 

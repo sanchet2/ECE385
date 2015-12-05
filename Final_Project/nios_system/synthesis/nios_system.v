@@ -4,31 +4,22 @@
 
 `timescale 1 ps / 1 ps
 module nios_system (
-		input  wire        clk_clk,                //        clk.clk
-		input  wire [1:0]  hw_to_sw_export,        //   hw_to_sw.export
-		input  wire        reset_reset_n,          //      reset.reset_n
-		output wire        sdram_clk_clk,          //  sdram_clk.clk
-		input  wire [24:0] sdram_mm_address,       //   sdram_mm.address
-		input  wire [3:0]  sdram_mm_byteenable_n,  //           .byteenable_n
-		input  wire        sdram_mm_chipselect,    //           .chipselect
-		input  wire [31:0] sdram_mm_writedata,     //           .writedata
-		input  wire        sdram_mm_read_n,        //           .read_n
-		input  wire        sdram_mm_write_n,       //           .write_n
-		output wire [31:0] sdram_mm_readdata,      //           .readdata
-		output wire        sdram_mm_readdatavalid, //           .readdatavalid
-		output wire        sdram_mm_waitrequest,   //           .waitrequest
-		output wire [12:0] sdram_wire_addr,        // sdram_wire.addr
-		output wire [1:0]  sdram_wire_ba,          //           .ba
-		output wire        sdram_wire_cas_n,       //           .cas_n
-		output wire        sdram_wire_cke,         //           .cke
-		output wire        sdram_wire_cs_n,        //           .cs_n
-		inout  wire [31:0] sdram_wire_dq,          //           .dq
-		output wire [3:0]  sdram_wire_dqm,         //           .dqm
-		output wire        sdram_wire_ras_n,       //           .ras_n
-		output wire        sdram_wire_we_n,        //           .we_n
-		output wire [1:0]  sprite_num_export,      // sprite_num.export
-		output wire [1:0]  sw_to_hw_export,        //   sw_to_hw.export
-		output wire [19:0] xy_pos_export           //     xy_pos.export
+		input  wire        clk_clk,           //        clk.clk
+		input  wire [1:0]  hw_to_sw_export,   //   hw_to_sw.export
+		input  wire        reset_reset_n,     //      reset.reset_n
+		output wire        sdram_clk_clk,     //  sdram_clk.clk
+		output wire [12:0] sdram_wire_addr,   // sdram_wire.addr
+		output wire [1:0]  sdram_wire_ba,     //           .ba
+		output wire        sdram_wire_cas_n,  //           .cas_n
+		output wire        sdram_wire_cke,    //           .cke
+		output wire        sdram_wire_cs_n,   //           .cs_n
+		inout  wire [31:0] sdram_wire_dq,     //           .dq
+		output wire [3:0]  sdram_wire_dqm,    //           .dqm
+		output wire        sdram_wire_ras_n,  //           .ras_n
+		output wire        sdram_wire_we_n,   //           .we_n
+		output wire [1:0]  sprite_num_export, // sprite_num.export
+		output wire [2:0]  sw_to_hw_export,   //   sw_to_hw.export
+		output wire [19:0] xy_pos_export      //     xy_pos.export
 	);
 
 	wire         sdram_pll_c0_clk;                                            // sdram_pll:c0 -> [rst_controller_001:clk, sdram:clk]
@@ -162,15 +153,15 @@ module nios_system (
 	nios_system_sdram sdram (
 		.clk            (sdram_pll_c0_clk),                    //   clk.clk
 		.reset_n        (~rst_controller_001_reset_out_reset), // reset.reset_n
-		.az_addr        (sdram_mm_address),                    //    s1.address
-		.az_be_n        (sdram_mm_byteenable_n),               //      .byteenable_n
-		.az_cs          (sdram_mm_chipselect),                 //      .chipselect
-		.az_data        (sdram_mm_writedata),                  //      .writedata
-		.az_rd_n        (sdram_mm_read_n),                     //      .read_n
-		.az_wr_n        (sdram_mm_write_n),                    //      .write_n
-		.za_data        (sdram_mm_readdata),                   //      .readdata
-		.za_valid       (sdram_mm_readdatavalid),              //      .readdatavalid
-		.za_waitrequest (sdram_mm_waitrequest),                //      .waitrequest
+		.az_addr        (),                                    //    s1.address
+		.az_be_n        (),                                    //      .byteenable_n
+		.az_cs          (),                                    //      .chipselect
+		.az_data        (),                                    //      .writedata
+		.az_rd_n        (),                                    //      .read_n
+		.az_wr_n        (),                                    //      .write_n
+		.za_data        (),                                    //      .readdata
+		.za_valid       (),                                    //      .readdatavalid
+		.za_waitrequest (),                                    //      .waitrequest
 		.zs_addr        (sdram_wire_addr),                     //  wire.export
 		.zs_ba          (sdram_wire_ba),                       //      .export
 		.zs_cas_n       (sdram_wire_cas_n),                    //      .export
@@ -219,7 +210,7 @@ module nios_system (
 		.out_port   (xy_pos_export)                              // external_connection.export
 	);
 
-	nios_system_sprite_num sw_to_hw (
+	nios_system_sw_to_hw sw_to_hw (
 		.clk        (clk_clk),                                  //                 clk.clk
 		.reset_n    (~rst_controller_reset_out_reset),          //               reset.reset_n
 		.address    (mm_interconnect_0_sw_to_hw_s1_address),    //                  s1.address

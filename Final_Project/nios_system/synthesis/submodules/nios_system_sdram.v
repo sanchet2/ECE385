@@ -365,7 +365,7 @@ module nios_system_sdram (
               3'b001: begin
                   i_state <= 3'b011;
                   i_cmd <= {{1{1'b0}},3'h2};
-                  i_count <= 0;
+                  i_count <= 3;
                   i_next <= 3'b010;
               end // 3'b001 
           
@@ -456,7 +456,7 @@ module nios_system_sdram (
                         begin
                           m_state <= 9'b001000000;
                           m_next <= 9'b010000000;
-                          m_count <= 0;
+                          m_count <= 3;
                           active_cs_n <= 1'b1;
                         end
                       else if (!f_empty)
@@ -584,7 +584,7 @@ module nios_system_sdram (
                   else 
                     begin
                       m_state <= 9'b001000000;
-                      m_count <= 0;
+                      m_count <= 3;
                     end
               end // 9'b000100000 
           

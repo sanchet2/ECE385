@@ -1,4 +1,4 @@
-module blitter(input Clk, Reset, new_sprite, valid,
+module blitter(input Clk, Reset, new_sprite, valid, is_shadow,
 					input [9:0] sprite_x_pos, sprite_y_pos,
 					input [24:0] sprite_address,
 					input [31:0] data_from_sdram,
@@ -55,7 +55,12 @@ module blitter(input Clk, Reset, new_sprite, valid,
 				unique case(state)
 				WAIT: begin
 						if(new_sprite)
-							next_state = READ;
+						begin
+							if(is_shadow)
+								next_state = WRITE;
+							else
+								next_state = READ;
+						end 
 						else
 							next_state = WAIT;
 				end 
@@ -83,7 +88,10 @@ module blitter(input Clk, Reset, new_sprite, valid,
 				end	
 				WRITE: begin
 						address_to_sdram = sprite_x_pos + counter%x_dim + ((sprite_y_pos + counter/x_dim) * 10'd640);
-						data_out = data;
+						if(is_shadow)
+							data_out = 32'b0;
+						else 
+							data_out = data;
 						write_req = 1'b1;
 						if(valid)
 						begin
@@ -93,7 +101,10 @@ module blitter(input Clk, Reset, new_sprite, valid,
 										wrote_sprite = 1'b1;
 								end 
 								else begin
-										next_state = READ;
+										if(is_shadow)
+											next_state = WRITE;
+										else
+											next_state = READ;
 								end 
 						end 
 						else begin

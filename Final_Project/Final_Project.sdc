@@ -20,7 +20,7 @@
 ## PROGRAM "Quartus II"
 ## VERSION "Version 15.0.0 Build 145 04/22/2015 SJ Web Edition"
 
-## DATE    "Tue Dec 01 17:46:12 2015"
+## DATE    "Tue Dec 01 17:43:18 2015"
 
 ##
 ## DEVICE  "EP4CE115F29C7"
@@ -48,7 +48,8 @@ create_clock -name {CLOCK_50} -period 20.000 -waveform { 0.000 5.000 } [get_port
 
 create_generated_clock -name {VGA_CLK} -source [get_ports {CLOCK_50}] -divide_by 2 -master_clock {CLOCK_50} [get_ports {VGA_CLK}] 
 create_generated_clock -name {nios_system|sdram_pll|sd1|pll7|clk[0]} -source [get_pins {nios_system|sdram_pll|sd1|pll7|inclk[0]}] -duty_cycle 50.000 -multiply_by 1 -master_clock {CLOCK_50} [get_pins {nios_system|sdram_pll|sd1|pll7|clk[0]}] 
-create_generated_clock -name {nios_system|sdram_pll|sd1|pll7|clk[1]} -source [get_pins {nios_system|sdram_pll|sd1|pll7|inclk[0]}] -duty_cycle 50.000 -multiply_by 2 -phase -54.000 -master_clock {CLOCK_50} [get_pins {nios_system|sdram_pll|sd1|pll7|clk[1]}] 
+create_generated_clock -name {nios_system|sdram_pll|sd1|pll7|clk[1]} -source [get_pins {nios_system|sdram_pll|sd1|pll7|inclk[0]}] -duty_cycle 50.000 -multiply_by 20 -divide_by 7 -phase -54.000 -master_clock {CLOCK_50} [get_pins {nios_system|sdram_pll|sd1|pll7|clk[1]}] 
+
 
 #**************************************************************
 # Set Clock Latency
