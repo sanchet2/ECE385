@@ -1,3 +1,4 @@
 activeuserprofiles=Orbit;Team
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=zjsplingaire
+useridperkey=Orbit.Local\=zjsplingaire;

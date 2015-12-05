@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'nios_system'
  * SOPC Builder design path: ../../nios_system.sopcinfo
  *
- * Generated: Fri Dec 04 14:59:06 CST 2015
+ * Generated: Fri Dec 04 18:38:53 CST 2015
  */
 
 /*
@@ -62,13 +62,13 @@
 
 #define ALT_CPU_ARCHITECTURE "altera_nios2_gen2"
 #define ALT_CPU_BIG_ENDIAN 0
-#define ALT_CPU_BREAK_ADDR 0x00010820
+#define ALT_CPU_BREAK_ADDR 0x00080820
 #define ALT_CPU_CPU_ARCH_NIOS2_R1
 #define ALT_CPU_CPU_FREQ 50000000u
 #define ALT_CPU_CPU_ID_SIZE 1
 #define ALT_CPU_CPU_ID_VALUE 0x00000000
 #define ALT_CPU_CPU_IMPLEMENTATION "tiny"
-#define ALT_CPU_DATA_ADDR_WIDTH 0x11
+#define ALT_CPU_DATA_ADDR_WIDTH 0x14
 #define ALT_CPU_DCACHE_LINE_SIZE 0
 #define ALT_CPU_DCACHE_LINE_SIZE_LOG2 0
 #define ALT_CPU_DCACHE_SIZE 0
@@ -87,7 +87,7 @@
 #define ALT_CPU_ICACHE_LINE_SIZE 0
 #define ALT_CPU_ICACHE_LINE_SIZE_LOG2 0
 #define ALT_CPU_ICACHE_SIZE 0
-#define ALT_CPU_INST_ADDR_WIDTH 0x11
+#define ALT_CPU_INST_ADDR_WIDTH 0x14
 #define ALT_CPU_NAME "nios2_qsys_0"
 #define ALT_CPU_OCI_VERSION 1
 #define ALT_CPU_RESET_ADDR 0x00000000
@@ -99,13 +99,13 @@
  */
 
 #define NIOS2_BIG_ENDIAN 0
-#define NIOS2_BREAK_ADDR 0x00010820
+#define NIOS2_BREAK_ADDR 0x00080820
 #define NIOS2_CPU_ARCH_NIOS2_R1
 #define NIOS2_CPU_FREQ 50000000u
 #define NIOS2_CPU_ID_SIZE 1
 #define NIOS2_CPU_ID_VALUE 0x00000000
 #define NIOS2_CPU_IMPLEMENTATION "tiny"
-#define NIOS2_DATA_ADDR_WIDTH 0x11
+#define NIOS2_DATA_ADDR_WIDTH 0x14
 #define NIOS2_DCACHE_LINE_SIZE 0
 #define NIOS2_DCACHE_LINE_SIZE_LOG2 0
 #define NIOS2_DCACHE_SIZE 0
@@ -123,7 +123,7 @@
 #define NIOS2_ICACHE_LINE_SIZE 0
 #define NIOS2_ICACHE_LINE_SIZE_LOG2 0
 #define NIOS2_ICACHE_SIZE 0
-#define NIOS2_INST_ADDR_WIDTH 0x11
+#define NIOS2_INST_ADDR_WIDTH 0x14
 #define NIOS2_OCI_VERSION 1
 #define NIOS2_RESET_ADDR 0x00000000
 
@@ -157,19 +157,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x11070
+#define ALT_STDERR_BASE 0x81070
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x11070
+#define ALT_STDIN_BASE 0x81070
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x11070
+#define ALT_STDOUT_BASE 0x81070
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -194,7 +194,7 @@
  */
 
 #define ALT_MODULE_CLASS_hw_to_sw altera_avalon_pio
-#define HW_TO_SW_BASE 0x11010
+#define HW_TO_SW_BASE 0x81010
 #define HW_TO_SW_BIT_CLEARING_EDGE_REGISTER 0
 #define HW_TO_SW_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define HW_TO_SW_CAPTURE 0
@@ -221,7 +221,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x11070
+#define JTAG_UART_0_BASE 0x81070
 #define JTAG_UART_0_IRQ 5
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -256,8 +256,8 @@
 #define ONCHIP_MEMORY2_0_READ_DURING_WRITE_MODE "DONT_CARE"
 #define ONCHIP_MEMORY2_0_SINGLE_CLOCK_OP 0
 #define ONCHIP_MEMORY2_0_SIZE_MULTIPLE 1
-#define ONCHIP_MEMORY2_0_SIZE_VALUE 64000
-#define ONCHIP_MEMORY2_0_SPAN 64000
+#define ONCHIP_MEMORY2_0_SIZE_VALUE 400000
+#define ONCHIP_MEMORY2_0_SPAN 400000
 #define ONCHIP_MEMORY2_0_TYPE "altera_avalon_onchip_memory2"
 #define ONCHIP_MEMORY2_0_WRITABLE 1
 
@@ -268,7 +268,7 @@
  */
 
 #define ALT_MODULE_CLASS_sdram_pll altpll
-#define SDRAM_PLL_BASE 0x11050
+#define SDRAM_PLL_BASE 0x81050
 #define SDRAM_PLL_IRQ -1
 #define SDRAM_PLL_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SDRAM_PLL_NAME "/dev/sdram_pll"
@@ -282,7 +282,7 @@
  */
 
 #define ALT_MODULE_CLASS_sprite_num altera_avalon_pio
-#define SPRITE_NUM_BASE 0x11040
+#define SPRITE_NUM_BASE 0x81040
 #define SPRITE_NUM_BIT_CLEARING_EDGE_REGISTER 0
 #define SPRITE_NUM_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SPRITE_NUM_CAPTURE 0
@@ -309,7 +309,7 @@
  */
 
 #define ALT_MODULE_CLASS_sprite_xy altera_avalon_pio
-#define SPRITE_XY_BASE 0x11030
+#define SPRITE_XY_BASE 0x81030
 #define SPRITE_XY_BIT_CLEARING_EDGE_REGISTER 0
 #define SPRITE_XY_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SPRITE_XY_CAPTURE 0
@@ -336,7 +336,7 @@
  */
 
 #define ALT_MODULE_CLASS_sw_to_hw altera_avalon_pio
-#define SW_TO_HW_BASE 0x11020
+#define SW_TO_HW_BASE 0x81020
 #define SW_TO_HW_BIT_CLEARING_EDGE_REGISTER 0
 #define SW_TO_HW_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define SW_TO_HW_CAPTURE 0
@@ -363,13 +363,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_qsys_0 altera_avalon_sysid_qsys
-#define SYSID_QSYS_0_BASE 0x11068
+#define SYSID_QSYS_0_BASE 0x81068
 #define SYSID_QSYS_0_ID 0
 #define SYSID_QSYS_0_IRQ -1
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1449192729
+#define SYSID_QSYS_0_TIMESTAMP 1449275721
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */
