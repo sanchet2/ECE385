@@ -15,19 +15,19 @@ preplace inst nios_system.sdram_pll -pg 1 -lvl 3 -y 310
 preplace inst nios_system.sdram -pg 1 -lvl 3 -y 470
 preplace inst nios_system.nios2_qsys_0.cpu -pg 1
 preplace inst nios_system.clk_0 -pg 1 -lvl 1 -y 220
-preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.sw_to_hw,(SLAVE)sw_to_hw.external_connection) 1 0 3 NJ 700 NJ 700 NJ
-preplace netloc FAN_OUT<net_container>nios_system</net_container>(SLAVE)sdram_pll.inclk_interface_reset,(SLAVE)sprite_xy.reset,(SLAVE)nios2_qsys_0.reset,(SLAVE)sw_to_hw.reset,(MASTER)clk_0.clk_reset,(SLAVE)sprite_num.reset,(SLAVE)hw_to_sw.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)sdram.reset,(SLAVE)jtag_uart_0.reset,(SLAVE)sysid_qsys_0.reset) 1 1 2 290 180 730
 preplace netloc POINT_TO_POINT<net_container>nios_system</net_container>(SLAVE)jtag_uart_0.irq,(MASTER)nios2_qsys_0.irq) 1 2 1 790
-preplace netloc FAN_OUT<net_container>nios_system</net_container>(SLAVE)sw_to_hw.clk,(SLAVE)sdram_pll.inclk_interface,(SLAVE)nios2_qsys_0.clk,(SLAVE)sprite_xy.clk,(SLAVE)sprite_num.clk,(SLAVE)hw_to_sw.clk,(SLAVE)jtag_uart_0.clk,(MASTER)clk_0.clk,(SLAVE)sysid_qsys_0.clk,(SLAVE)onchip_memory2_0.clk1) 1 1 2 310 720 770
-preplace netloc POINT_TO_POINT<net_container>nios_system</net_container>(MASTER)sdram_pll.c0,(SLAVE)sdram.clk) 1 2 2 790 460 1030
-preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.hw_to_sw,(SLAVE)hw_to_sw.external_connection) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)nios_system.reset) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>nios_system</net_container>(SLAVE)nios2_qsys_0.clk,(SLAVE)sw_to_hw.clk,(SLAVE)sprite_num.clk,(SLAVE)sysid_qsys_0.clk,(SLAVE)jtag_uart_0.clk,(SLAVE)onchip_memory2_0.clk1,(SLAVE)sdram_pll.inclk_interface,(MASTER)clk_0.clk,(SLAVE)sprite_xy.clk,(SLAVE)hw_to_sw.clk) 1 1 2 310 180 710
 preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>nios_system</net_container>(SLAVE)sprite_num.reset,(SLAVE)sdram_pll.inclk_interface_reset,(SLAVE)sdram.reset,(SLAVE)onchip_memory2_0.reset1,(SLAVE)jtag_uart_0.reset,(MASTER)clk_0.clk_reset,(SLAVE)nios2_qsys_0.reset,(SLAVE)sprite_xy.reset,(SLAVE)sw_to_hw.reset,(SLAVE)hw_to_sw.reset,(SLAVE)sysid_qsys_0.reset) 1 1 2 290 820 770
+preplace netloc EXPORT<net_container>nios_system</net_container>(MASTER)sdram_pll.c1,(MASTER)nios_system.sdram_clk) 1 3 1 N
 preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.xy_pos,(SLAVE)sprite_xy.external_connection) 1 0 3 NJ 800 NJ 800 NJ
 preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.sdram_mm,(SLAVE)sdram.s1) 1 0 3 NJ 500 NJ 500 NJ
 preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)sprite_num.external_connection,(SLAVE)nios_system.sprite_num) 1 0 3 NJ 600 NJ 600 NJ
-preplace netloc EXPORT<net_container>nios_system</net_container>(MASTER)nios_system.sdram_clk,(MASTER)sdram_pll.c1) 1 3 1 N
+preplace netloc POINT_TO_POINT<net_container>nios_system</net_container>(SLAVE)sdram.clk,(MASTER)sdram_pll.c0) 1 2 2 790 460 1030
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)hw_to_sw.external_connection,(SLAVE)nios_system.hw_to_sw) 1 0 3 NJ 60 NJ 60 NJ
+preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)sw_to_hw.external_connection,(SLAVE)nios_system.sw_to_hw) 1 0 3 NJ 700 NJ 700 NJ
 preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.sdram_wire,(SLAVE)sdram.wire) 1 0 3 NJ 520 NJ 520 NJ
-preplace netloc EXPORT<net_container>nios_system</net_container>(SLAVE)nios_system.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
-preplace netloc INTERCONNECT<net_container>nios_system</net_container>(MASTER)nios2_qsys_0.data_master,(SLAVE)sprite_num.s1,(SLAVE)sprite_xy.s1,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)hw_to_sw.s1,(MASTER)nios2_qsys_0.instruction_master,(SLAVE)onchip_memory2_0.s1,(SLAVE)sysid_qsys_0.control_slave,(SLAVE)sw_to_hw.s1,(SLAVE)sdram_pll.pll_slave,(SLAVE)nios2_qsys_0.debug_mem_slave) 1 1 2 330 820 750
+preplace netloc INTERCONNECT<net_container>nios_system</net_container>(SLAVE)sw_to_hw.s1,(SLAVE)nios2_qsys_0.debug_mem_slave,(SLAVE)hw_to_sw.s1,(MASTER)nios2_qsys_0.data_master,(MASTER)nios2_qsys_0.instruction_master,(SLAVE)sdram_pll.pll_slave,(SLAVE)jtag_uart_0.avalon_jtag_slave,(SLAVE)onchip_memory2_0.s1,(SLAVE)sprite_xy.s1,(SLAVE)sysid_qsys_0.control_slave,(SLAVE)sprite_num.s1) 1 1 2 310 840 750
 levelinfo -pg 1 0 80 1140
 levelinfo -hier nios_system 90 120 450 840 1050

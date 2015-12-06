@@ -142,7 +142,9 @@ ACDS_VERSION := 15.0
 ELF := Final_Project_Code.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := main.c
+C_SRCS += io_handler.c
+C_SRCS += usb.c
+C_SRCS += run_keyboard.c
 CXX_SRCS :=
 ASM_SRCS :=
 

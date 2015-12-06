@@ -8,7 +8,8 @@
    <inputclock preferredWidth="115" />
   </columns>
  </systemtable>
- <library expandedCategories="Library,Project" />
- <window width="1920" height="1030" x="0" y="0" />
+ <library
+   expandedCategories="Project,Library/Processors and Peripherals,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Interface Protocols/Serial,Library/Basic Functions,Library/Basic Functions/Bridges and Adaptors,Library/Processors and Peripherals/Co-Processors/Nios II Custom Instructions,Library/Basic Functions/Simulation; Debug and Verification/Simulation,Library/Qsys Interconnect,Library/Processors and Peripherals/Co-Processors,Library/Interface Protocols,Library,Library/Qsys Interconnect/Memory-Mapped,Library/Basic Functions/Simulation; Debug and Verification" />
+ <window width="1938" height="1048" x="-9" y="-9" />
  <generation path="_PROJECT_NAME_" />
 </preferences>
