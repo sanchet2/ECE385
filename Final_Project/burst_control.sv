@@ -15,12 +15,13 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 							output [31:0] data_to_blitter
 							);
 							
-		/*
-		logic fifo_empty, fifo_full, fifo_read, fifo_write, sdram_read, sdram_write, sdram_ready;	
+		
+		logic fifo_empty, fifo_full, fifo_read, fifo_write, sdram_read, sdram_write, sdram_ready,
+				burst_req, burst_finished;	
 		logic [24:0] sdram_address, frame_address;
 		logic [31:0] read_data, fifo_data, blitter_data;
 		
-		enum logic [2:0] {WAIT,FIFO_INPUT} state, next_state;
+		enum logic [2:0] {FIFO_INPUT, WAIT} state, next_state;
 		enum logic [2:0] {VGA_READ,VGA_WAIT} v_state, v_next_state;
 		
 		assign red [7:0] = fifo_data[7:0];
@@ -33,7 +34,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 		sdram_master master(.Clk(Clk), .Reset(Reset), .read_req(sdram_read), .write_req(sdram_write), .valid(valid), .wait_req(wait_req),
 								  .address_in(sdram_address), .write_data(data_from_blitter), .data_from_mem(data_from_mem), .write_out(write_out),
 								  .read_out(read_out), .ready(sdram_ready), .byte_enable(byte_enable), .address_out(address_out), 
-								  .data_to_sdram(data_to_sdram), .data_to_fpga(read_data));
+								  .data_to_sdram(data_to_sdram), .data_out(read_data), .burst_req(burst_req), .burst_finished(burst_finished));
 		
 		
 		always_ff @ (posedge Clk or posedge Reset)
@@ -50,13 +51,13 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 						v_state <= v_next_state;
 						case (state)
 							WAIT:begin
-							if( x_pos == 25'b0 && y_pos== 25'd479)
-								frame_address <= 25'd0;
+							if( x_pos >= 25'b0 && y_pos >= 25'd479)
+								frame_address <= 25'd640;
 							end
 							FIFO_INPUT:begin
-								if(sdram_ready)
+								if(burst_finished)
 								begin
-									frame_address<=frame_address+1'b1;
+									frame_address<=(frame_address+25'd640)%25'd307840;
 								end
 							end
 						endcase
@@ -70,6 +71,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 			fifo_write  = 1'b0;
 			sdram_read  = 1'b0;
 			sdram_write = 1'b0;
+			burst_req = 1'b0;
 			sdram_address = 25'd0;
 			unique case(state)
 			WAIT: begin
@@ -80,12 +82,12 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 			
 			end
 			FIFO_INPUT: begin
-					sdram_read = 1'b1;
+					burst_req = 1'b1;
 					sdram_address = frame_address;
 					if(sdram_ready)
 					begin
 						fifo_write=1'b1;
-						if(( frame_address+ 1'b1 )% 25'd640==1'b0)
+						if(burst_finished)
 							next_state=WAIT;
 						else
 							next_state=FIFO_INPUT;
@@ -98,7 +100,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 			
 			unique case(v_state)
 			VGA_WAIT: begin
-					if(y_pos == 10'b0 && x_pos == 10'd640)
+					if(y_pos == 10'd0 && x_pos == 10'd640)
 						v_next_state = VGA_READ;
 					else
 						v_next_state = VGA_WAIT;
@@ -114,13 +116,13 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 			
 			
 		end
-				*/
+				
 		
 		
 		
 		
 		
-		
+		/*
 		 logic master_ready, sdram_read, sdram_write;
 		logic [31:0] data;
 		logic [24:0] address, vga_address;
@@ -175,5 +177,5 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 				
 		end 
 		
-		
+		*/
 endmodule 

@@ -5,14 +5,23 @@ state.WAIT 0 0 0
 state.READ 1 0 1 
 state.WRITE 1 1 0 
 
+State Machine - |Final_Project|burst_control:burst|v_state
+Name v_state.VGA_READ 
+v_state.VGA_WAIT 0 
+v_state.VGA_READ 1 
+
+State Machine - |Final_Project|burst_control:burst|state
+Name state.WAIT 
+state.FIFO_INPUT 0 
+state.WAIT 1 
+
 State Machine - |Final_Project|burst_control:burst|sdram_master:master|state
-Name state.WRITE_LOOP state.WRITE state.READ_LOOP state.READ state.WAIT state.RESET 
-state.RESET 0 0 0 0 0 0 
-state.WAIT 0 0 0 0 1 1 
-state.READ 0 0 0 1 0 1 
-state.READ_LOOP 0 0 1 0 0 1 
-state.WRITE 0 1 0 0 0 1 
-state.WRITE_LOOP 1 0 0 0 0 1 
+Name state.BURST_READ state.WRITE state.READ state.WAIT state.BURST_WAIT 
+state.WAIT 0 0 0 0 0 
+state.READ 0 0 1 1 0 
+state.WRITE 0 1 0 1 0 
+state.BURST_READ 1 0 0 1 0 
+state.BURST_WAIT 0 0 0 1 1 
 
 State Machine - |Final_Project|communicator:com|state
 Name state.WRITE_SPRITE state.READ_SPRITE2 state.READ_SPRITE state.WAIT state.FINISHED_SPRITE 

@@ -8,8 +8,7 @@
    <inputclock preferredWidth="115" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library,Library/Basic Functions/Bridges and Adaptors/Streaming,Library/Basic Functions/Bridges and Adaptors,Project,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Basic Functions" />
- <window width="1920" height="1038" x="0" y="0" />
+ <library expandedCategories="Project,Library" />
+ <window width="1920" height="1030" x="0" y="0" />
  <generation path="_PROJECT_NAME_" />
 </preferences>

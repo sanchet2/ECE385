@@ -93,8 +93,8 @@ module  Final_Project ( input logic         CLOCK_50,
 										 .sprite_num_export(sprite_num),
 										 .sw_to_hw_export({is_shadow, sprite_incoming, sprite_ack}),
 										 .xy_pos_export({sprite_x_pos, sprite_y_pos})
-										 );
-										 
+										 ); 
+									 
 		logic [31:0]  data_from_blitter, data_to_blitter;
 		logic [24:0] address_from_blitter;
 		logic blitter_read, blitter_valid, blitter_write;
@@ -123,7 +123,7 @@ module  Final_Project ( input logic         CLOCK_50,
 		
 			assign data = data_from_blitter;
 			
-			assign LEDR = 	address[17:0];						 
+			assign LEDR = 	sdram_address[17:0];						 
 			HexDriver Hexd0( .In0(data[3:0]), .Out0(HEX0));
 			HexDriver Hexd1( .In0(data[7:4]), .Out0(HEX1));
 			HexDriver Hexd2( .In0(data[11:8]), .Out0(HEX2));

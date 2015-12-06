@@ -38,7 +38,7 @@ module nios_system_mm_interconnect_0 (
 		output wire [3:0]  nios2_qsys_0_debug_mem_slave_byteenable,        //                                         .byteenable
 		input  wire        nios2_qsys_0_debug_mem_slave_waitrequest,       //                                         .waitrequest
 		output wire        nios2_qsys_0_debug_mem_slave_debugaccess,       //                                         .debugaccess
-		output wire [16:0] onchip_memory2_0_s1_address,                    //                      onchip_memory2_0_s1.address
+		output wire [13:0] onchip_memory2_0_s1_address,                    //                      onchip_memory2_0_s1.address
 		output wire        onchip_memory2_0_s1_write,                      //                                         .write
 		input  wire [31:0] onchip_memory2_0_s1_readdata,                   //                                         .readdata
 		output wire [31:0] onchip_memory2_0_s1_writedata,                  //                                         .writedata
@@ -1064,7 +1064,7 @@ module nios_system_mm_interconnect_0 (
 	);
 
 	altera_merlin_slave_translator #(
-		.AV_ADDRESS_W                   (17),
+		.AV_ADDRESS_W                   (14),
 		.AV_DATA_W                      (32),
 		.UAV_DATA_W                     (32),
 		.AV_BURSTCOUNT_W                (1),
