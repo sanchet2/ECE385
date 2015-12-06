@@ -22,7 +22,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 		logic [31:0] read_data, fifo_data, blitter_data;
 		
 		
-		enum logic [2:0] {FIFO_INPUT, WAIT} state, next_state;
+		enum logic [2:0] {FIFO_INPUT, WAIT, BLITTER_READ, BLITTER_WRITE} state, next_state;
 		enum logic [2:0] {VGA_READ,VGA_WAIT} v_state, v_next_state;
 		
 		assign red [7:0] = fifo_data[7:0];
@@ -50,7 +50,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 				begin	
 						state <= next_state;
 						v_state <= v_next_state;
-						case (state)
+						unique case (state)
 							WAIT:begin
 							if( x_pos >= 25'b0 && y_pos >= 25'd479)
 								frame_address <= 25'd640;
@@ -60,7 +60,9 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 								begin
 									frame_address<=(frame_address+25'd640)%25'd307200;
 								end
-							end
+							end 
+							BLITTER_READ: ;
+							BLITTER_WRITE:;
 						endcase
 				end
 		end 
@@ -74,13 +76,25 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 			sdram_write = 1'b0;
 			burst_req = 1'b0;
 			sdram_address = 25'd0;
+			
+			blitter_finished = 1'b0;
+			data_to_blitter = read_data;
+			
 			unique case(state)
 			WAIT: begin
 			if( (x_pos == 1'b0) && (y_pos < 10'd480))
 				next_state = FIFO_INPUT;
-			else
-				next_state = WAIT;
-			
+			else if(y_pos >= 10'd480 && y_pos < 10'd524)
+				begin
+						if(blitter_read == 1'b1)
+							next_state = BLITTER_READ;
+						else if(blitter_write == 1'b1)
+							next_state = BLITTER_WRITE;
+						else	
+							next_state = WAIT;
+				end
+			else 
+					next_state = WAIT;
 			end
 			FIFO_INPUT: begin
 					burst_req = 1'b1;
@@ -96,6 +110,30 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 					else
 						next_state=FIFO_INPUT;
 				end
+			BLITTER_READ: begin
+					sdram_address = address_from_blitter;
+					sdram_read = 1'b1;
+					if(sdram_ready == 1'b1)
+					begin
+						blitter_finished = 1'b1;
+						next_state = WAIT;
+					end 
+					else begin
+						next_state = BLITTER_READ;
+					end 
+			end 
+			BLITTER_WRITE: begin
+					sdram_address = address_from_blitter;
+					sdram_write = 1'b1;
+					if(sdram_ready == 1'b1)
+					begin
+						blitter_finished = 1'b1;
+						next_state = WAIT;
+					end 
+					else begin
+						next_state = BLITTER_WRITE;
+					end 
+			end 
 			endcase
 			
 			

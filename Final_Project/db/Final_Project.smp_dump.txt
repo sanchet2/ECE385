@@ -11,9 +11,11 @@ v_state.VGA_WAIT 0
 v_state.VGA_READ 1 
 
 State Machine - |Final_Project|burst_control:burst|state
-Name state.WAIT 
-state.FIFO_INPUT 0 
-state.WAIT 1 
+Name state.BLITTER_WRITE state.BLITTER_READ state.WAIT state.FIFO_INPUT 
+state.FIFO_INPUT 0 0 0 0 
+state.WAIT 0 0 1 1 
+state.BLITTER_READ 0 1 0 1 
+state.BLITTER_WRITE 1 0 0 1 
 
 State Machine - |Final_Project|burst_control:burst|sdram_master:master|state
 Name state.BURST_READ state.WRITE state.READ state.WAIT state.BURST_WAIT 

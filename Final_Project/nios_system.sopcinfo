@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="nios_system" kind="nios_system" version="1.0" fabric="QSYS">
  <!-- Format version 15.0 145 (Future versions may contain additional information.) -->
- <!-- 2015.12.05.17:56:24 -->
+ <!-- 2015.12.05.22:23:09 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1449359784</value>
+  <value>1449375789</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -3533,7 +3533,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="instSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0xFA00' /><slave name='nios2_qsys_0.debug_mem_slave' start='0x80800' end='0x81000' /><slave name='sdram_pll.pll_slave' start='0x81050' end='0x81060' /><slave name='sysid_qsys_0.control_slave' start='0x81068' end='0x81070' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0x1E848' /><slave name='nios2_qsys_0.debug_mem_slave' start='0x80800' end='0x81000' /><slave name='sdram_pll.pll_slave' start='0x81050' end='0x81060' /><slave name='sysid_qsys_0.control_slave' start='0x81068' end='0x81070' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -3553,7 +3553,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dataSlaveMapParam">
    <type>java.lang.String</type>
-   <value><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0xFA00' /><slave name='nios2_qsys_0.debug_mem_slave' start='0x80800' end='0x81000' /><slave name='hw_to_sw.s1' start='0x81010' end='0x81020' /><slave name='sw_to_hw.s1' start='0x81020' end='0x81030' /><slave name='sprite_xy.s1' start='0x81030' end='0x81040' /><slave name='sprite_num.s1' start='0x81040' end='0x81050' /><slave name='sdram_pll.pll_slave' start='0x81050' end='0x81060' /><slave name='sysid_qsys_0.control_slave' start='0x81068' end='0x81070' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x81070' end='0x81078' /></address-map>]]></value>
+   <value><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x0' end='0x1E848' /><slave name='nios2_qsys_0.debug_mem_slave' start='0x80800' end='0x81000' /><slave name='hw_to_sw.s1' start='0x81010' end='0x81020' /><slave name='sw_to_hw.s1' start='0x81020' end='0x81030' /><slave name='sprite_xy.s1' start='0x81030' end='0x81040' /><slave name='sprite_num.s1' start='0x81040' end='0x81050' /><slave name='sdram_pll.pll_slave' start='0x81050' end='0x81060' /><slave name='sysid_qsys_0.control_slave' start='0x81068' end='0x81070' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x81070' end='0x81078' /></address-map>]]></value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -4257,7 +4257,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>onchip_memory2_0.s1</name>
     <baseAddress>0</baseAddress>
-    <span>64000</span>
+    <span>125000</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
@@ -4608,7 +4608,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s1</slaveName>
     <name>onchip_memory2_0.s1</name>
     <baseAddress>0</baseAddress>
-    <span>64000</span>
+    <span>125000</span>
    </memoryBlock>
   </interface>
   <interface name="irq" kind="interrupt_receiver" version="15.0">
@@ -5289,7 +5289,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.SIZE_VALUE</name>
-   <value>64000</value>
+   <value>125000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.WRITABLE</name>
@@ -5389,7 +5389,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="memorySize">
    <type>long</type>
-   <value>64000</value>
+   <value>125000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -5520,7 +5520,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="derived_set_addr_width">
    <type>int</type>
-   <value>14</value>
+   <value>15</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -5649,7 +5649,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="addressSpan">
     <type>java.math.BigInteger</type>
-    <value>64000</value>
+    <value>125000</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -5737,7 +5737,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="explicitAddressSpan">
     <type>java.math.BigInteger</type>
-    <value>64000</value>
+    <value>125000</value>
     <derived>false</derived>
     <enabled>true</enabled>
     <visible>true</visible>
@@ -5948,7 +5948,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>address</name>
     <direction>Input</direction>
-    <width>14</width>
+    <width>15</width>
     <role>address</role>
    </port>
    <port>
@@ -11468,7 +11468,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1449359784</value>
+   <value>1449375789</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -11488,7 +11488,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1449359784</value>
+   <value>1449375789</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -11504,7 +11504,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1449359784</value>
+   <value>1449375789</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>

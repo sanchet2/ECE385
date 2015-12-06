@@ -211,7 +211,7 @@ Memory Configuration
 
 Name             Origin             Length             Attributes
 reset            0x0000000000000000 0x0000000000000020
-onchip_memory2_0 0x0000000000000020 0x0000000000061a60
+onchip_memory2_0 0x0000000000000020 0x000000000001e828
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
@@ -2005,11 +2005,11 @@ LOAD c:/altera/15.0/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/4
  *(.debug_alt_sim_info)
  .debug_alt_sim_info
                 0x0000000000000000       0x10 ../Final_Project_Code_bsp//obj/HAL/src/crt0.o
-                0x0000000000061a80                __alt_data_end = 0x61a80
-                0x0000000000061a80                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x000000000001e848                __alt_data_end = 0x1e848
+                0x000000000001e848                PROVIDE (__alt_stack_pointer, __alt_data_end)
                 0x0000000000013140                PROVIDE (__alt_stack_limit, __alt_stack_base)
                 0x0000000000013140                PROVIDE (__alt_heap_start, end)
-                0x0000000000061a80                PROVIDE (__alt_heap_limit, 0x61a80)
+                0x000000000001e848                PROVIDE (__alt_heap_limit, 0x1e848)
 OUTPUT(Final_Project_Code.elf elf32-littlenios2)
 
 .debug_ranges   0x0000000000000000     0x1388
