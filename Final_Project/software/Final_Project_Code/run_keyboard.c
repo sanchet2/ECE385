@@ -134,7 +134,7 @@ int main(void)
 	no_device = (A_DP_STAT | A_DM_STAT);
 	fs_device = A_DP_STAT;
 	usb_ctl_val = UsbRead(ctl_reg);
-
+/*
 	if (!(usb_ctl_val & no_device))
 	{
 		for(hot_plug_count = 0 ; hot_plug_count < 5 ; hot_plug_count++)
@@ -168,7 +168,7 @@ int main(void)
 		{
 			printf("[INFO]: low speed device\n");
 		}
-	}
+	//}
 
 
 
@@ -520,6 +520,10 @@ int main(void)
 		IO_write(HPI_ADDR,0x051e); //the start address
 		keycode = IO_read(HPI_DATA);
 		printf("\nfirst two keycode values are %04x\n",keycode);
+
+
+		keycode = IO_read(HPI_DATA);
+		printf("\nsecond two keycode values are %04x\n",keycode);
 		IOWR(KEYCODE_BASE, 0, keycode & 0xff);
 
 

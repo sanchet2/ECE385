@@ -297,8 +297,6 @@ set_location_assignment PIN_H7 -to OTG_ADDR[0]
 set_location_assignment PIN_C3 -to OTG_ADDR[1]
 set_location_assignment PIN_C6 -to OTG_FSPEED
 set_location_assignment PIN_B6 -to OTG_LSPEED
-set_location_assignment PIN_D5 -to OTG_INT[1]
-set_location_assignment PIN_A6 -to OTG_INT[0]
 set_location_assignment PIN_C5 -to OTG_RST_N
 set_location_assignment PIN_J6 -to OTG_DATA[0]
 set_location_assignment PIN_K4 -to OTG_DATA[1]

@@ -2401,3 +2401,147 @@ Binding(ALT+CTRL+I,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.cdt.ui.cViewScope,,,system)
+!SESSION 2015-12-06 16:31:25.488 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-06 16:31:30.732
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 16:58:01.685
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 16:58:04.593
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+!SESSION 2015-12-06 16:59:30.175 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-12-06 16:59:31.130
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-06 16:59:35.545
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:00:35.374
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:00:37.921
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+!SESSION 2015-12-06 17:02:18.762 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-12-06 17:02:19.715
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-06 17:02:24.005
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:03:48.622
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:03:51.418
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:08:32.516
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:08:36.138
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+!SESSION 2015-12-06 17:13:19.363 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-12-06 17:13:20.326
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-06 17:13:37.795
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:13:52.682
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:13:55.324
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:20:04.449
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:20:07.844
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:32:23.188
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:32:26.079
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:34:00.589
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:34:02.461
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:34:05.951
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:35:39.753
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:35:42.531
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:40:19.985
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:40:23.522
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:42:49.734
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:42:52.619
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:50:44.144
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449437626]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-06 17:50:47.679
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449437626 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
