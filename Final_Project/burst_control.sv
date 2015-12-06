@@ -21,6 +21,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 		logic [24:0] sdram_address, frame_address;
 		logic [31:0] read_data, fifo_data, blitter_data;
 		
+		
 		enum logic [2:0] {FIFO_INPUT, WAIT} state, next_state;
 		enum logic [2:0] {VGA_READ,VGA_WAIT} v_state, v_next_state;
 		
@@ -55,9 +56,9 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 								frame_address <= 25'd640;
 							end
 							FIFO_INPUT:begin
-								if(burst_finished)
+								if(burst_finished == 1'b1)
 								begin
-									frame_address<=(frame_address+25'd640)%25'd307840;
+									frame_address<=(frame_address+25'd640)%25'd307200;
 								end
 							end
 						endcase
@@ -75,7 +76,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 			sdram_address = 25'd0;
 			unique case(state)
 			WAIT: begin
-			if( (x_pos == 1'b0))
+			if( (x_pos == 1'b0) && (y_pos < 10'd480))
 				next_state = FIFO_INPUT;
 			else
 				next_state = WAIT;

@@ -1,5 +1,5 @@
 Assembler report for Final_Project
-Sat Dec 05 20:02:59 2015
+Sat Dec 05 21:57:24 2015
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Dec 05 20:02:59 2015 ;
+; Assembler Status      ; Successful - Sat Dec 05 21:57:24 2015 ;
 ; Revision Name         ; Final_Project                         ;
 ; Top-level Entity Name ; Final_Project                         ;
 ; Family                ; Cyclone IV E                          ;
@@ -79,8 +79,8 @@ agreement for further details.
 ; Option         ; Setting                                                                                             ;
 +----------------+-----------------------------------------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                                                       ;
-; JTAG usercode  ; 0x009610EA                                                                                          ;
-; Checksum       ; 0x009610EA                                                                                          ;
+; JTAG usercode  ; 0x009B3145                                                                                          ;
+; Checksum       ; 0x009B3145                                                                                          ;
 +----------------+-----------------------------------------------------------------------------------------------------+
 
 
@@ -90,14 +90,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Sat Dec 05 20:02:54 2015
+    Info: Processing started: Sat Dec 05 21:57:19 2015
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Final_Project -c Final_Project
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 675 megabytes
-    Info: Processing ended: Sat Dec 05 20:02:59 2015
+    Info: Peak virtual memory: 678 megabytes
+    Info: Processing ended: Sat Dec 05 21:57:24 2015
     Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 
