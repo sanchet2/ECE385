@@ -44,7 +44,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 				begin
 						state   <= FIFO_INPUT;
 						v_state <= VGA_WAIT;
-						frame_address<=25'd640;
+						frame_address<=25'd218;
 				end
 				else
 				begin	
@@ -53,7 +53,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 						unique case (state)
 							WAIT:begin
 							if( x_pos >= 25'b0 && y_pos >= 25'd479)
-								frame_address <= 25'd640;
+								frame_address <= 25'd218;
 							end
 							FIFO_INPUT:begin
 								if(burst_finished == 1'b1)
