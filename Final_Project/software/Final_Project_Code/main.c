@@ -5,10 +5,10 @@
 
 #include "keyboard_functions.h"
 
-#define  sprite_xy 		(volatile int*) 0x00081030
-#define  sw_to_hw 		(volatile int*) 0x00081020
-#define  sprite_number 	(volatile int*) 0x00081040
-#define  hw_to_sw		(volatile int*) 0x00081010
+#define  sprite_xy 		(volatile int*) 0x00081090
+#define  sw_to_hw 		(volatile int*) 0x00081080
+#define  sprite_number 	(volatile int*) 0x000810A0
+#define  hw_to_sw		(volatile int*) 0x00081070
 
 
 
@@ -94,32 +94,33 @@ void render_players(player *first,player *second){
 void keycode_effect(player *first,player *second,unsigned int *arr){
 	int i=0;
 	for(i=0;i<4;i++){
+		printf("keycode %d : %x\n", i, arr[i]);
 		if(arr[i]==0x04){
 			move_player(first,first->x_pos-5,first->y_pos);
 		}
 		if(arr[i]==0x07){
 			move_player(first,first->x_pos+5,first->y_pos);
 		}
-		if(arr[i]==0x26){
+		if(arr[i]==0x1a){
 			fire_projectile(first);
 		}
-		if(arr[i]==0x80){
+		if(arr[i]==0x50){
 			move_player(second,second->x_pos-5,second->y_pos);
 		}
-		if(arr[i]==0x79){
+		if(arr[i]==0x4f){
 			move_player(second,second->x_pos+5,second->y_pos);
 		}
-		if(arr[i]==0x82){
+		if(arr[i]==0x52){
 			fire_projectile(second);
 		}
 	}
 
 }
 void parse_keycode(unsigned int *arr,unsigned int keycode1,unsigned int keycode2){
-	arr[0]=keycode1%16;
-	arr[1]=keycode1/16;
-	arr[2]=keycode2%16;
-	arr[3]=keycode2/16;
+	arr[0]=keycode1%256;
+	arr[1]=keycode1/256;
+	arr[2]=keycode2%256;
+	arr[3]=keycode2/256;
 }
 
 
