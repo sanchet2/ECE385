@@ -2689,3 +2689,1590 @@ Info:                          256 KBytes free for stack + heap.
 Info: Creating Final_Project_Code.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
 [Final_Project_Code build complete]
+19:25:37 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:25:37 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:17:20: error: expected identifier or '(' before numeric constant
+ #define projectile 3 #TODO
+                    ^
+main.c:43:3: note: in expansion of macro 'projectile'
+ } projectile;
+   ^
+main.c:17:22: error: stray '#' in program
+ #define projectile 3 #TODO
+                      ^
+main.c:43:3: note: in expansion of macro 'projectile'
+ } projectile;
+   ^
+main.c:85:35: error: unknown type name 'player2'
+ void keycode_effect(player *first,player2 second,int *arr){
+                                   ^
+main.c: In function 'init_players':
+main.c:16:26: error: stray '#' in program
+ #define player_sprite1 2 #TODO
+                          ^
+main.c:132:13: note: in expansion of macro 'player_sprite1'
+   first->id=player_sprite1;
+             ^
+main.c:16:27: error: expected ';' before 'TODO'
+ #define player_sprite1 2 #TODO
+                           ^
+main.c:132:13: note: in expansion of macro 'player_sprite1'
+   first->id=player_sprite1;
+             ^
+main.c:16:26: error: stray '#' in program
+ #define player_sprite1 2 #TODO
+                          ^
+main.c:136:16: note: in expansion of macro 'player_sprite1'
+   second->id = player_sprite1;
+                ^
+main.c:16:27: error: expected ';' before 'TODO'
+ #define player_sprite1 2 #TODO
+                           ^
+main.c:136:16: note: in expansion of macro 'player_sprite1'
+   second->id = player_sprite1;
+                ^
+main.c: In function 'main':
+main.c:169:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:169:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:170:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:109:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:166:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:26:05 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:26:05 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:17:20: error: expected identifier or '(' before numeric constant
+ #define projectile 3
+                    ^
+main.c:43:3: note: in expansion of macro 'projectile'
+ } projectile;
+   ^
+main.c:85:35: error: unknown type name 'player2'
+ void keycode_effect(player *first,player2 second,int *arr){
+                                   ^
+main.c: In function 'main':
+main.c:169:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:169:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:170:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:109:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:166:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:26:30 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:26:30 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:85:35: error: unknown type name 'player2'
+ void keycode_effect(player *first,player2 second,int *arr){
+                                   ^
+main.c: In function 'main':
+main.c:169:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:169:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:170:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:109:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:166:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:27:00 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:27:01 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'keycode_effect':
+main.c:89:4: warning: implicit declaration of function 'move_player' [-Wimplicit-function-declaration]
+    move_player(first,first->x_pos-5,first->y_pos);
+    ^
+main.c:95:4: warning: implicit declaration of function 'fire_projectile' [-Wimplicit-function-declaration]
+    fire_projectile(first);
+    ^
+main.c:97:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(arr[i]=0x80){
+   ^
+main.c:98:29: error: invalid type argument of '->' (have 'player')
+    move_player(second,second->x_pos-5,second->y_pos);
+                             ^
+main.c:98:45: error: invalid type argument of '->' (have 'player')
+    move_player(second,second->x_pos-5,second->y_pos);
+                                             ^
+main.c:100:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(arr[i]=0x79){
+   ^
+main.c:101:29: error: invalid type argument of '->' (have 'player')
+    move_player(second,second->x_pos+5,second->y_pos);
+                             ^
+main.c:101:45: error: invalid type argument of '->' (have 'player')
+    move_player(second,second->x_pos+5,second->y_pos);
+                                             ^
+main.c:103:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(arr[i]=0x82){
+   ^
+main.c: At top level:
+main.c:117:6: warning: conflicting types for 'fire_projectile'
+ void fire_projectile(player *current)
+      ^
+main.c:95:4: note: previous implicit declaration of 'fire_projectile' was here
+    fire_projectile(first);
+    ^
+main.c:142:6: warning: conflicting types for 'move_player'
+ void move_player(player *current, int x_pos, int y_pos){
+      ^
+main.c:89:4: note: previous implicit declaration of 'move_player' was here
+    move_player(first,first->x_pos-5,first->y_pos);
+    ^
+main.c: In function 'main':
+main.c:169:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:169:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:170:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:109:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:166:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:27:20 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:27:20 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'keycode_effect':
+main.c:89:4: warning: implicit declaration of function 'move_player' [-Wimplicit-function-declaration]
+    move_player(first,first->x_pos-5,first->y_pos);
+    ^
+main.c:95:4: warning: implicit declaration of function 'fire_projectile' [-Wimplicit-function-declaration]
+    fire_projectile(first);
+    ^
+main.c:97:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(arr[i]=0x80){
+   ^
+main.c:100:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(arr[i]=0x79){
+   ^
+main.c:103:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   if(arr[i]=0x82){
+   ^
+main.c: At top level:
+main.c:117:6: warning: conflicting types for 'fire_projectile'
+ void fire_projectile(player *current)
+      ^
+main.c:95:4: note: previous implicit declaration of 'fire_projectile' was here
+    fire_projectile(first);
+    ^
+main.c:142:6: warning: conflicting types for 'move_player'
+ void move_player(player *current, int x_pos, int y_pos){
+      ^
+main.c:89:4: note: previous implicit declaration of 'move_player' was here
+    move_player(first,first->x_pos-5,first->y_pos);
+    ^
+main.c: In function 'main':
+main.c:169:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:169:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:170:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:109:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:166:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+Info: Compiling play_game.c to obj/default/play_game.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/play_game.o play_game.c
+play_game.c: In function 'renderer':
+play_game.c:9:4: error: 'sw_to_hw' undeclared (first use in this function)
+   *sw_to_hw = 4;
+    ^
+play_game.c:9:4: note: each undeclared identifier is reported only once for each function it appears in
+play_game.c:12:3: error: 'sprite_number' undeclared (first use in this function)
+  *sprite_number = sprite_num;
+   ^
+play_game.c:13:3: error: 'sprite_xy' undeclared (first use in this function)
+  *sprite_xy = 1024*x + y;
+   ^
+play_game.c:15:9: error: 'hw_to_sw' undeclared (first use in this function)
+  while(*hw_to_sw%2 != 0)
+         ^
+play_game.c: At top level:
+play_game.c:24:21: error: unknown type name 'player'
+ void render_shadows(player *first,player *second){
+                     ^
+play_game.c:24:35: error: unknown type name 'player'
+ void render_shadows(player *first,player *second){
+                                   ^
+play_game.c:35:21: error: unknown type name 'player'
+ void render_sprites(player *first,player *second){
+                     ^
+play_game.c:35:35: error: unknown type name 'player'
+ void render_sprites(player *first,player *second){
+                                   ^
+play_game.c:46:19: error: unknown type name 'player'
+ void init_players(player *first,player *second){
+                   ^
+play_game.c:46:33: error: unknown type name 'player'
+ void init_players(player *first,player *second){
+                                 ^
+play_game.c:63:18: error: unknown type name 'player'
+ void move_player(player *current, int x_pos, int y_pos){
+                  ^
+play_game.c: In function 'yo':
+play_game.c:82:2: error: unknown type name 'player'
+  player *first=(player *)malloc(sizeof(player));
+  ^
+play_game.c:82:17: error: 'player' undeclared (first use in this function)
+  player *first=(player *)malloc(sizeof(player));
+                 ^
+play_game.c:82:25: error: expected expression before ')' token
+  player *first=(player *)malloc(sizeof(player));
+                         ^
+play_game.c:83:10: error: 'second' undeclared (first use in this function)
+  player *second=(player *)malloc(sizeof(player));
+          ^
+play_game.c:83:26: error: expected expression before ')' token
+  player *second=(player *)malloc(sizeof(player));
+                          ^
+play_game.c:84:2: warning: implicit declaration of function 'init_players' [-Wimplicit-function-declaration]
+  init_players(first,second);
+  ^
+play_game.c:88:3: warning: implicit declaration of function 'render_sprites' [-Wimplicit-function-declaration]
+   render_sprites(first,second);
+   ^
+play_game.c:89:3: warning: implicit declaration of function 'move_player' [-Wimplicit-function-declaration]
+   move_player(first,first->x_pos+5,first->y_pos);
+   ^
+play_game.c:89:26: error: request for member 'x_pos' in something not a structure or union
+   move_player(first,first->x_pos+5,first->y_pos);
+                          ^
+play_game.c:89:41: error: request for member 'y_pos' in something not a structure or union
+   move_player(first,first->x_pos+5,first->y_pos);
+                                         ^
+play_game.c:93:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(first);
+  ^
+play_game.c:93:2: warning: incompatible implicit declaration of built-in function 'free'
+make: *** [obj/default/play_game.o] Error 1
+19:27:39 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:27:39 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'keycode_effect':
+main.c:89:4: warning: implicit declaration of function 'move_player' [-Wimplicit-function-declaration]
+    move_player(first,first->x_pos-5,first->y_pos);
+    ^
+main.c:95:4: warning: implicit declaration of function 'fire_projectile' [-Wimplicit-function-declaration]
+    fire_projectile(first);
+    ^
+main.c: At top level:
+main.c:117:6: warning: conflicting types for 'fire_projectile'
+ void fire_projectile(player *current)
+      ^
+main.c:95:4: note: previous implicit declaration of 'fire_projectile' was here
+    fire_projectile(first);
+    ^
+main.c:142:6: warning: conflicting types for 'move_player'
+ void move_player(player *current, int x_pos, int y_pos){
+      ^
+main.c:89:4: note: previous implicit declaration of 'move_player' was here
+    move_player(first,first->x_pos-5,first->y_pos);
+    ^
+main.c: In function 'main':
+main.c:169:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:169:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:170:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:109:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:166:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+Info: Compiling play_game.c to obj/default/play_game.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/play_game.o play_game.c
+play_game.c: In function 'renderer':
+play_game.c:9:4: error: 'sw_to_hw' undeclared (first use in this function)
+   *sw_to_hw = 4;
+    ^
+play_game.c:9:4: note: each undeclared identifier is reported only once for each function it appears in
+play_game.c:12:3: error: 'sprite_number' undeclared (first use in this function)
+  *sprite_number = sprite_num;
+   ^
+play_game.c:13:3: error: 'sprite_xy' undeclared (first use in this function)
+  *sprite_xy = 1024*x + y;
+   ^
+play_game.c:15:9: error: 'hw_to_sw' undeclared (first use in this function)
+  while(*hw_to_sw%2 != 0)
+         ^
+play_game.c: At top level:
+play_game.c:24:21: error: unknown type name 'player'
+ void render_shadows(player *first,player *second){
+                     ^
+play_game.c:24:35: error: unknown type name 'player'
+ void render_shadows(player *first,player *second){
+                                   ^
+play_game.c:35:21: error: unknown type name 'player'
+ void render_sprites(player *first,player *second){
+                     ^
+play_game.c:35:35: error: unknown type name 'player'
+ void render_sprites(player *first,player *second){
+                                   ^
+play_game.c:46:19: error: unknown type name 'player'
+ void init_players(player *first,player *second){
+                   ^
+play_game.c:46:33: error: unknown type name 'player'
+ void init_players(player *first,player *second){
+                                 ^
+play_game.c:63:18: error: unknown type name 'player'
+ void move_player(player *current, int x_pos, int y_pos){
+                  ^
+play_game.c: In function 'yo':
+play_game.c:82:2: error: unknown type name 'player'
+  player *first=(player *)malloc(sizeof(player));
+  ^
+play_game.c:82:17: error: 'player' undeclared (first use in this function)
+  player *first=(player *)malloc(sizeof(player));
+                 ^
+play_game.c:82:25: error: expected expression before ')' token
+  player *first=(player *)malloc(sizeof(player));
+                         ^
+play_game.c:83:10: error: 'second' undeclared (first use in this function)
+  player *second=(player *)malloc(sizeof(player));
+          ^
+play_game.c:83:26: error: expected expression before ')' token
+  player *second=(player *)malloc(sizeof(player));
+                          ^
+play_game.c:84:2: warning: implicit declaration of function 'init_players' [-Wimplicit-function-declaration]
+  init_players(first,second);
+  ^
+play_game.c:88:3: warning: implicit declaration of function 'render_sprites' [-Wimplicit-function-declaration]
+   render_sprites(first,second);
+   ^
+play_game.c:89:3: warning: implicit declaration of function 'move_player' [-Wimplicit-function-declaration]
+   move_player(first,first->x_pos+5,first->y_pos);
+   ^
+play_game.c:89:26: error: request for member 'x_pos' in something not a structure or union
+   move_player(first,first->x_pos+5,first->y_pos);
+                          ^
+play_game.c:89:41: error: request for member 'y_pos' in something not a structure or union
+   move_player(first,first->x_pos+5,first->y_pos);
+                                         ^
+play_game.c:93:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(first);
+  ^
+play_game.c:93:2: warning: incompatible implicit declaration of built-in function 'free'
+make: *** [obj/default/play_game.o] Error 1
+19:28:46 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:28:47 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:21:18: error: unknown type name 'player'
+ void move_player(player *current, int x_pos, int y_pos);
+                  ^
+main.c:22:22: error: unknown type name 'player'
+ void fire_projectile(player *current);
+                      ^
+main.c: In function 'keycode_effect':
+main.c:92:4: warning: implicit declaration of function 'move_player' [-Wimplicit-function-declaration]
+    move_player(first,first->x_pos-5,first->y_pos);
+    ^
+main.c:98:4: warning: implicit declaration of function 'fire_projectile' [-Wimplicit-function-declaration]
+    fire_projectile(first);
+    ^
+main.c: At top level:
+main.c:120:6: warning: conflicting types for 'fire_projectile'
+ void fire_projectile(player *current)
+      ^
+main.c:98:4: note: previous implicit declaration of 'fire_projectile' was here
+    fire_projectile(first);
+    ^
+main.c:145:6: warning: conflicting types for 'move_player'
+ void move_player(player *current, int x_pos, int y_pos){
+      ^
+main.c:92:4: note: previous implicit declaration of 'move_player' was here
+    move_player(first,first->x_pos-5,first->y_pos);
+    ^
+main.c: In function 'main':
+main.c:172:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:172:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:173:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:112:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:169:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:29:10 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:29:10 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:21:18: error: unknown type name 'player'
+ void move_player(player *current, int x_pos, int y_pos)
+                  ^
+main.c:31:3: warning: data definition has no type or storage class
+ } player;
+   ^
+main.c:31:3: warning: type defaults to 'int' in declaration of 'player' [-Wimplicit-int]
+main.c:67:21: error: expected declaration specifiers or '...' before 'player'
+ void render_shadows(player *first,player *second){
+                     ^
+main.c:67:35: error: expected declaration specifiers or '...' before 'player'
+ void render_shadows(player *first,player *second){
+                                   ^
+main.c:78:21: error: expected declaration specifiers or '...' before 'player'
+ void render_sprites(player *first,player *second){
+                     ^
+main.c:78:35: error: expected declaration specifiers or '...' before 'player'
+ void render_sprites(player *first,player *second){
+                                   ^
+main.c:88:21: error: expected declaration specifiers or '...' before 'player'
+ void keycode_effect(player *first,player *second,int *arr){
+                     ^
+main.c:88:35: error: expected declaration specifiers or '...' before 'player'
+ void keycode_effect(player *first,player *second,int *arr){
+                                   ^
+main.c:120:22: error: expected declaration specifiers or '...' before 'player'
+ void fire_projectile(player *current)
+                      ^
+main.c:126:19: error: expected declaration specifiers or '...' before 'player'
+ void init_players(player *first,player *second){
+                   ^
+main.c:126:33: error: expected declaration specifiers or '...' before 'player'
+ void init_players(player *first,player *second){
+                                 ^
+main.c:145:18: error: expected declaration specifiers or '...' before 'player'
+ void move_player(player *current, int x_pos, int y_pos){
+                  ^
+main.c: In function 'main':
+main.c:165:10: error: 'first' undeclared (first use in this function)
+  player *first=(player *)malloc(sizeof(player));
+          ^
+main.c:165:10: note: each undeclared identifier is reported only once for each function it appears in
+main.c:165:25: error: expected expression before ')' token
+  player *first=(player *)malloc(sizeof(player));
+                         ^
+main.c:166:10: error: 'second' undeclared (first use in this function)
+  player *second=(player *)malloc(sizeof(player));
+          ^
+main.c:166:26: error: expected expression before ')' token
+  player *second=(player *)malloc(sizeof(player));
+                          ^
+main.c:167:2: warning: implicit declaration of function 'init_players' [-Wimplicit-function-declaration]
+  init_players(first,second);
+  ^
+main.c:172:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:172:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:173:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:112:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:169:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:29:27 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:29:28 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'move_player':
+main.c:49:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'
+ void renderer(int x, int y, int sprite_num, int is_shadow)
+ ^
+main.c:67:50: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void render_shadows(player *first,player *second){
+                                                  ^
+main.c:78:50: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void render_sprites(player *first,player *second){
+                                                  ^
+main.c:88:59: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void keycode_effect(player *first,player *second,int *arr){
+                                                           ^
+main.c:112:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+                                                       ^
+main.c:121:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+main.c:126:48: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void init_players(player *first,player *second){
+                                                ^
+main.c:145:56: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void move_player(player *current, int x_pos, int y_pos){
+                                                        ^
+main.c:162:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int main(void){
+               ^
+main.c:177:1: error: expected '{' at end of input
+ }
+ ^
+make: *** [obj/default/main.o] Error 1
+19:29:38 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:29:38 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:172:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:172:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:173:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:112:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:169:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+Info: Compiling play_game.c to obj/default/play_game.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/play_game.o play_game.c
+play_game.c: In function 'renderer':
+play_game.c:9:4: error: 'sw_to_hw' undeclared (first use in this function)
+   *sw_to_hw = 4;
+    ^
+play_game.c:9:4: note: each undeclared identifier is reported only once for each function it appears in
+play_game.c:12:3: error: 'sprite_number' undeclared (first use in this function)
+  *sprite_number = sprite_num;
+   ^
+play_game.c:13:3: error: 'sprite_xy' undeclared (first use in this function)
+  *sprite_xy = 1024*x + y;
+   ^
+play_game.c:15:9: error: 'hw_to_sw' undeclared (first use in this function)
+  while(*hw_to_sw%2 != 0)
+         ^
+play_game.c: At top level:
+play_game.c:24:21: error: unknown type name 'player'
+ void render_shadows(player *first,player *second){
+                     ^
+play_game.c:24:35: error: unknown type name 'player'
+ void render_shadows(player *first,player *second){
+                                   ^
+play_game.c:35:21: error: unknown type name 'player'
+ void render_sprites(player *first,player *second){
+                     ^
+play_game.c:35:35: error: unknown type name 'player'
+ void render_sprites(player *first,player *second){
+                                   ^
+play_game.c:46:19: error: unknown type name 'player'
+ void init_players(player *first,player *second){
+                   ^
+play_game.c:46:33: error: unknown type name 'player'
+ void init_players(player *first,player *second){
+                                 ^
+play_game.c:63:18: error: unknown type name 'player'
+ void move_player(player *current, int x_pos, int y_pos){
+                  ^
+play_game.c: In function 'yo':
+play_game.c:82:2: error: unknown type name 'player'
+  player *first=(player *)malloc(sizeof(player));
+  ^
+play_game.c:82:17: error: 'player' undeclared (first use in this function)
+  player *first=(player *)malloc(sizeof(player));
+                 ^
+play_game.c:82:25: error: expected expression before ')' token
+  player *first=(player *)malloc(sizeof(player));
+                         ^
+play_game.c:83:10: error: 'second' undeclared (first use in this function)
+  player *second=(player *)malloc(sizeof(player));
+          ^
+play_game.c:83:26: error: expected expression before ')' token
+  player *second=(player *)malloc(sizeof(player));
+                          ^
+play_game.c:84:2: warning: implicit declaration of function 'init_players' [-Wimplicit-function-declaration]
+  init_players(first,second);
+  ^
+play_game.c:88:3: warning: implicit declaration of function 'render_sprites' [-Wimplicit-function-declaration]
+   render_sprites(first,second);
+   ^
+play_game.c:89:3: warning: implicit declaration of function 'move_player' [-Wimplicit-function-declaration]
+   move_player(first,first->x_pos+5,first->y_pos);
+   ^
+play_game.c:89:26: error: request for member 'x_pos' in something not a structure or union
+   move_player(first,first->x_pos+5,first->y_pos);
+                          ^
+play_game.c:89:41: error: request for member 'y_pos' in something not a structure or union
+   move_player(first,first->x_pos+5,first->y_pos);
+                                         ^
+play_game.c:93:2: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  free(first);
+  ^
+play_game.c:93:2: warning: incompatible implicit declaration of built-in function 'free'
+make: *** [obj/default/play_game.o] Error 1
+19:29:56 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:29:56 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling play_game.c to obj/default/play_game.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/play_game.o play_game.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:40:35 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:40:36 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:49:1: error: invalid initializer
+ static player_projectile projectiles=NULL;
+ ^
+main.c: In function 'fire_projectile':
+main.c:131:5: error: 'head' undeclared (first use in this function)
+  if(head==NULL){
+     ^
+main.c:131:5: note: each undeclared identifier is reported only once for each function it appears in
+main.c:135:12: error: incompatible types when assigning to type 'struct player_projectile *' from type 'player_projectile'
+   new->next=projectiles;
+            ^
+main.c:136:14: error: incompatible types when assigning to type 'player_projectile' from type 'struct player_projectile *'
+   projectiles=new;
+              ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:40:43 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:40:44 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:49:1: error: invalid initializer
+ static player_projectile projectiles=NULL;
+ ^
+main.c: In function 'fire_projectile':
+main.c:131:16: error: invalid operands to binary == (have 'player_projectile' and 'void *')
+  if(projectiles==NULL){
+                ^
+main.c:132:3: error: 'head' undeclared (first use in this function)
+   head=new;
+   ^
+main.c:132:3: note: each undeclared identifier is reported only once for each function it appears in
+main.c:135:12: error: incompatible types when assigning to type 'struct player_projectile *' from type 'player_projectile'
+   new->next=projectiles;
+            ^
+main.c:136:14: error: incompatible types when assigning to type 'player_projectile' from type 'struct player_projectile *'
+   projectiles=new;
+              ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:40:53 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:40:54 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:49:1: error: invalid initializer
+ static player_projectile projectiles=NULL;
+ ^
+main.c: In function 'fire_projectile':
+main.c:131:16: error: invalid operands to binary == (have 'player_projectile' and 'void *')
+  if(projectiles==NULL){
+                ^
+main.c:132:14: error: incompatible types when assigning to type 'player_projectile' from type 'struct player_projectile *'
+   projectiles=new;
+              ^
+main.c:135:12: error: incompatible types when assigning to type 'struct player_projectile *' from type 'player_projectile'
+   new->next=projectiles;
+            ^
+main.c:136:14: error: incompatible types when assigning to type 'player_projectile' from type 'struct player_projectile *'
+   projectiles=new;
+              ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:41:18 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:41:18 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'fire_projectile':
+main.c:135:12: warning: assignment from incompatible pointer type
+   new->next=projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:42:31 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:42:32 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'fire_projectile':
+main.c:135:12: error: incompatible types when assigning to type 'struct player_projectile *' from type 'player_projectile'
+   new->next=*projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:42:35 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:42:35 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'fire_projectile':
+main.c:135:12: error: incompatible types when assigning to type 'struct player_projectile *' from type 'player_projectile'
+   new->next=*projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:42:39 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:42:40 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'fire_projectile':
+main.c:135:12: warning: assignment from incompatible pointer type
+   new->next=projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:43:37 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:43:38 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:44:09 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:44:09 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:38:2: error: unknown type name 'enemy'
+  enemy *next;
+  ^
+main.c:46:2: error: unknown type name 'player_projectile'
+  player_projectile *next;
+  ^
+main.c: In function 'fire_projectile':
+main.c:135:12: warning: assignment from incompatible pointer type
+   new->next=projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:44:14 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:44:15 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:38:2: error: unknown type name 'enemy'
+  enemy *next;
+  ^
+main.c:46:2: error: unknown type name 'player_projectile'
+  player_projectile *next;
+  ^
+main.c: In function 'fire_projectile':
+main.c:135:12: warning: assignment from incompatible pointer type
+   new->next=projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:45:15 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:45:16 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:38:2: error: unknown type name 'enemy'
+  enemy *next;
+  ^
+main.c:46:2: error: unknown type name 'player_projectile'
+  player_projectile *next;
+  ^
+main.c: In function 'fire_projectile':
+main.c:135:12: warning: assignment from incompatible pointer type
+   new->next=projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:45:22 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:45:22 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:46:2: error: unknown type name 'player_projectile'
+  player_projectile *next;
+  ^
+main.c: In function 'fire_projectile':
+main.c:135:12: warning: assignment from incompatible pointer type
+   new->next=projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:45:31 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:45:31 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:46:2: error: unknown type name 'player_projectile'
+  player_projectile *next;
+  ^
+main.c: In function 'fire_projectile':
+main.c:135:12: warning: assignment from incompatible pointer type
+   new->next=projectiles;
+            ^
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+make: *** [obj/default/main.o] Error 1
+19:45:34 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:45:35 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:188:7: warning: pointer targets in passing argument 1 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:188:7: warning: pointer targets in passing argument 2 of 'get_keycode' differ in signedness [-Wpointer-sign]
+    if(get_keycode(&keycode1,&keycode2)==0){
+       ^
+In file included from main.c:6:0:
+keyboard_functions.h:1:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ int get_keycode(int *keycode1,int *keycode2);
+     ^
+main.c:189:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+main.c:185:6: warning: unused variable 'i' [-Wunused-variable]
+  int i=0;
+      ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:46:30 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:46:30 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:188:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,int keycode1,int keycode2){
+      ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:46:51 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:46:51 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+19:46:53 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:46:54 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:188:5: warning: pointer targets in passing argument 1 of 'parse_keycode' differ in signedness [-Wpointer-sign]
+     parse_keycode(arr,keycode1,keycode2);
+     ^
+main.c:118:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void parse_keycode(int *arr,unsigned int keycode1,unsigned int keycode2){
+      ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:47:11 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:47:12 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:53:43 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:53:43 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:194:5: warning: pointer targets in passing argument 3 of 'keycode_effect' differ in signedness [-Wpointer-sign]
+     keycode_effect(first,second,arr);
+     ^
+main.c:94:6: note: expected 'int *' but argument is of type 'unsigned int *'
+ void keycode_effect(player *first,player *second,int *arr){
+      ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:54:10 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:54:10 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:55:47 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:55:47 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+19:56:17 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+19:56:17 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]

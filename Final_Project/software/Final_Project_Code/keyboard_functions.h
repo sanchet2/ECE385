@@ -1,2 +1,2 @@
-int get_keycode(int *keycode1,int *keycode2);
+int get_keycode(unsigned int *keycode1,unsigned int *keycode2);
 void setup_keyboard();
