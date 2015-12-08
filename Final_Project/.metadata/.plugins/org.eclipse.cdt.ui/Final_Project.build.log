@@ -1,9 +1,18 @@
-16:42:50 **** Incremental Build of configuration Nios II for project Final_Project ****
+22:13:28 **** Incremental Build of configuration Nios II for project Final_Project ****
 make all 
 Info: Building ../Final_Project_Code_bsp/
 C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
 [BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
 [Final_Project_Code build complete]
 
-16:42:51 Build Finished (took 848ms)
+22:13:30 Build Finished (took 1s.876ms)
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
-	<configuration id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.2072552491" name="Nios II">
+	<configuration id="preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1126824099" name="Nios II">
 		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
 			<provider id="altera.tool.Nios2GCCBuiltinSpecsDetector">
 				<language id="org.eclipse.cdt.core.gcc">
@@ -1569,20 +1569,6 @@
 						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
 						<entry kind="macro" name="__hal__" value=""/>
 					</resource>
-					<resource project-relative-path="shit.c">
-						<entry kind="includePath" name="/Final_Project_bsp/HAL/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/Final_Project_bsp">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/Final_Project_bsp/drivers/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
-						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
-						<entry kind="macro" name="__hal__" value=""/>
-					</resource>
 					<resource project-relative-path="HAL/src/alt_icache_flush.c">
 						<entry kind="includePath" name="/Final_Project_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
@@ -1906,20 +1892,6 @@
 						<entry kind="macro" name="__hal__" value=""/>
 					</resource>
 					<resource project-relative-path="HAL/src/alt_fork.c">
-						<entry kind="includePath" name="/Final_Project_bsp/HAL/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/Final_Project_bsp">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/Final_Project_bsp/drivers/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="macro" name="ALT_NO_INSTRUCTION_EMULATION" value=""/>
-						<entry kind="macro" name="ALT_SINGLE_THREADED" value=""/>
-						<entry kind="macro" name="__hal__" value=""/>
-					</resource>
-					<resource project-relative-path="run_keyboard.c">
 						<entry kind="includePath" name="/Final_Project_bsp/HAL/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>

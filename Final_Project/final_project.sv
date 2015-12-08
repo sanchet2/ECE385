@@ -126,7 +126,7 @@ module  Final_Project ( input logic         CLOCK_50,
 									  .blitter_read(blitter_read), .blitter_write(blitter_write), .data_from_blitter(data_from_blitter),
 									  .address_from_blitter(address_from_blitter), .blitter_finished(burst_finished), .data_to_blitter(data_to_blitter)); 
 							
-		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(new_sprite), .valid(blitter_valid), .is_shadow(is_shadow),
+		blittera blittera(.Clk(Clk), .Reset(Reset_h), .new_sprite(new_sprite), .valid(blitter_valid), .is_shadow(is_shadow),
 							 .sprite_x_pos(sprite_x_pos), .sprite_y_pos(sprite_y_pos),.sprite_address(sprite_address),
 							 .data_from_sdram(data_to_blitter), .wrote_sprite(blitter_finished), .read_req(blitter_read), 
 							 .write_req(blitter_write), .data_out(data_from_blitter), .address_to_sdram(address_from_blitter),

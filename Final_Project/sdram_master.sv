@@ -1,4 +1,4 @@
-module sdram_master(input 				Clk, Reset, read_req, write_req, valid, wait_req, burst_req,
+module sdram_master(input 				Clk, Reset, read_req, write_req, valid, wait_req, burst_req,blitter_read,
 						  input [24:0] 	address_in,
 						  input [31:0] 	write_data, data_from_mem,
 						  output 			write_out, read_out, ready, burst_finished,
@@ -93,7 +93,10 @@ module sdram_master(input 				Clk, Reset, read_req, write_req, valid, wait_req, 
 						end 
 				end 
 				BURST_READ: begin
-						address_out = burst_address%25'd307200;
+						if(blitter_read)
+							address_out=burst_address;
+						else
+							address_out = burst_address%25'd307200;
 						read_out =1'b0;
 						if(burst_address - address_in >= 25'd641)
 						begin

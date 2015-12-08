@@ -30,11 +30,11 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 		assign blue [7:0] = fifo_data[23:16];
 		
 		FIFO fifo(.data(read_data), .wrclk(Clk), .wrfull(fifo_full), .wrreq(fifo_write), .aclr(Reset), 
-					 .q(fifo_data), .rdreq(fifo_read), .rdclk(VGA_Clk), .rdempty(fifo_empty));
+					 .q(fifo_data), .rdreq(fifo_read), .rdclk(VGA_Clk), .rdempty(fifo_empty), .wrusedw(num_words));
 		
 		sdram_master master(.Clk(Clk), .Reset(Reset), .read_req(sdram_read), .write_req(sdram_write), .valid(valid), .wait_req(wait_req),
 								  .address_in(sdram_address), .write_data(data_from_blitter), .data_from_mem(data_from_mem), .write_out(write_out),
-								  .read_out(read_out), .ready(sdram_ready), .byte_enable(byte_enable), .address_out(address_out), 
+								  .read_out(read_out), .ready(sdram_ready), .byte_enable(byte_enable), .address_out(address_out), .blitter_read(blitter_read),
 								  .data_to_sdram(data_to_sdram), .data_out(read_data), .burst_req(burst_req), .burst_finished(burst_finished));
 		
 		

@@ -1,9 +1,10 @@
 
-State Machine - |Final_Project|blitter:blitter|state
-Name state.WAIT state.WRITE state.READ 
-state.WAIT 0 0 0 
-state.READ 1 0 1 
-state.WRITE 1 1 0 
+State Machine - |Final_Project|blittera:blittera|state
+Name state.WRITE state.INTER state.READ state.WAIT 
+state.WAIT 0 0 0 0 
+state.READ 0 0 1 1 
+state.INTER 0 1 0 1 
+state.WRITE 1 0 0 1 
 
 State Machine - |Final_Project|burst_control:burst|v_state
 Name v_state.VGA_READ 
