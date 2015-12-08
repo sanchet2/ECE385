@@ -11,7 +11,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 							input blitter_read, blitter_write,
 							input [31:0] data_from_blitter,
 							input [24:0] address_from_blitter,
-							output blitter_finished,
+							output blitter_finished, blitter_valid,
 							output [31:0] data_to_blitter
 							);
 							
@@ -30,7 +30,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 		assign blue [7:0] = fifo_data[23:16];
 		
 		FIFO fifo(.data(read_data), .wrclk(Clk), .wrfull(fifo_full), .wrreq(fifo_write), .aclr(Reset), 
-					 .wrusedw(num_words), .q(fifo_data), .rdreq(fifo_read), .rdclk(VGA_Clk), .rdempty(fifo_empty));
+					 .q(fifo_data), .rdreq(fifo_read), .rdclk(VGA_Clk), .rdempty(fifo_empty));
 		
 		sdram_master master(.Clk(Clk), .Reset(Reset), .read_req(sdram_read), .write_req(sdram_write), .valid(valid), .wait_req(wait_req),
 								  .address_in(sdram_address), .write_data(data_from_blitter), .data_from_mem(data_from_mem), .write_out(write_out),
@@ -78,6 +78,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 			sdram_address = 25'd0;
 			
 			blitter_finished = 1'b0;
+			blitter_valid = 1'b0;
 			data_to_blitter = read_data;
 			
 			unique case(state)
@@ -112,8 +113,9 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 				end
 			BLITTER_READ: begin
 					sdram_address = address_from_blitter;
-					sdram_read = 1'b1;
-					if(sdram_ready == 1'b1)
+					burst_req = 1'b1;
+					blitter_valid = sdram_ready;
+					if(burst_finished == 1'b1)
 					begin
 						blitter_finished = 1'b1;
 						next_state = WAIT;
@@ -127,7 +129,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 					sdram_write = 1'b1;
 					if(sdram_ready == 1'b1)
 					begin
-						blitter_finished = 1'b1;
+						blitter_valid = 1'b1;
 						next_state = WAIT;
 					end 
 					else begin

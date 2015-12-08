@@ -109,7 +109,7 @@ module  Final_Project ( input logic         CLOCK_50,
 									 
 		logic [31:0]  data_from_blitter, data_to_blitter;
 		logic [24:0] address_from_blitter;
-		logic blitter_read, blitter_valid, blitter_write;
+		logic blitter_read, blitter_valid, blitter_write, burst_finished;
 		
 		
 		
@@ -118,19 +118,19 @@ module  Final_Project ( input logic         CLOCK_50,
 						 .sprite_received(sprite_received), .sprite_finished(sprite_finished), .blitter_start(new_sprite),
 						 .sprite_address(sprite_address), .x_size(x_size), .y_size(y_size));
 									  
-		burst_control burst(.Clk(Clk), .Reset(Reset_h), .VGA_Clk(VGA_CLK),
+		burst_control burst(.Clk(Clk), .Reset(Reset_h), .VGA_Clk(VGA_CLK), .blitter_valid(blitter_valid),
 									  .valid(sdram_rvalid), .wait_req(sdram_wait), .red(VGA_R), .green(VGA_G), .blue(VGA_B),
 									  .address_in(a), .data_from_mem(sdram_dataout), .write_out(sdram_w),
 									  .read_out(sdram_r), .byte_enable(sdram_byteen), .address_out(sdram_address), .address_test(address),
 									  .data_to_sdram(sdram_datain), .data_to_fpga(data2), .x_pos(drawxsig), .y_pos(drawysig),
 									  .blitter_read(blitter_read), .blitter_write(blitter_write), .data_from_blitter(data_from_blitter),
-									  .address_from_blitter(address_from_blitter), .blitter_finished(blitter_valid), .data_to_blitter(data_to_blitter)); 
+									  .address_from_blitter(address_from_blitter), .blitter_finished(burst_finished), .data_to_blitter(data_to_blitter)); 
 							
 		blitter blitter(.Clk(Clk), .Reset(Reset_h), .new_sprite(new_sprite), .valid(blitter_valid), .is_shadow(is_shadow),
 							 .sprite_x_pos(sprite_x_pos), .sprite_y_pos(sprite_y_pos),.sprite_address(sprite_address),
 							 .data_from_sdram(data_to_blitter), .wrote_sprite(blitter_finished), .read_req(blitter_read), 
 							 .write_req(blitter_write), .data_out(data_from_blitter), .address_to_sdram(address_from_blitter),
-							 .sprite_dimx(x_size), .sprite_dimy(y_size));
+							 .sprite_dimx(x_size), .sprite_dimy(y_size), .burst_finished(burst_finished));
 							 
 		
 	 
