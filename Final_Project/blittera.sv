@@ -65,7 +65,10 @@ module blittera(input Clk, Reset, new_sprite, valid, burst_finished, is_shadow,
 				WAIT: begin
 						if(new_sprite==1'b1)
 						begin
-							next_state=READ;
+							if(is_shadow == 1'b1)
+								next_state =  WRITE;
+							else 
+								next_state=READ;
 						end
 						else
 							next_state=WAIT;
@@ -95,6 +98,10 @@ module blittera(input Clk, Reset, new_sprite, valid, burst_finished, is_shadow,
 				end
 				WRITE: begin
 					write_req=1'b1;
+					if(is_shadow)
+					begin
+							data_out = 32'b0;
+					end 
 					address_to_sdram=sprite_x_pos + counter%x_dim+((sprite_y_pos+counter/x_dim)*10'd640);
 					if(valid)
 					begin
@@ -105,7 +112,10 @@ module blittera(input Clk, Reset, new_sprite, valid, burst_finished, is_shadow,
 							wrote_sprite=1'b1;
 						end
 					else
-						next_state=INTER;
+						if(is_shadow)
+							next_state = WRITE;
+						else 
+							next_state=INTER;
 					end
 					else
 						next_state=WRITE;
