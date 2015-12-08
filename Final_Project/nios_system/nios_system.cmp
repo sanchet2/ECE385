@@ -29,7 +29,7 @@
 			sdram_wire_dqm         : out   std_logic_vector(3 downto 0);                     -- dqm
 			sdram_wire_ras_n       : out   std_logic;                                        -- ras_n
 			sdram_wire_we_n        : out   std_logic;                                        -- we_n
-			sprite_num_export      : out   std_logic_vector(1 downto 0);                     -- export
+			sprite_num_export      : out   std_logic_vector(5 downto 0);                     -- export
 			sw_to_hw_export        : out   std_logic_vector(2 downto 0);                     -- export
 			xy_pos_export          : out   std_logic_vector(19 downto 0)                     -- export
 		);

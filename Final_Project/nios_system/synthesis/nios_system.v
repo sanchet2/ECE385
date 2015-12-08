@@ -33,7 +33,7 @@ module nios_system (
 		output wire [3:0]  sdram_wire_dqm,         //                .dqm
 		output wire        sdram_wire_ras_n,       //                .ras_n
 		output wire        sdram_wire_we_n,        //                .we_n
-		output wire [1:0]  sprite_num_export,      //      sprite_num.export
+		output wire [5:0]  sprite_num_export,      //      sprite_num.export
 		output wire [2:0]  sw_to_hw_export,        //        sw_to_hw.export
 		output wire [19:0] xy_pos_export           //          xy_pos.export
 	);
@@ -301,7 +301,7 @@ module nios_system (
 		.phasedone ()                                                 //     phasedone_conduit.export
 	);
 
-	nios_system_otg_hpi_address sprite_num (
+	nios_system_sprite_num sprite_num (
 		.clk        (clk_clk),                                    //                 clk.clk
 		.reset_n    (~rst_controller_reset_out_reset),            //               reset.reset_n
 		.address    (mm_interconnect_0_sprite_num_s1_address),    //                  s1.address

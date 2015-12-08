@@ -2,6 +2,14 @@
 module nios_system (
 	clk_clk,
 	hw_to_sw_export,
+	keycode_export,
+	otg_hpi_address_export,
+	otg_hpi_cs_export,
+	otg_hpi_data_in_port,
+	otg_hpi_data_out_port,
+	otg_hpi_r_export,
+	otg_hpi_w_export,
+	reset_reset_n,
 	sdram_clk_clk,
 	sdram_mm_address,
 	sdram_mm_byteenable_n,
@@ -23,18 +31,18 @@ module nios_system (
 	sdram_wire_we_n,
 	sprite_num_export,
 	sw_to_hw_export,
-	xy_pos_export,
-	keycode_export,
-	otg_hpi_cs_export,
-	otg_hpi_address_export,
-	otg_hpi_data_in_port,
-	otg_hpi_data_out_port,
-	otg_hpi_r_export,
-	otg_hpi_w_export,
-	reset_reset_n);	
+	xy_pos_export);	
 
 	input		clk_clk;
 	input	[1:0]	hw_to_sw_export;
+	output	[15:0]	keycode_export;
+	output	[1:0]	otg_hpi_address_export;
+	output		otg_hpi_cs_export;
+	input	[15:0]	otg_hpi_data_in_port;
+	output	[15:0]	otg_hpi_data_out_port;
+	output		otg_hpi_r_export;
+	output		otg_hpi_w_export;
+	input		reset_reset_n;
 	output		sdram_clk_clk;
 	input	[24:0]	sdram_mm_address;
 	input	[3:0]	sdram_mm_byteenable_n;
@@ -54,15 +62,7 @@ module nios_system (
 	output	[3:0]	sdram_wire_dqm;
 	output		sdram_wire_ras_n;
 	output		sdram_wire_we_n;
-	output	[1:0]	sprite_num_export;
+	output	[5:0]	sprite_num_export;
 	output	[2:0]	sw_to_hw_export;
 	output	[19:0]	xy_pos_export;
-	output	[15:0]	keycode_export;
-	output		otg_hpi_cs_export;
-	output	[1:0]	otg_hpi_address_export;
-	input	[15:0]	otg_hpi_data_in_port;
-	output	[15:0]	otg_hpi_data_out_port;
-	output		otg_hpi_r_export;
-	output		otg_hpi_w_export;
-	input		reset_reset_n;
 endmodule

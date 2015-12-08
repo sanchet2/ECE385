@@ -12,11 +12,12 @@
 
 
 
-#define enemy_sprite 2 //TODO: Write sprite numbers
-#define player_sprite1 2
-#define player_bullet 3
-#define x_bounds 640
-#define y_bounds 480
+#define enemy_sprite 3
+#define player1_sprite 0
+#define player2_sprite 1
+#define player_bullet 13
+#define x_bounds 639
+#define y_bounds 479
 
 
 typedef struct{
@@ -35,6 +36,7 @@ typedef struct enemy{
 	int id;
 	int old_x;
 	int old_y;
+	int dead;
 	struct enemy *next;
 } enemy;
 
@@ -46,11 +48,169 @@ typedef struct player_projectile{
 	struct player_projectile *next;
 } player_projectile;
 
-static player_projectile *projectiles=NULL;
 
 
+//Init
+void init_players(player *first,player *second);
+void make_enemies(enemy **em);
+
+//Move
 void move_player(player *current, int x_pos, int y_pos);
+void move_enemy(enemy *current, int x_pos, int y_pos);
+void move_enemies(enemy *em);
+//void move_projectiles();
+
+//Render Check
+int render_player_check(player *current);
+int render_enemy_check(enemy *current);
+
+//Render
+void renderer(int x, int y, int sprite_num, int is_shadow);
+void render_shadows_player(player *first,player *second);
+void render_shadow_enemy(enemy *enemy);
+void render_enemy(enemy *em);
+void render_enemies(enemy *em);
+void render_players(player *first,player *second);
+
+//Render
 void fire_projectile(player *current);
+
+//Keycode
+int keycode_effect(player *first,player *second,unsigned int *arr);
+void parse_keycode(unsigned int *arr,unsigned int keycode1,unsigned int keycode2);
+
+//Hits
+void check_projectiles();
+
+int main(void){
+	setup_keyboard();
+	unsigned int keycode1,keycode2;
+	player *first=(player *)malloc(sizeof(player));
+	player *second=(player *)malloc(sizeof(player));
+	enemy *head_enemies=NULL;
+	init_players(first,second);
+	render_players(first,second);
+	unsigned int arr[4]={0,0,0,0};
+	while(1)
+		{
+			if(get_keycode(&keycode1,&keycode2)==0){
+				parse_keycode(arr,keycode1,keycode2);
+				if(keycode_effect(first,second,arr)==1){
+				render_players(first,second);
+				}
+			}
+			make_enemies(&head_enemies);
+			render_enemies(head_enemies);
+			move_enemies(head_enemies);
+		}
+}
+
+
+
+
+int sizes[13][2]={{64,48},	// players
+				 {60,64},
+				 {1,1},	 	 	 // enemies
+				 {99,66},
+				 {226,138},
+				 {60,100},
+				 {123,66},
+				 {102,77},
+				 {98,65},
+				 {84,78},
+				 {116,137},
+				 {105,63},
+				 {89,75}};
+
+void init_players(player *first,player *second){
+	if(first==NULL || second ==NULL)
+	{
+		printf("players not instantiated");
+	}
+	else{
+		first->x_pos = 300,
+		first->y_pos = y_bounds - sizes[player1_sprite][1];
+		first->health = 3;
+		first->id=player1_sprite;
+		first->old_x =
+		second->x_pos= 200;
+		second->y_pos= y_bounds - sizes[player2_sprite][1];
+		second->health=3;
+		second->id = player2_sprite;
+	}
+}
+
+void make_enemies(enemy **em){
+	int num=0;
+	enemy *mover=*em;
+	while(mover!=NULL){
+		num++;
+		mover=mover->next;
+	}
+	while(num<10){
+		enemy *generated=(enemy *)malloc(sizeof(enemy));
+		generated->x_pos=rand()%640;
+		generated->y_pos=3;
+		generated->old_x=generated->x_pos;
+		generated->old_y=generated->y_pos;
+		generated->health = 2;
+		generated->id=rand()%9+3;
+		generated->next = *em;
+		*em = generated;
+		num++;
+	}
+
+}
+
+
+
+
+void move_enemies(enemy *start){
+	if(start==NULL){
+		printf("You piece of shit\n");
+	}
+	else{
+	enemy *em=start;
+	while(em!=NULL){
+		render_shadow_enemy(em);
+		move_enemy(em,em->x_pos,em->y_pos+3);
+		if(em->next!=NULL && em->next->y_pos==100){
+			enemy *to_free=em->next;
+			em->next=em->next->next;
+			free(to_free);
+			}
+		em=em->next;
+		}
+	}
+}
+
+void render_shadow_enemy(enemy *start){
+	if(start==NULL){
+		printf("enemy not initialized");
+	}
+	else{
+		renderer(start->x_pos,start->y_pos,start->id,1);
+	}
+}
+
+void render_enemies(enemy *start){
+	enemy *em=start;
+	while(em!=NULL){
+		render_shadow_enemy(em);
+		render_enemy(em);
+		em=em->next;
+	}
+}
+
+void render_enemy(enemy *em){
+	if(em==NULL){
+		printf("enemy not initialized");
+		}
+	else{
+		renderer(em->x_pos,em->y_pos,em->id,0);
+		}
+}
+
 
 void renderer(int x, int y, int sprite_num, int is_shadow)
 {
@@ -97,25 +257,32 @@ void render_players(player *first,player *second){
 		printf("players not instantiated");
 	}
 	else{
-		if(render_check(first)==0){
+		if(render_player_check(first)==0){
 			render_shadow(first);
 			renderer(first->x_pos,first->y_pos,first->id,0);
 
 		}
-		if(render_check(second)==0){
+		if(render_player_check(second)==0){
 			render_shadow(second);
 			renderer(second->x_pos,second->y_pos,second->id,0);
 
 		}
 	}
 }
-int render_check(player *current){
+int render_player_check(player *current){
 	int i=0;
 	if(current->x_pos==current->old_x && current->y_pos==current->old_y){
 		i=1;
 	}
 	return i;
 }
+//int render_enemy_check(enemy *current){
+//	int i=0;
+//	if(current->x_pos==current->old_x && current->y_pos==current->old_y){
+//		i=1;
+//	}
+//	return i;
+//}
 int keycode_effect(player *first,player *second,unsigned int *arr){
 	int i=0;
 	int j=0;
@@ -130,7 +297,7 @@ int keycode_effect(player *first,player *second,unsigned int *arr){
 		}
 		if(arr[i]==0x1a){
 			j=1;
-			fire_projectile(first);
+//			fire_projectile(first);
 		}
 		if(arr[i]==0x50){
 			j=1;
@@ -142,7 +309,7 @@ int keycode_effect(player *first,player *second,unsigned int *arr){
 		}
 		if(arr[i]==0x52){
 			j=1;
-			fire_projectile(second);
+//			fire_projectile(second);
 		}
 	}
 	return j;
@@ -155,45 +322,24 @@ void parse_keycode(unsigned int *arr,unsigned int keycode1,unsigned int keycode2
 }
 
 
-void fire_projectile(player *current)
-{
-	player_projectile *new=(player_projectile*)malloc(sizeof(player_projectile));
-	new->x_pos=current->x_pos;//TODO: Refine start point
-	new->y_pos=current->y_pos -20;
-	if(projectiles==NULL){
-		projectiles=new;
-	}
-	else{
-		new->next=projectiles;
-		projectiles=new;
-	}
-}
+//void fire_projectile(player *current)
+//{
+//	player_projectile *new=(player_projectile*)malloc(sizeof(player_projectile));
+//	new->x_pos=current->x_pos;//TODO: Refine start point
+//	new->y_pos=current->y_pos -20;
+//	if(projectiles==NULL){
+//		projectiles=new;
+//	}
+//	else{
+//		new->next=projectiles;
+//		projectiles=new;
+//	}
+//}
 
 void check_projectiles()
 {
 
 }
-
-
-
-void init_players(player *first,player *second){
-	if(first==NULL || second ==NULL)
-	{
-		printf("players not instantiated");
-	}
-	else{
-		first->x_pos = 300,
-		first->y_pos = 400;
-		first->health = 3;
-		first->id=player_sprite1;
-		second->x_pos= 200;
-		second->y_pos= 200;
-		second->health=3;
-		second->id = player_sprite1;
-	}
-}
-
-
 
 void move_player(player *current, int x_pos, int y_pos){
 	if(current==NULL)
@@ -201,31 +347,50 @@ void move_player(player *current, int x_pos, int y_pos){
 			printf("players not instantiated");
 		}
 	else{
-		if((x_pos+64) < x_bounds && x_pos > 0 && y_pos > 0 && (y_pos+64)<y_bounds){
-			current->x_pos = x_pos;
-			current->y_pos = y_pos;
+		int width = sizes[current->id][0];
+		int height = sizes[current->id][1];
+		current->x_pos = x_pos;
+		current->y_pos = y_pos;
+		if((x_pos + width)> x_bounds)
+			current->x_pos = x_bounds - width;
+		else if(x_pos < 0)
+		{
+			current->x_pos = 0;
+		}
+		if((y_pos + height) > y_bounds)
+			current->y_pos = y_bounds - height;
+		else if(y_pos < 0)
+		{
+			current->y_pos = 0;
+		}
+	}
+}
+
+void move_enemy(enemy *current, int x_pos, int y_pos){
+	if(current==NULL)
+		{
+			printf("players not instantiated");
+		}
+	else{
+		int width = sizes[current->id][0];
+		int height = sizes[current->id][1];
+		current->x_pos = x_pos;
+		current->y_pos = y_pos;
+		if((x_pos + width)> x_bounds)
+			current->x_pos = x_bounds - width;
+		else if(x_pos < 0)
+		{
+			current->x_pos = 0;
+		}
+		if((y_pos + height) > y_bounds)
+			current->y_pos = y_bounds - height;
+		else if(y_pos < 0)
+		{
+			current->y_pos = 0;
 		}
 	}
 }
 
 
 
-int main(void){
-	setup_keyboard();
-	unsigned int keycode1,keycode2;
-	player *first=(player *)malloc(sizeof(player));
-	player *second=(player *)malloc(sizeof(player));
-	init_players(first,second);
-	unsigned int arr[4]={0,0,0,0};
-	while(1)
-		{
-			if(get_keycode(&keycode1,&keycode2)==0){
-				parse_keycode(arr,keycode1,keycode2);
-				if(keycode_effect(first,second,arr)==1){
-				render_players(first,second);
-				}
-			}
-
-		}
-}
 

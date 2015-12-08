@@ -773,3 +773,1695 @@ Info: Building ../Final_Project_Code_bsp/
 C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
 [BSP build complete]
 [Final_Project_Code build complete]
+23:17:42 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'render_players':
+main.c:105:3: warning: implicit declaration of function 'render_check' [-Wimplicit-function-declaration]
+   if(render_check(first)==0){
+   ^
+main.c: In function 'move_player':
+main.c:212:3: error: expected ',' or ';' before 'if'
+   if((x_pos+ width)> x_bounds)
+   ^
+main.c:216:3: error: 'else' without a previous 'if'
+   else if((y_pos + height) > y_bounds)
+   ^
+main.c:210:7: warning: unused variable 'width' [-Wunused-variable]
+   int width = sizes[current->id][0];
+       ^
+make: *** [obj/default/main.o] Error 1
+23:17:43 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+23:17:56 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'render_players':
+main.c:105:3: warning: implicit declaration of function 'render_check' [-Wimplicit-function-declaration]
+   if(render_check(first)==0){
+   ^
+main.c: In function 'move_player':
+main.c:212:3: error: expected ',' or ';' before 'if'
+   if((x_pos+ width)> x_bounds)
+   ^
+main.c:216:3: error: 'else' without a previous 'if'
+   else if((y_pos + height) > y_bounds)
+   ^
+main.c:210:7: warning: unused variable 'width' [-Wunused-variable]
+   int width = sizes[current->id][0];
+       ^
+make: *** [obj/default/main.o] Error 1
+23:18:36 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'render_players':
+main.c:105:3: warning: implicit declaration of function 'render_check' [-Wimplicit-function-declaration]
+   if(render_check(first)==0){
+   ^
+main.c: In function 'move_player':
+main.c:212:3: error: expected ',' or ';' before 'if'
+   if((x_pos+ width)> x_bounds)
+   ^
+main.c:216:3: error: 'else' without a previous 'if'
+   else if((y_pos + height) > y_bounds)
+   ^
+main.c:210:7: warning: unused variable 'width' [-Wunused-variable]
+   int width = sizes[current->id][0];
+       ^
+make: *** [obj/default/main.o] Error 1
+23:18:37 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+23:19:48 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'render_players':
+main.c:105:3: warning: implicit declaration of function 'render_check' [-Wimplicit-function-declaration]
+   if(render_check(first)==0){
+   ^
+main.c: In function 'move_player':
+main.c:212:3: error: expected ',' or ';' before 'if'
+   if((x_pos+ width)> x_bounds)
+   ^
+main.c:216:3: error: 'else' without a previous 'if'
+   else if((y_pos + height) > y_bounds)
+   ^
+main.c:210:7: warning: unused variable 'width' [-Wunused-variable]
+   int width = sizes[current->id][0];
+       ^
+make: *** [obj/default/main.o] Error 1
+23:19:49 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+23:20:52 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'render_players':
+main.c:105:3: warning: implicit declaration of function 'render_check' [-Wimplicit-function-declaration]
+   if(render_check(first)==0){
+   ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+23:20:54 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+23:21:29 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 80 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+23:21:31 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+23:21:40 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+23:31:41 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 81 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+23:31:43 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+23:31:50 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+23:32:59 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 81 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+23:33:01 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+23:33:48 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449437626 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 81 KBytes program size (code + initialized data).
+Info:                          254 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+23:33:50 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+23:33:54 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+00:03:23 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../Final_Project_Code_bsp/-recurs-make-lib] Error 2
+00:03:24 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+00:07:23 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../Final_Project_Code_bsp/-recurs-make-lib] Error 2
+00:07:24 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+00:07:43 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../Final_Project_Code_bsp/-recurs-make-lib] Error 2
+00:07:44 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+00:07:53 **** Clean-only build of configuration Nios II for project Final_Project ****
+make clean 
+[Final_Project_Code clean complete]
+00:07:53 **** Clean-only build of configuration Nios II for project Final_Project_bsp ****
+make clean 
+[BSP clean complete]
+00:07:53 **** Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../Final_Project_Code_bsp/-recurs-make-lib] Error 2
+00:07:54 **** Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+Makefile not up to date.
+../../nios_system.sopcinfo has been modified since the BSP was generated.
+
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make: *** [public.mk] Error 1
+00:08:10 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+Compiling alt_alarm_start.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_alarm_start.o HAL/src/alt_alarm_start.c
+Compiling alt_busy_sleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_busy_sleep.o HAL/src/alt_busy_sleep.c
+Compiling alt_close.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_close.o HAL/src/alt_close.c
+Compiling alt_dcache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush.o HAL/src/alt_dcache_flush.c
+Compiling alt_dcache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_all.o HAL/src/alt_dcache_flush_all.c
+Compiling alt_dcache_flush_no_writeback.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dcache_flush_no_writeback.o HAL/src/alt_dcache_flush_no_writeback.c
+Compiling alt_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev.o HAL/src/alt_dev.c
+Compiling alt_dev_llist_insert.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dev_llist_insert.o HAL/src/alt_dev_llist_insert.c
+Compiling alt_dma_rxchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_rxchan_open.o HAL/src/alt_dma_rxchan_open.c
+Compiling alt_dma_txchan_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_dma_txchan_open.o HAL/src/alt_dma_txchan_open.c
+Compiling alt_do_ctors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_ctors.o HAL/src/alt_do_ctors.c
+Compiling alt_do_dtors.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_do_dtors.o HAL/src/alt_do_dtors.c
+Compiling alt_ecc_fatal_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_ecc_fatal_entry.o HAL/src/alt_ecc_fatal_entry.S
+Compiling alt_ecc_fatal_exception.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ecc_fatal_exception.o HAL/src/alt_ecc_fatal_exception.c
+Compiling alt_env_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_env_lock.o HAL/src/alt_env_lock.c
+Compiling alt_environ.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_environ.o HAL/src/alt_environ.c
+Compiling alt_errno.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_errno.o HAL/src/alt_errno.c
+Compiling alt_exception_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_entry.o HAL/src/alt_exception_entry.S
+Compiling alt_exception_muldiv.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_muldiv.o HAL/src/alt_exception_muldiv.S
+Compiling alt_exception_trap.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_exception_trap.o HAL/src/alt_exception_trap.S
+Compiling alt_execve.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_execve.o HAL/src/alt_execve.c
+Compiling alt_exit.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_exit.o HAL/src/alt_exit.c
+Compiling alt_fcntl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fcntl.o HAL/src/alt_fcntl.c
+Compiling alt_fd_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_lock.o HAL/src/alt_fd_lock.c
+Compiling alt_fd_unlock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fd_unlock.o HAL/src/alt_fd_unlock.c
+Compiling alt_find_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_dev.o HAL/src/alt_find_dev.c
+Compiling alt_find_file.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_find_file.o HAL/src/alt_find_file.c
+Compiling alt_flash_dev.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_flash_dev.o HAL/src/alt_flash_dev.c
+Compiling alt_fork.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fork.o HAL/src/alt_fork.c
+Compiling alt_fs_reg.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fs_reg.o HAL/src/alt_fs_reg.c
+Compiling alt_fstat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_fstat.o HAL/src/alt_fstat.c
+Compiling alt_get_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_get_fd.o HAL/src/alt_get_fd.c
+Compiling alt_getchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getchar.o HAL/src/alt_getchar.c
+Compiling alt_getpid.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_getpid.o HAL/src/alt_getpid.c
+Compiling alt_gettod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gettod.o HAL/src/alt_gettod.c
+Compiling alt_gmon.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_gmon.o HAL/src/alt_gmon.c
+Compiling alt_icache_flush.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush.o HAL/src/alt_icache_flush.c
+Compiling alt_icache_flush_all.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_icache_flush_all.o HAL/src/alt_icache_flush_all.c
+Compiling alt_iic.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic.o HAL/src/alt_iic.c
+Compiling alt_iic_isr_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_iic_isr_register.o HAL/src/alt_iic_isr_register.c
+Compiling alt_instruction_exception_entry.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_entry.o HAL/src/alt_instruction_exception_entry.c
+Compiling alt_instruction_exception_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_instruction_exception_register.o HAL/src/alt_instruction_exception_register.c
+Compiling alt_io_redirect.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_io_redirect.o HAL/src/alt_io_redirect.c
+Compiling alt_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_ioctl.o HAL/src/alt_ioctl.c
+Compiling alt_irq_entry.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_irq_entry.o HAL/src/alt_irq_entry.S
+Compiling alt_irq_handler.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_handler.o HAL/src/alt_irq_handler.c
+Compiling alt_irq_register.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_register.o HAL/src/alt_irq_register.c
+Compiling alt_irq_vars.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_irq_vars.o HAL/src/alt_irq_vars.c
+Compiling alt_isatty.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_isatty.o HAL/src/alt_isatty.c
+Compiling alt_kill.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_kill.o HAL/src/alt_kill.c
+Compiling alt_link.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_link.o HAL/src/alt_link.c
+Compiling alt_load.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_load.o HAL/src/alt_load.c
+Compiling alt_log_macro.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_log_macro.o HAL/src/alt_log_macro.S
+Compiling alt_log_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_log_printf.o HAL/src/alt_log_printf.c
+Compiling alt_lseek.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_lseek.o HAL/src/alt_lseek.c
+Compiling alt_main.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_main.o HAL/src/alt_main.c
+Compiling alt_malloc_lock.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_malloc_lock.o HAL/src/alt_malloc_lock.c
+Compiling alt_mcount.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_mcount.o HAL/src/alt_mcount.S
+Compiling alt_open.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_open.o HAL/src/alt_open.c
+Compiling alt_printf.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_printf.o HAL/src/alt_printf.c
+Compiling alt_putchar.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putchar.o HAL/src/alt_putchar.c
+Compiling alt_putstr.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_putstr.o HAL/src/alt_putstr.c
+Compiling alt_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_read.o HAL/src/alt_read.c
+Compiling alt_release_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_release_fd.o HAL/src/alt_release_fd.c
+Compiling alt_remap_cached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_cached.o HAL/src/alt_remap_cached.c
+Compiling alt_remap_uncached.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_remap_uncached.o HAL/src/alt_remap_uncached.c
+Compiling alt_rename.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_rename.o HAL/src/alt_rename.c
+Compiling alt_sbrk.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_sbrk.o HAL/src/alt_sbrk.c
+Compiling alt_settod.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_settod.o HAL/src/alt_settod.c
+Compiling alt_software_exception.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/alt_software_exception.o HAL/src/alt_software_exception.S
+Compiling alt_stat.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_stat.o HAL/src/alt_stat.c
+Compiling alt_tick.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_tick.o HAL/src/alt_tick.c
+Compiling alt_times.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_times.o HAL/src/alt_times.c
+Compiling alt_uncached_free.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_free.o HAL/src/alt_uncached_free.c
+Compiling alt_uncached_malloc.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_uncached_malloc.o HAL/src/alt_uncached_malloc.c
+Compiling alt_unlink.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_unlink.o HAL/src/alt_unlink.c
+Compiling alt_usleep.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_usleep.o HAL/src/alt_usleep.c
+Compiling alt_wait.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_wait.o HAL/src/alt_wait.c
+Compiling alt_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/alt_write.o HAL/src/alt_write.c
+Compiling altera_nios2_gen2_irq.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/HAL/src/altera_nios2_gen2_irq.o HAL/src/altera_nios2_gen2_irq.c
+Compiling crt0.S...
+nios2-elf-gcc -MP -MMD -c   -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx    -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED  -Wa,-gdwarf2  -o obj/HAL/src/crt0.o HAL/src/crt0.S
+Compiling alt_sys_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/alt_sys_init.o alt_sys_init.c
+Compiling altera_avalon_jtag_uart_fd.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_fd.o drivers/src/altera_avalon_jtag_uart_fd.c
+Compiling altera_avalon_jtag_uart_init.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_init.o drivers/src/altera_avalon_jtag_uart_init.c
+Compiling altera_avalon_jtag_uart_ioctl.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o drivers/src/altera_avalon_jtag_uart_ioctl.c
+Compiling altera_avalon_jtag_uart_read.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_read.o drivers/src/altera_avalon_jtag_uart_read.c
+Compiling altera_avalon_jtag_uart_write.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_jtag_uart_write.o drivers/src/altera_avalon_jtag_uart_write.c
+Compiling altera_avalon_sysid_qsys.c...
+nios2-elf-gcc -xc -MP -MMD -c  -I./HAL/inc -I. -I./drivers/inc -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall  -mno-hw-div -mno-hw-mul -mno-hw-mulx   -o obj/drivers/src/altera_avalon_sysid_qsys.o drivers/src/altera_avalon_sysid_qsys.c
+Creating libhal_bsp.a...
+rm -f -f libhal_bsp.a
+nios2-elf-ar -src libhal_bsp.a obj/HAL/src/alt_alarm_start.o obj/HAL/src/alt_busy_sleep.o obj/HAL/src/alt_close.o obj/HAL/src/alt_dcache_flush.o obj/HAL/src/alt_dcache_flush_all.o obj/HAL/src/alt_dcache_flush_no_writeback.o obj/HAL/src/alt_dev.o obj/HAL/src/alt_dev_llist_insert.o obj/HAL/src/alt_dma_rxchan_open.o obj/HAL/src/alt_dma_txchan_open.o obj/HAL/src/alt_do_ctors.o obj/HAL/src/alt_do_dtors.o obj/HAL/src/alt_ecc_fatal_entry.o obj/HAL/src/alt_ecc_fatal_exception.o obj/HAL/src/alt_env_lock.o obj/HAL/src/alt_environ.o obj/HAL/src/alt_errno.o obj/HAL/src/alt_exception_entry.o obj/HAL/src/alt_exception_muldiv.o obj/HAL/src/alt_exception_trap.o obj/HAL/src/alt_execve.o obj/HAL/src/alt_exit.o obj/HAL/src/alt_fcntl.o obj/HAL/src/alt_fd_lock.o obj/HAL/src/alt_fd_unlock.o obj/HAL/src/alt_find_dev.o obj/HAL/src/alt_find_file.o obj/HAL/src/alt_flash_dev.o obj/HAL/src/alt_fork.o obj/HAL/src/alt_fs_reg.o obj/HAL/src/alt_fstat.o obj/HAL/src/alt_get_fd.o obj/HAL/src/alt_getchar.o obj/HAL/src/alt_getpid.o obj/HAL/src/alt_gettod.o obj/HAL/src/alt_gmon.o obj/HAL/src/alt_icache_flush.o obj/HAL/src/alt_icache_flush_all.o obj/HAL/src/alt_iic.o obj/HAL/src/alt_iic_isr_register.o obj/HAL/src/alt_instruction_exception_entry.o obj/HAL/src/alt_instruction_exception_register.o obj/HAL/src/alt_io_redirect.o obj/HAL/src/alt_ioctl.o obj/HAL/src/alt_irq_entry.o obj/HAL/src/alt_irq_handler.o obj/HAL/src/alt_irq_register.o obj/HAL/src/alt_irq_vars.o obj/HAL/src/alt_isatty.o obj/HAL/src/alt_kill.o obj/HAL/src/alt_link.o obj/HAL/src/alt_load.o obj/HAL/src/alt_log_macro.o obj/HAL/src/alt_log_printf.o obj/HAL/src/alt_lseek.o obj/HAL/src/alt_main.o obj/HAL/src/alt_malloc_lock.o obj/HAL/src/alt_mcount.o obj/HAL/src/alt_open.o obj/HAL/src/alt_printf.o obj/HAL/src/alt_putchar.o obj/HAL/src/alt_putstr.o obj/HAL/src/alt_read.o obj/HAL/src/alt_release_fd.o obj/HAL/src/alt_remap_cached.o obj/HAL/src/alt_remap_uncached.o obj/HAL/src/alt_rename.o obj/HAL/src/alt_sbrk.o obj/HAL/src/alt_settod.o obj/HAL/src/alt_software_exception.o obj/HAL/src/alt_stat.o obj/HAL/src/alt_tick.o obj/HAL/src/alt_times.o obj/HAL/src/alt_uncached_free.o obj/HAL/src/alt_uncached_malloc.o obj/HAL/src/alt_unlink.o obj/HAL/src/alt_usleep.o obj/HAL/src/alt_wait.o obj/HAL/src/alt_write.o obj/HAL/src/altera_nios2_gen2_irq.o obj/HAL/src/crt0.o obj/alt_sys_init.o obj/drivers/src/altera_avalon_jtag_uart_fd.o obj/drivers/src/altera_avalon_jtag_uart_init.o obj/drivers/src/altera_avalon_jtag_uart_ioctl.o obj/drivers/src/altera_avalon_jtag_uart_read.o obj/drivers/src/altera_avalon_jtag_uart_write.o obj/drivers/src/altera_avalon_sysid_qsys.o
+[BSP build complete]
+Info: Compiling io_handler.c to obj/default/io_handler.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/io_handler.o io_handler.c
+Info: Compiling keyboard_functions.c to obj/default/keyboard_functions.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/keyboard_functions.o keyboard_functions.c
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:105:6: warning: excess elements in array initializer
+      {1,1},      // enemies
+      ^
+main.c:105:6: warning: (near initialization for 'sizes')
+main.c:106:6: warning: excess elements in array initializer
+      {99,66},
+      ^
+main.c:106:6: warning: (near initialization for 'sizes')
+main.c:107:6: warning: excess elements in array initializer
+      {226,138},
+      ^
+main.c:107:6: warning: (near initialization for 'sizes')
+main.c:108:6: warning: excess elements in array initializer
+      {60,100},
+      ^
+main.c:108:6: warning: (near initialization for 'sizes')
+main.c:109:6: warning: excess elements in array initializer
+      {123,66},
+      ^
+main.c:109:6: warning: (near initialization for 'sizes')
+main.c:110:6: warning: excess elements in array initializer
+      {102,77},
+      ^
+main.c:110:6: warning: (near initialization for 'sizes')
+main.c:111:6: warning: excess elements in array initializer
+      {98,65},
+      ^
+main.c:111:6: warning: (near initialization for 'sizes')
+main.c:112:6: warning: excess elements in array initializer
+      {84,78},
+      ^
+main.c:112:6: warning: (near initialization for 'sizes')
+main.c:113:6: warning: excess elements in array initializer
+      {116,137},
+      ^
+main.c:113:6: warning: (near initialization for 'sizes')
+main.c:114:6: warning: excess elements in array initializer
+      {105,63},
+      ^
+main.c:114:6: warning: (near initialization for 'sizes')
+main.c:115:6: warning: excess elements in array initializer
+      {89,75}};
+      ^
+main.c:115:6: warning: (near initialization for 'sizes')
+main.c:51:15: warning: 'enemy_list' defined but not used [-Wunused-variable]
+ static enemy *enemy_list = NULL;
+               ^
+Info: Compiling play_game.c to obj/default/play_game.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/play_game.o play_game.c
+Info: Compiling usb.c to obj/default/usb.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/usb.o usb.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 81 KBytes program size (code + initialized data).
+Info:                          253 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:08:20 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:08:42 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:51:15: warning: 'enemy_list' defined but not used [-Wunused-variable]
+ static enemy *enemy_list = NULL;
+               ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 81 KBytes program size (code + initialized data).
+Info:                          253 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:08:44 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:09:23 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c:51:15: warning: 'enemy_list' defined but not used [-Wunused-variable]
+ static enemy *enemy_list = NULL;
+               ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 81 KBytes program size (code + initialized data).
+Info:                          253 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:09:25 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:26:46 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'init_enemies':
+main.c:140:15: error: incompatible types when initializing type 'struct enemy *' using type 'enemy'
+  enemy *mover=*em;
+               ^
+main.c: In function 'fire_projectile':
+main.c:284:5: error: 'projectiles' undeclared (first use in this function)
+  if(projectiles==NULL){
+     ^
+main.c:284:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/main.o] Error 1
+00:26:47 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:27:08 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'fire_projectile':
+main.c:284:5: error: 'projectiles' undeclared (first use in this function)
+  if(projectiles==NULL){
+     ^
+main.c:284:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/main.o] Error 1
+00:27:08 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:27:29 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:88:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+obj/default/main.o: In function `main':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:88: undefined reference to `make_enemies'
+obj/default/main.o: In function `keycode_effect':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:254: undefined reference to `fire_projectile'
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:266: undefined reference to `fire_projectile'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Final_Project_Code.elf] Error 1
+00:27:30 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:27:44 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:88:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+obj/default/main.o: In function `main':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:88: undefined reference to `make_enemies'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Final_Project_Code.elf] Error 1
+00:27:45 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:28:15 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:88:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 81 KBytes program size (code + initialized data).
+Info:                          253 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:28:17 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:28:57 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+00:28:58 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:30:13 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:94:17: error: 'em' undeclared (first use in this function)
+    move_enemies(em);
+                 ^
+main.c:94:17: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [obj/default/main.o] Error 1
+00:30:14 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:32:19 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:95:17: error: 'em' undeclared (first use in this function)
+    move_enemies(em);
+                 ^
+main.c:95:17: note: each undeclared identifier is reported only once for each function it appears in
+main.c: In function 'move_enemies':
+main.c:169:15: error: incompatible types when initializing type 'struct enemy *' using type 'enemy'
+  enemy *start=*em;
+               ^
+main.c:170:8: error: expected expression before ')' token
+  while()
+        ^
+main.c:169:9: warning: unused variable 'start' [-Wunused-variable]
+  enemy *start=*em;
+         ^
+make: *** [obj/default/main.o] Error 1
+00:32:20 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:32:32 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'move_enemies':
+main.c:169:15: error: incompatible types when initializing type 'struct enemy *' using type 'enemy'
+  enemy *start=*em;
+               ^
+main.c:170:8: error: expected expression before ')' token
+  while()
+        ^
+main.c:169:9: warning: unused variable 'start' [-Wunused-variable]
+  enemy *start=*em;
+         ^
+make: *** [obj/default/main.o] Error 1
+00:32:32 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:32:52 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'move_enemies':
+main.c:170:15: error: incompatible types when initializing type 'struct enemy *' using type 'enemy'
+  enemy *start=*em;
+               ^
+main.c:171:8: error: expected expression before ')' token
+  while()
+        ^
+main.c:170:9: warning: unused variable 'start' [-Wunused-variable]
+  enemy *start=*em;
+         ^
+make: *** [obj/default/main.o] Error 1
+00:32:53 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:33:16 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:90:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:33:18 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:43:34 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c: In function 'move_enemies':
+main.c:177:21: error: request for member 'next' in something not a structure or union
+    enemy *to_free=em.next;
+                     ^
+main.c:177:11: warning: unused variable 'to_free' [-Wunused-variable]
+    enemy *to_free=em.next;
+           ^
+make: *** [obj/default/main.o] Error 1
+00:43:35 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:43:45 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c: In function 'move_enemies':
+main.c:177:21: error: request for member 'next' in something not a structure or union
+    enemy *to_free=em.next;
+                     ^
+main.c:177:11: warning: unused variable 'to_free' [-Wunused-variable]
+    enemy *to_free=em.next;
+           ^
+make: *** [obj/default/main.o] Error 1
+00:43:46 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:44:09 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c: In function 'move_enemies':
+main.c:177:11: warning: unused variable 'to_free' [-Wunused-variable]
+    enemy *to_free=em->next;
+           ^
+main.c: In function 'main':
+main.c:91:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+obj/default/main.o: In function `main':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:97: undefined reference to `render_enemies'
+obj/default/main.o: In function `move_enemies':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:174: undefined reference to `render_shadow_enemy'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Final_Project_Code.elf] Error 1
+00:44:10 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:44:49 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c: In function 'move_enemies':
+main.c:177:11: warning: unused variable 'to_free' [-Wunused-variable]
+    enemy *to_free=em->next;
+           ^
+main.c: In function 'main':
+main.c:91:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+obj/default/main.o: In function `main':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:97: undefined reference to `render_enemies'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Final_Project_Code.elf] Error 1
+00:44:50 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:45:03 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c:91:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+obj/default/main.o: In function `main':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:97: undefined reference to `render_enemies'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Final_Project_Code.elf] Error 1
+00:45:04 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:46:12 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c:91:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+obj/default/main.o: In function `main':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:97: undefined reference to `render_enemies'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Final_Project_Code.elf] Error 1
+00:46:13 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:47:31 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c: In function 'render_shadow_enemy':
+main.c:194:2: warning: implicit declaration of function 'rendered' [-Wimplicit-function-declaration]
+  rendered(em->x_pos,em->y_pos,1);
+  ^
+main.c: In function 'main':
+main.c:91:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+obj/default/main.o: In function `main':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:97: undefined reference to `render_enemies'
+obj/default/main.o: In function `render_shadow_enemy':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:194: undefined reference to `rendered'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Final_Project_Code.elf] Error 1
+00:47:32 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:48:10 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c:91:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+obj/default/main.o: In function `main':
+C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code/main.c:97: undefined reference to `render_enemies'
+collect2.exe: error: ld returned 1 exit status
+make: *** [Final_Project_Code.elf] Error 1
+00:48:11 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:48:55 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: implicit declaration of function 'render_enemies' [-Wimplicit-function-declaration]
+    render_enemies(head_enemies);
+    ^
+main.c: At top level:
+main.c:198:6: warning: conflicting types for 'render_enemies'
+ void render_enemies(enemy *em){
+      ^
+main.c:97:4: note: previous implicit declaration of 'render_enemies' was here
+    render_enemies(head_enemies);
+    ^
+main.c: In function 'main':
+main.c:91:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:48:57 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:50:15 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:92:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:50:16 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:51:13 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:92:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:51:15 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:51:32 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:92:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:51:34 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:52:54 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'render_enemies':
+main.c:201:9: warning: unused variable 'start' [-Wunused-variable]
+  enemy *start=em;
+         ^
+main.c: In function 'main':
+main.c:92:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:52:56 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:54:41 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:92:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:54:43 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:55:02 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:92:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:55:04 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:56:07 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:92:2: warning: 'head_enemies' is used uninitialized in this function [-Wuninitialized]
+  make_enemies(head_enemies);
+  ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:56:09 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:56:56 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:56:58 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:57:43 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+00:59:15 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+00:59:17 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+00:59:19 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:04:06 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:04:08 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:08:10 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:08:12 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:08:14 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:08:31 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:14:54 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:97:4: warning: passing argument 1 of 'make_enemies' from incompatible pointer type
+    make_enemies(&head_enemies);
+    ^
+main.c:55:6: note: expected 'struct enemy *' but argument is of type 'struct enemy **'
+ void make_enemies(enemy *em);
+      ^
+main.c: At top level:
+main.c:145:6: error: conflicting types for 'make_enemies'
+ void make_enemies(enemy **em){
+      ^
+main.c:55:6: note: previous declaration of 'make_enemies' was here
+ void make_enemies(enemy *em);
+      ^
+make: *** [obj/default/main.o] Error 1
+01:14:55 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:16:10 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:92:2: warning: passing argument 1 of 'make_enemies' from incompatible pointer type
+  make_enemies(head_enemies);
+  ^
+main.c:55:6: note: expected 'struct enemy **' but argument is of type 'struct enemy *'
+ void make_enemies(enemy **em);
+      ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:16:12 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:16:51 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:16:53 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:17:04 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:17:29 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:17:31 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:21:49 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:21:51 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:22:07 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:22:08 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:22:11 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:23:24 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:23:26 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:23:34 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:24:16 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:25:41 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:25:43 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:25:46 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:27:27 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:96:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(5000);
+    ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:27:29 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:27:43 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:29:53 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:96:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(5000);
+    ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:29:55 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:29:57 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:31:40 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'main':
+main.c:96:4: warning: implicit declaration of function 'usleep' [-Wimplicit-function-declaration]
+    usleep(5000);
+    ^
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:31:42 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:31:53 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:31:55 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:32:01 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:32:53 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:32:55 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:33:03 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:33:04 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:33:06 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:33:58 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Final_Project_Code_bsp//HAL/inc -I../Final_Project_Code_bsp/ -I../Final_Project_Code_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+Info: Linking Final_Project_Code.elf
+nios2-elf-g++  -T'../Final_Project_Code_bsp//linker.x' -msys-crt0='../Final_Project_Code_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Final_Project_Code_bsp/   -Wl,-Map=Final_Project_Code.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o Final_Project_Code.elf obj/default/io_handler.o obj/default/keyboard_functions.o obj/default/main.o obj/default/play_game.o obj/default/usb.o -lm -msys-lib=m
+nios2-elf-insert Final_Project_Code.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --id 0 --sidp 0x810c8 --timestamp 1449553603 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name nios_system --quartus_project_dir "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project" --jdi ../..//output_files/Final_Project.jdi --sopcinfo C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code_bsp/../../nios_system.sopcinfo
+Info: (Final_Project_Code.elf) 82 KBytes program size (code + initialized data).
+Info:                          252 KBytes free for stack + heap.
+Info: Creating Final_Project_Code.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Final_Project_Code.elf >Final_Project_Code.objdump
+[Final_Project_Code build complete]
+01:33:59 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:34:10 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]
+01:34:11 **** Incremental Build of configuration Nios II for project Final_Project_bsp ****
+make all 
+[BSP build complete]
+01:34:12 **** Incremental Build of configuration Nios II for project Final_Project ****
+make all 
+Info: Building ../Final_Project_Code_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Final_Project_Code_bsp/
+[BSP build complete]
+[Final_Project_Code build complete]

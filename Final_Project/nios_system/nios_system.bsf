@@ -223,8 +223,8 @@ agreement for further details.
 	(port
 		(pt 0 784)
 		(output)
-		(text "sprite_num_export[1..0]" (rect 0 0 94 12)(font "Arial" (font_size 8)))
-		(text "sprite_num_export[1..0]" (rect 4 773 142 784)(font "Arial" (font_size 8)))
+		(text "sprite_num_export[5..0]" (rect 0 0 95 12)(font "Arial" (font_size 8)))
+		(text "sprite_num_export[5..0]" (rect 4 773 142 784)(font "Arial" (font_size 8)))
 		(line (pt 0 784)(pt 160 784)(line_width 3))
 	)
 	(port
