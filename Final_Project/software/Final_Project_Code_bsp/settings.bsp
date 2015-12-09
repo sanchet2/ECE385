@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 6, 2015 11:32:24 AM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1449423144722</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 9, 2015 9:43:57 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1449675837319</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\zjsplingaire\Documents\GitHub\ECE385\Final_Project\software\Final_Project_Code_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nios_system.sopcinfo</SopcDesignFile>
@@ -888,49 +888,85 @@
         </Setting>
         <MemoryMap>
                 <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
-                <addressRange>0x00000000 - 0x0001E847</addressRange>
-                <addressSpan>125000</addressSpan>
+                <addressRange>0x00000000 - 0x0005572F</addressRange>
+                <addressSpan>350000</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>hw_to_sw</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_w</slaveDescriptor>
                 <addressRange>0x00081010 - 0x0008101F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sw_to_hw</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_r</slaveDescriptor>
                 <addressRange>0x00081020 - 0x0008102F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sprite_xy</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_data</slaveDescriptor>
                 <addressRange>0x00081030 - 0x0008103F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sprite_num</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_address</slaveDescriptor>
                 <addressRange>0x00081040 - 0x0008104F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sdram_pll</slaveDescriptor>
+                <slaveDescriptor>otg_hpi_cs</slaveDescriptor>
                 <addressRange>0x00081050 - 0x0008105F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>keycode</slaveDescriptor>
+                <addressRange>0x00081060 - 0x0008106F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>hw_to_sw</slaveDescriptor>
+                <addressRange>0x00081070 - 0x0008107F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sw_to_hw</slaveDescriptor>
+                <addressRange>0x00081080 - 0x0008108F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sprite_xy</slaveDescriptor>
+                <addressRange>0x00081090 - 0x0008109F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sprite_num</slaveDescriptor>
+                <addressRange>0x000810A0 - 0x000810AF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sdram_pll</slaveDescriptor>
+                <addressRange>0x000810B0 - 0x000810BF</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x00081068 - 0x0008106F</addressRange>
+                <addressRange>0x000810C8 - 0x000810CF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x00081070 - 0x00081077</addressRange>
+                <addressRange>0x000810D0 - 0x000810D7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>

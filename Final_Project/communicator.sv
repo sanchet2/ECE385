@@ -1,7 +1,7 @@
 module communicator(input Clk, Reset, sprite_incoming, acknowledge_finished_sprite, blitter_finished,
-							input [1:0] sprite_num,
+							input [5:0] sprite_num,
 							output sprite_received, sprite_finished, blitter_start,
-							output [25:0] sprite_address,
+							output [24:0] sprite_address,
 							output [9:0] x_size, y_size
 							);
 							
