@@ -143,7 +143,7 @@ int sizes[14][2]={{64,48},	// players
 				 {116,137},
 				 {105,63},
 				 {89,75},
-				 {23,32}};			//bullets
+				 {23,32}};			//bullet
 
 void init_players(player *first,player *second){
 	if(first==NULL || second ==NULL)
@@ -226,6 +226,16 @@ enemy * delete_enemy(enemy *curr)
     enemy *tempNext;
     tempNext = curr->next;
     renderer(curr->x_pos,curr->y_pos,curr->id,1);//Render shadow
+    if(curr->health==0)
+    {
+    	renderer(curr->x_pos+sizes[curr->id][0]/2-32,curr->y_pos+sizes[curr->id][0]/2-32,14,0);
+    	renderer(curr->x_pos+sizes[curr->id][0]/2-32,curr->y_pos+sizes[curr->id][0]/2-32,15,0);
+    	renderer(curr->x_pos+sizes[curr->id][0]/2-32,curr->y_pos+sizes[curr->id][0]/2-32,16,0);
+    	renderer(curr->x_pos+sizes[curr->id][0]/2-32,curr->y_pos+sizes[curr->id][0]/2-32,17,0);
+    	renderer(curr->x_pos+sizes[curr->id][0]/2-32,curr->y_pos+sizes[curr->id][0]/2-32,18,0);
+    	renderer(curr->x_pos+sizes[curr->id][0]/2-32,curr->y_pos+sizes[curr->id][0]/2-32,19,0);
+    	renderer(curr->x_pos+sizes[curr->id][0]/2-32,curr->y_pos+sizes[curr->id][0]/2-32,19,1);
+    }
     free(curr);
     return tempNext;
   }
@@ -397,7 +407,7 @@ player_projectile* fire_projectile(player *current, player_projectile *head)
 {
 	player_projectile *new=(player_projectile*)malloc(sizeof(player_projectile));
 	new->x_pos=current->x_pos + ((sizes[current->id][0])/2)-11;
-	new->y_pos=current->y_pos + sizes[13][1];
+	new->y_pos=current->y_pos - sizes[13][1];
 	new->old_x = new->x_pos;
 	new->old_y = new->y_pos;
 	new->next = head;

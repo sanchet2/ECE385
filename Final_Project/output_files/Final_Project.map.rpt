@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Final_Project
-Wed Dec 09 09:07:25 2015
+Wed Dec 09 09:41:08 2015
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -341,13 +341,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 09 09:07:24 2015      ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 09 09:41:08 2015      ;
 ; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
 ; Revision Name                      ; Final_Project                              ;
 ; Top-level Entity Name              ; Final_Project                              ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 6,827                                      ;
-;     Total combinational functions  ; 5,359                                      ;
+; Total logic elements               ; 6,842                                      ;
+;     Total combinational functions  ; 5,374                                      ;
 ;     Dedicated logic registers      ; 3,230                                      ;
 ; Total registers                    ; 3230                                       ;
 ; Total pins                         ; 188                                        ;
@@ -658,16 +658,16 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 6,827          ;
+; Estimated Total logic elements              ; 6,842          ;
 ;                                             ;                ;
-; Total combinational functions               ; 5359           ;
+; Total combinational functions               ; 5374           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 2330           ;
-;     -- 3 input functions                    ; 1892           ;
-;     -- <=2 input functions                  ; 1137           ;
+;     -- 4 input functions                    ; 2343           ;
+;     -- 3 input functions                    ; 1896           ;
+;     -- <=2 input functions                  ; 1135           ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 4357           ;
+;     -- normal mode                          ; 4372           ;
 ;     -- arithmetic mode                      ; 1002           ;
 ;                                             ;                ;
 ; Total registers                             ; 3230           ;
@@ -684,7 +684,7 @@ agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 2690           ;
-; Total fan-out                               ; 39534          ;
+; Total fan-out                               ; 39611          ;
 ; Average fan-out                             ; 4.10           ;
 +---------------------------------------------+----------------+
 
@@ -694,7 +694,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                                                                                                                            ; Library Name ;
 +-------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Final_Project                                                                                                          ; 5359 (1)          ; 3230 (0)     ; 3216768     ; 1            ; 1       ; 0         ; 188  ; 0            ; |Final_Project                                                                                                                                                                                                                                                                                                                                                                                                                                                 ; work         ;
+; |Final_Project                                                                                                          ; 5374 (1)          ; 3230 (0)     ; 3216768     ; 1            ; 1       ; 0         ; 188  ; 0            ; |Final_Project                                                                                                                                                                                                                                                                                                                                                                                                                                                 ; work         ;
 ;    |HexDriver:Hexd0|                                                                                                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|HexDriver:Hexd0                                                                                                                                                                                                                                                                                                                                                                                                                                 ; work         ;
 ;    |HexDriver:Hexd1|                                                                                                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|HexDriver:Hexd1                                                                                                                                                                                                                                                                                                                                                                                                                                 ; work         ;
 ;    |HexDriver:Hexd2|                                                                                                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|HexDriver:Hexd2                                                                                                                                                                                                                                                                                                                                                                                                                                 ; work         ;
@@ -753,8 +753,8 @@ agreement for further details.
 ;             |lpm_divide_rcm:auto_generated|                                                                             ; 356 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|burst_control:burst|sdram_master:master|lpm_divide:Mod0|lpm_divide_rcm:auto_generated                                                                                                                                                                                                                                                                                                                                                           ; work         ;
 ;                |sign_div_unsign_gnh:divider|                                                                            ; 356 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|burst_control:burst|sdram_master:master|lpm_divide:Mod0|lpm_divide_rcm:auto_generated|sign_div_unsign_gnh:divider                                                                                                                                                                                                                                                                                                                               ; work         ;
 ;                   |alt_u_div_kaf:divider|                                                                               ; 356 (356)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|burst_control:burst|sdram_master:master|lpm_divide:Mod0|lpm_divide_rcm:auto_generated|sign_div_unsign_gnh:divider|alt_u_div_kaf:divider                                                                                                                                                                                                                                                                                                         ; work         ;
-;    |communicator:com|                                                                                                   ; 44 (6)            ; 40 (6)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|communicator:com                                                                                                                                                                                                                                                                                                                                                                                                                                ; work         ;
-;       |sprite_table:table1|                                                                                             ; 38 (38)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|communicator:com|sprite_table:table1                                                                                                                                                                                                                                                                                                                                                                                                            ; work         ;
+;    |communicator:com|                                                                                                   ; 59 (6)            ; 40 (6)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|communicator:com                                                                                                                                                                                                                                                                                                                                                                                                                                ; work         ;
+;       |sprite_table:table1|                                                                                             ; 53 (53)           ; 34 (34)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|communicator:com|sprite_table:table1                                                                                                                                                                                                                                                                                                                                                                                                            ; work         ;
 ;    |hpi_io_intf:hpi_io_inst|                                                                                            ; 3 (3)             ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|hpi_io_intf:hpi_io_inst                                                                                                                                                                                                                                                                                                                                                                                                                         ; work         ;
 ;    |nios_system:nios_system|                                                                                            ; 2239 (0)          ; 1356 (0)     ; 2811264     ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system                                                                                                                                                                                                                                                                                                                                                                                                                         ; nios_system  ;
 ;       |altera_reset_controller:rst_controller_001|                                                                      ; 0 (0)             ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|altera_reset_controller:rst_controller_001                                                                                                                                                                                                                                                                                                                                                                              ; nios_system  ;
@@ -844,8 +844,8 @@ agreement for further details.
 ;          |nios_system_mm_interconnect_0_rsp_demux_001:rsp_demux_002|                                                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_demux_001:rsp_demux_002                                                                                                                                                                                                                                                                                                               ; nios_system  ;
 ;          |nios_system_mm_interconnect_0_rsp_demux_001:rsp_demux_003|                                                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_demux_001:rsp_demux_003                                                                                                                                                                                                                                                                                                               ; nios_system  ;
 ;          |nios_system_mm_interconnect_0_rsp_demux_001:rsp_demux_004|                                                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_demux_001:rsp_demux_004                                                                                                                                                                                                                                                                                                               ; nios_system  ;
-;          |nios_system_mm_interconnect_0_rsp_mux:rsp_mux|                                                                ; 84 (84)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_mux:rsp_mux                                                                                                                                                                                                                                                                                                                           ; nios_system  ;
-;          |nios_system_mm_interconnect_0_rsp_mux_001:rsp_mux_001|                                                        ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_mux_001:rsp_mux_001                                                                                                                                                                                                                                                                                                                   ; nios_system  ;
+;          |nios_system_mm_interconnect_0_rsp_mux:rsp_mux|                                                                ; 85 (85)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_mux:rsp_mux                                                                                                                                                                                                                                                                                                                           ; nios_system  ;
+;          |nios_system_mm_interconnect_0_rsp_mux_001:rsp_mux_001|                                                        ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_mm_interconnect_0:mm_interconnect_0|nios_system_mm_interconnect_0_rsp_mux_001:rsp_mux_001                                                                                                                                                                                                                                                                                                                   ; nios_system  ;
 ;       |nios_system_nios2_qsys_0:nios2_qsys_0|                                                                           ; 972 (0)           ; 577 (0)      ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_nios2_qsys_0:nios2_qsys_0                                                                                                                                                                                                                                                                                                                                                                                   ; nios_system  ;
 ;          |nios_system_nios2_qsys_0_cpu:cpu|                                                                             ; 972 (686)         ; 577 (309)    ; 10240       ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_nios2_qsys_0:nios2_qsys_0|nios_system_nios2_qsys_0_cpu:cpu                                                                                                                                                                                                                                                                                                                                                  ; nios_system  ;
 ;             |nios_system_nios2_qsys_0_cpu_nios2_oci:the_nios_system_nios2_qsys_0_cpu_nios2_oci|                         ; 286 (35)          ; 268 (80)     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final_Project|nios_system:nios_system|nios_system_nios2_qsys_0:nios2_qsys_0|nios_system_nios2_qsys_0_cpu:cpu|nios_system_nios2_qsys_0_cpu_nios2_oci:the_nios_system_nios2_qsys_0_cpu_nios2_oci                                                                                                                                                                                                                                                                ; nios_system  ;
@@ -2200,8 +2200,8 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 3230  ;
-; Number of registers using Synchronous Clear  ; 129   ;
-; Number of registers using Synchronous Load   ; 303   ;
+; Number of registers using Synchronous Clear  ; 138   ;
+; Number of registers using Synchronous Load   ; 309   ;
 ; Number of registers using Asynchronous Clear ; 1749  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1408  ;
@@ -2226,7 +2226,7 @@ Encoding Type:  One-Hot
 ; nios_system:nios_system|nios_system_sdram:sdram|m_cmd[1]                                                                                                                                                                                                                                        ; 2       ;
 ; nios_system:nios_system|nios_system_sdram:sdram|m_cmd[0]                                                                                                                                                                                                                                        ; 2       ;
 ; nios_system:nios_system|nios_system_sdram:sdram|m_cmd[3]                                                                                                                                                                                                                                        ; 1       ;
-; burst_control:burst|FIFO:fifo|dcfifo:dcfifo_component|dcfifo_62l1:auto_generated|a_graycounter_677:rdptr_g1p|counter5a0                                                                                                                                                                         ; 7       ;
+; burst_control:burst|FIFO:fifo|dcfifo:dcfifo_component|dcfifo_62l1:auto_generated|a_graycounter_677:rdptr_g1p|counter5a0                                                                                                                                                                         ; 8       ;
 ; nios_system:nios_system|nios_system_sdram:sdram|i_addr[12]                                                                                                                                                                                                                                      ; 11      ;
 ; nios_system:nios_system|altera_reset_controller:rst_controller_001|altera_reset_synchronizer:alt_rst_sync_uq1|altera_reset_synchronizer_int_chain_out                                                                                                                                           ; 149     ;
 ; nios_system:nios_system|nios_system_sdram:sdram|i_cmd[2]                                                                                                                                                                                                                                        ; 2       ;
@@ -2234,7 +2234,7 @@ Encoding Type:  One-Hot
 ; nios_system:nios_system|nios_system_sdram:sdram|i_cmd[0]                                                                                                                                                                                                                                        ; 2       ;
 ; nios_system:nios_system|nios_system_sdram:sdram|i_cmd[3]                                                                                                                                                                                                                                        ; 2       ;
 ; nios_system:nios_system|altera_reset_controller:rst_controller|r_sync_rst_chain[1]                                                                                                                                                                                                              ; 1       ;
-; nios_system:nios_system|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|rst1                                                                                                                                                                    ; 21      ;
+; nios_system:nios_system|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|rst1                                                                                                                                                                    ; 23      ;
 ; nios_system:nios_system|nios_system_jtag_uart_0:jtag_uart_0|av_waitrequest                                                                                                                                                                                                                      ; 4       ;
 ; nios_system:nios_system|nios_system_nios2_qsys_0:nios2_qsys_0|nios_system_nios2_qsys_0_cpu:cpu|i_read                                                                                                                                                                                           ; 6       ;
 ; burst_control:burst|FIFO:fifo|dcfifo:dcfifo_component|dcfifo_62l1:auto_generated|a_graycounter_2lc:wrptr_g1p|counter8a0                                                                                                                                                                         ; 6       ;
@@ -2336,7 +2336,7 @@ Encoding Type:  One-Hot
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Final_Project|nios_system:nios_system|nios_system_nios2_qsys_0:nios2_qsys_0|nios_system_nios2_qsys_0_cpu:cpu|d_byteenable[3]                                                                                                                                                                                                                                                                              ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |Final_Project|nios_system:nios_system|nios_system_sdram:sdram|i_count[0]                                                                                                                                                                                                                                                                                                                                  ;
 ; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |Final_Project|nios_system:nios_system|nios_system_sdram:sdram|m_addr[10]                                                                                                                                                                                                                                                                                                                                  ;
-; 64:1               ; 34 bits   ; 1428 LEs      ; 272 LEs              ; 1156 LEs               ; Yes        ; |Final_Project|communicator:com|sprite_table:table1|out[24]                                                                                                                                                                                                                                                                                                                                                ;
+; 64:1               ; 34 bits   ; 1428 LEs      ; 408 LEs              ; 1020 LEs               ; Yes        ; |Final_Project|communicator:com|sprite_table:table1|out[24]                                                                                                                                                                                                                                                                                                                                                ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |Final_Project|nios_system:nios_system|nios_system_sdram:sdram|m_addr[4]                                                                                                                                                                                                                                                                                                                                   ;
 ; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |Final_Project|nios_system:nios_system|nios_system_sdram:sdram|m_addr[6]                                                                                                                                                                                                                                                                                                                                   ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |Final_Project|nios_system:nios_system|nios_system_jtag_uart_0:jtag_uart_0|alt_jtag_atlantic:nios_system_jtag_uart_0_alt_jtag_atlantic|td_shift[7]                                                                                                                                                                                                                                                         ;
@@ -8059,34 +8059,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR SCLR          ; 2                           ;
 ;     CLR SCLR SLD      ; 47                          ;
 ;     CLR SLD           ; 78                          ;
-;     ENA               ; 341                         ;
+;     ENA               ; 327                         ;
 ;     ENA CLR           ; 340                         ;
 ;     ENA CLR SCLR      ; 26                          ;
 ;     ENA CLR SLD       ; 43                          ;
-;     ENA SCLR          ; 3                           ;
-;     ENA SCLR SLD      ; 2                           ;
-;     ENA SLD           ; 48                          ;
+;     ENA SCLR          ; 11                          ;
+;     ENA SCLR SLD      ; 3                           ;
+;     ENA SLD           ; 53                          ;
 ;     SLD               ; 11                          ;
 ;     plain             ; 121                         ;
 ; cycloneiii_io_obuf    ; 48                          ;
-; cycloneiii_lcell_comb ; 4553                        ;
+; cycloneiii_lcell_comb ; 4568                        ;
 ;     arith             ; 904                         ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 221                         ;
 ;         3 data inputs ; 681                         ;
-;     normal            ; 3649                        ;
+;     normal            ; 3664                        ;
 ;         0 data inputs ; 70                          ;
-;         1 data inputs ; 74                          ;
-;         2 data inputs ; 620                         ;
-;         3 data inputs ; 957                         ;
-;         4 data inputs ; 1928                        ;
+;         1 data inputs ; 75                          ;
+;         2 data inputs ; 617                         ;
+;         3 data inputs ; 961                         ;
+;         4 data inputs ; 1941                        ;
 ; cycloneiii_mac_mult   ; 1                           ;
 ; cycloneiii_mac_out    ; 1                           ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 520                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 61.80                       ;
-; Average LUT depth     ; 18.29                       ;
+; Average LUT depth     ; 18.25                       ;
 +-----------------------+-----------------------------+
 
 
@@ -8095,7 +8095,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:19     ;
+; Top            ; 00:00:15     ;
 +----------------+--------------+
 
 
@@ -8316,7 +8316,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Wed Dec 09 09:06:13 2015
+    Info: Processing started: Wed Dec 09 09:40:16 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Final_Project -c Final_Project
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file fifo.v
@@ -8808,7 +8808,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ngc
 Info (12033): Analysis and Synthesis generated SignalTap II or debug node instance "auto_signaltap_0"
 Info (11170): Start IP generation for the debug fabric within sld_hub.
-Info (11172): 2015.12.09.09:06:51 Progress: Loading sld7479d85e/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2015.12.09.09:40:43 Progress: Loading sld7479d85e/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -8976,19 +8976,19 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
     Warning (15610): No output dependent on input pin "OTG_INT"
-Info (21057): Implemented 7863 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 7876 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 135 output pins
     Info (21060): Implemented 48 bidirectional pins
-    Info (21061): Implemented 7063 logic cells
+    Info (21061): Implemented 7076 logic cells
     Info (21064): Implemented 605 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 1 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 62 warnings
-    Info: Peak virtual memory: 947 megabytes
-    Info: Processing ended: Wed Dec 09 09:07:25 2015
-    Info: Elapsed time: 00:01:12
-    Info: Total CPU time (on all processors): 00:01:26
+    Info: Peak virtual memory: 935 megabytes
+    Info: Processing ended: Wed Dec 09 09:41:08 2015
+    Info: Elapsed time: 00:00:52
+    Info: Total CPU time (on all processors): 00:01:20
 
 
 +------------------------------------------+
