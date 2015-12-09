@@ -52,7 +52,7 @@ typedef struct player_projectile{
 
 //Init
 void init_players(player *first,player *second);
-void make_enemies(enemy **em);
+void make_enemy(enemy **em);
 
 //Move
 void move_player(player *current, int x_pos, int y_pos);
@@ -87,6 +87,8 @@ int main(void){
 	unsigned int keycode1,keycode2;
 	player *first=(player *)malloc(sizeof(player));
 	player *second=(player *)malloc(sizeof(player));
+	int i=0;
+	int num_of_enemies=0;
 	enemy *head_enemies=NULL;
 	init_players(first,second);
 	render_players(first,second);
@@ -99,9 +101,13 @@ int main(void){
 				render_players(first,second);
 				}
 			}
-			make_enemies(&head_enemies);
-			render_enemies(head_enemies);
-			move_enemies(head_enemies);
+				if(num_of_enemies<50){
+				make_enemy(&head_enemies);
+				num_of_enemies++;
+				}
+				render_enemies(head_enemies);
+				move_enemies(head_enemies);
+
 		}
 }
 
@@ -132,7 +138,7 @@ void init_players(player *first,player *second){
 		first->y_pos = y_bounds - sizes[player1_sprite][1];
 		first->health = 3;
 		first->id=player1_sprite;
-		first->old_x =
+		first->old_x =first->x_pos;
 		second->x_pos= 200;
 		second->y_pos= y_bounds - sizes[player2_sprite][1];
 		second->health=3;
@@ -140,26 +146,16 @@ void init_players(player *first,player *second){
 	}
 }
 
-void make_enemies(enemy **em){
-	int num=0;
-	enemy *mover=*em;
-	while(mover!=NULL){
-		num++;
-		mover=mover->next;
-	}
-	while(num<10){
-		enemy *generated=(enemy *)malloc(sizeof(enemy));
-		generated->x_pos=rand()%640;
-		generated->y_pos=3;
-		generated->old_x=generated->x_pos;
-		generated->old_y=generated->y_pos;
-		generated->health = 2;
-		generated->id=rand()%9+3;
-		generated->next = *em;
-		*em = generated;
-		num++;
-	}
-
+void make_enemy(enemy **em){
+	enemy *generated=(enemy *)malloc(sizeof(enemy));
+	generated->x_pos=rand()%500;
+	generated->y_pos=rand()%400;
+	generated->old_x=generated->x_pos;
+	generated->old_y=generated->y_pos;
+	generated->health = 2;
+	generated->id=3;
+	generated->next = *em;
+	*em = generated;
 }
 
 
@@ -172,31 +168,16 @@ void move_enemies(enemy *start){
 	else{
 	enemy *em=start;
 	while(em!=NULL){
-		render_shadow_enemy(em);
 		move_enemy(em,em->x_pos,em->y_pos+3);
-		if(em->next!=NULL && em->next->y_pos==100){
-			enemy *to_free=em->next;
-			em->next=em->next->next;
-			free(to_free);
-			}
 		em=em->next;
 		}
-	}
-}
-
-void render_shadow_enemy(enemy *start){
-	if(start==NULL){
-		printf("enemy not initialized");
-	}
-	else{
-		renderer(start->x_pos,start->y_pos,start->id,1);
 	}
 }
 
 void render_enemies(enemy *start){
 	enemy *em=start;
 	while(em!=NULL){
-		render_shadow_enemy(em);
+
 		render_enemy(em);
 		em=em->next;
 	}
@@ -207,7 +188,10 @@ void render_enemy(enemy *em){
 		printf("enemy not initialized");
 		}
 	else{
+		renderer(em->old_x,em->old_y,em->id,1);
 		renderer(em->x_pos,em->y_pos,em->id,0);
+		em->old_x=em->x_pos;
+		em->old_y=em->y_pos;
 		}
 }
 
