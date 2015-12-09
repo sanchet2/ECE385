@@ -61,7 +61,7 @@ module  Final_Project ( input logic         CLOCK_50,
 
 
 	 logic blitter_finished, sprite_received, sprite_finished, new_sprite, sprite_ack, sprite_incoming, is_shadow;
-	 logic [1:0] sprite_num;
+	 logic [5:0] sprite_num;
 		logic [25:0] sprite_address;
 		logic [9:0] x_size, y_size, sprite_x_pos, sprite_y_pos;
 		

@@ -36,7 +36,6 @@ typedef struct enemy{
 	int id;
 	int old_x;
 	int old_y;
-	int dead;
 	struct enemy *next;
 } enemy;
 
@@ -53,6 +52,12 @@ typedef struct player_projectile{
 //Init
 void init_players(player *first,player *second);
 void make_enemy(enemy **em);
+
+//count enemies
+int count_enemies(enemy *em);
+
+//Delete enemies
+enemy * delete_enemy(enemy *curr);
 
 //Move
 void move_player(player *current, int x_pos, int y_pos);
@@ -73,10 +78,10 @@ void render_enemies(enemy *em);
 void render_players(player *first,player *second);
 
 //Render
-void fire_projectile(player *current);
+void fire_projectile(player *current, player_projectile **head);
 
 //Keycode
-int keycode_effect(player *first,player *second,unsigned int *arr);
+int keycode_effect(player *first,player *second,unsigned int *arr, player_projectile **bullet,  int can_fire_n);
 void parse_keycode(unsigned int *arr,unsigned int keycode1,unsigned int keycode2);
 
 //Hits
@@ -90,31 +95,35 @@ int main(void){
 	int i=0;
 	int num_of_enemies=0;
 	enemy *head_enemies=NULL;
+	player_projectile *head_bullets=NULL;
 	init_players(first,second);
 	render_players(first,second);
 	unsigned int arr[4]={0,0,0,0};
 	while(1)
 		{
+			//move_projectiles(head_bullets);
+			//render_projectiles(head_bullets);
 			if(get_keycode(&keycode1,&keycode2)==0){
 				parse_keycode(arr,keycode1,keycode2);
-				if(keycode_effect(first,second,arr)==1){
+				if(keycode_effect(first,second,arr,&head_bullets,i%30)==1){
 				render_players(first,second);
 				}
 			}
-				if(num_of_enemies<50){
+			if(num_of_enemies<3){
 				make_enemy(&head_enemies);
-				num_of_enemies++;
-				}
-				render_enemies(head_enemies);
-				move_enemies(head_enemies);
-
+			}
+			render_enemies(head_enemies);
+			move_enemies(head_enemies);
+			head_enemies=(enemy *)delete_enemy(head_enemies);
+			num_of_enemies=count_enemies(head_enemies);
+			i++;
 		}
 }
 
 
 
 
-int sizes[13][2]={{64,48},	// players
+int sizes[14][2]={{64,48},	// players
 				 {60,64},
 				 {1,1},	 	 	 // enemies
 				 {99,66},
@@ -126,7 +135,8 @@ int sizes[13][2]={{64,48},	// players
 				 {84,78},
 				 {116,137},
 				 {105,63},
-				 {89,75}};
+				 {89,75},
+				 {23,32}};			//bullets
 
 void init_players(player *first,player *second){
 	if(first==NULL || second ==NULL)
@@ -149,17 +159,40 @@ void init_players(player *first,player *second){
 void make_enemy(enemy **em){
 	enemy *generated=(enemy *)malloc(sizeof(enemy));
 	generated->x_pos=rand()%500;
-	generated->y_pos=rand()%400;
+	generated->y_pos=rand()%300;
 	generated->old_x=generated->x_pos;
 	generated->old_y=generated->y_pos;
 	generated->health = 2;
-	generated->id=3;
+	generated->id=9;
 	generated->next = *em;
 	*em = generated;
 }
 
+enemy * delete_enemy(enemy *curr)
+{
+  if (curr == NULL)
+    return NULL;
 
+  if (curr->y_pos + sizes[curr->id][1]>=475 || curr->health==0) {
+    enemy *tempNext;
+    tempNext = curr->next;
+    renderer(curr->x_pos,curr->y_pos,curr->id,1);//Render shadow
+    free(curr);
+    return tempNext;
+  }
+  curr->next = delete_enemy(curr->next);
+  return curr;
+}
 
+int count_enemies(enemy *em){
+	int i=0;
+	enemy *start=em;
+	while(start!=NULL){
+		start=start->next;
+		i++;
+	}
+	return i;
+}
 
 void move_enemies(enemy *start){
 	if(start==NULL){
@@ -177,7 +210,6 @@ void move_enemies(enemy *start){
 void render_enemies(enemy *start){
 	enemy *em=start;
 	while(em!=NULL){
-
 		render_enemy(em);
 		em=em->next;
 	}
@@ -188,7 +220,7 @@ void render_enemy(enemy *em){
 		printf("enemy not initialized");
 		}
 	else{
-		renderer(em->old_x,em->old_y,em->id,1);
+		renderer(em->old_x,em->old_y,em->id,1);//Shadow First
 		renderer(em->x_pos,em->y_pos,em->id,0);
 		em->old_x=em->x_pos;
 		em->old_y=em->y_pos;
@@ -267,7 +299,7 @@ int render_player_check(player *current){
 //	}
 //	return i;
 //}
-int keycode_effect(player *first,player *second,unsigned int *arr){
+int keycode_effect(player *first,player *second,unsigned int *arr, player_projectile **bullets, int can_fire_n){
 	int i=0;
 	int j=0;
 	for(i=0;i<4;i++){
@@ -280,8 +312,11 @@ int keycode_effect(player *first,player *second,unsigned int *arr){
 			move_player(first,first->x_pos+5,first->y_pos);
 		}
 		if(arr[i]==0x1a){
-			j=1;
-//			fire_projectile(first);
+			if(can_fire_n == 0)
+			{
+				j=1;
+				fire_projectile(first, bullets);
+			}
 		}
 		if(arr[i]==0x50){
 			j=1;
@@ -292,8 +327,11 @@ int keycode_effect(player *first,player *second,unsigned int *arr){
 			move_player(second,second->x_pos+5,second->y_pos);
 		}
 		if(arr[i]==0x52){
-			j=1;
-//			fire_projectile(second);
+			if(can_fire_n == 0)
+			{
+				j=1;
+				fire_projectile(second, bullets);
+			}
 		}
 	}
 	return j;
@@ -306,19 +344,16 @@ void parse_keycode(unsigned int *arr,unsigned int keycode1,unsigned int keycode2
 }
 
 
-//void fire_projectile(player *current)
-//{
-//	player_projectile *new=(player_projectile*)malloc(sizeof(player_projectile));
-//	new->x_pos=current->x_pos;//TODO: Refine start point
-//	new->y_pos=current->y_pos -20;
-//	if(projectiles==NULL){
-//		projectiles=new;
-//	}
-//	else{
-//		new->next=projectiles;
-//		projectiles=new;
-//	}
-//}
+void fire_projectile(player *current, player_projectile **head)
+{
+	player_projectile *new=(player_projectile*)malloc(sizeof(player_projectile));
+	new->x_pos=current->x_pos + (sizes[current->id][0])/2;
+	new->y_pos=current->y_pos + 1;
+	new->old_x = new->x_pos;
+	new->old_y = new->y_pos;
+	new->next = *head;
+	*head = new;
+}
 
 void check_projectiles()
 {
