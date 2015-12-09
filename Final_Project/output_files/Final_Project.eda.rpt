@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Final_Project
-Tue Dec 08 22:17:30 2015
+Tue Dec 08 23:10:25 2015
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Dec 08 22:17:30 2015 ;
+; EDA Netlist Writer Status ; Successful - Tue Dec 08 23:10:25 2015 ;
 ; Revision Name             ; Final_Project                         ;
 ; Top-level Entity Name     ; Final_Project                         ;
 ; Family                    ; Cyclone IV E                          ;
@@ -89,7 +89,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Tue Dec 08 22:17:21 2015
+    Info: Processing started: Tue Dec 08 23:10:16 2015
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Final_Project -c Final_Project
 Info (204019): Generated file Final_Project_7_1200mv_85c_slow.svo in folder "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file Final_Project_7_1200mv_0c_slow.svo in folder "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/simulation/modelsim/" for EDA simulation tool
@@ -100,9 +100,9 @@ Info (204019): Generated file Final_Project_7_1200mv_0c_v_slow.sdo in folder "C:
 Info (204019): Generated file Final_Project_min_1200mv_0c_v_fast.sdo in folder "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file Final_Project_v.sdo in folder "C:/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 727 megabytes
-    Info: Processing ended: Tue Dec 08 22:17:31 2015
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 728 megabytes
+    Info: Processing ended: Tue Dec 08 23:10:25 2015
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:09
 
 

@@ -63,7 +63,8 @@ enemy * delete_enemy(enemy *curr);
 void move_player(player *current, int x_pos, int y_pos);
 void move_enemy(enemy *current, int x_pos, int y_pos);
 void move_enemies(enemy *em);
-//void move_projectiles();
+void move_projectiles(player_projectile *head);
+void move_projectile(player_projectile *head);
 
 //Render Check
 int render_player_check(player *current);
@@ -76,16 +77,21 @@ void render_shadow_enemy(enemy *enemy);
 void render_enemy(enemy *em);
 void render_enemies(enemy *em);
 void render_players(player *first,player *second);
+void render_projectiles(player_projectile *head);
+void render_projectile(player_projectile *pr);
+
 
 //Render
-void fire_projectile(player *current, player_projectile **head);
+player_projectile* fire_projectile(player *current, player_projectile *head);
 
 //Keycode
 int keycode_effect(player *first,player *second,unsigned int *arr, player_projectile **bullet,  int can_fire_n);
 void parse_keycode(unsigned int *arr,unsigned int keycode1,unsigned int keycode2);
 
 //Hits
-void check_projectiles();
+player_projectile* check_projectiles(player_projectile *curr, enemy *em);
+int hits_enemy(int x, int y, enemy *em);
+
 
 int main(void){
 	setup_keyboard();
@@ -101,11 +107,11 @@ int main(void){
 	unsigned int arr[4]={0,0,0,0};
 	while(1)
 		{
-			//move_projectiles(head_bullets);
-			//render_projectiles(head_bullets);
+			move_projectiles(head_bullets);
+			render_projectiles(head_bullets);
 			if(get_keycode(&keycode1,&keycode2)==0){
 				parse_keycode(arr,keycode1,keycode2);
-				if(keycode_effect(first,second,arr,&head_bullets,i%30)==1){
+				if(keycode_effect(first,second,arr,&head_bullets,i%5)==1){
 				render_players(first,second);
 				}
 			}
@@ -116,6 +122,7 @@ int main(void){
 			move_enemies(head_enemies);
 			head_enemies=(enemy *)delete_enemy(head_enemies);
 			num_of_enemies=count_enemies(head_enemies);
+			head_bullets = check_projectiles(head_bullets, head_enemies);
 			i++;
 		}
 }
@@ -145,9 +152,9 @@ void init_players(player *first,player *second){
 	}
 	else{
 		first->x_pos = 300,
-		first->y_pos = y_bounds - sizes[player1_sprite][1];
+		first->y_pos = y_bounds - sizes[player2_sprite][1];
 		first->health = 3;
-		first->id=player1_sprite;
+		first->id=player2_sprite;
 		first->old_x =first->x_pos;
 		second->x_pos= 200;
 		second->y_pos= y_bounds - sizes[player2_sprite][1];
@@ -155,6 +162,45 @@ void init_players(player *first,player *second){
 		second->id = player2_sprite;
 	}
 }
+
+void move_projectile(player_projectile *head)
+{
+	if(head->y_pos<8)
+		head->y_pos=0;
+	else
+		head->y_pos-=8;
+}
+
+void move_projectiles(player_projectile *head)
+{
+	while(head!=NULL)
+	{
+		move_projectile(head);
+		head=head->next;
+	}
+}
+
+void render_projectiles(player_projectile *head)
+{
+	player_projectile *pr=head;
+		while(pr!=NULL){
+			render_projectile(pr);
+			pr=pr->next;
+		}
+}
+
+void render_projectile(player_projectile *pr){
+	if(pr==NULL){
+		printf("bullet not found");
+		}
+	else{
+		renderer(pr->old_x,pr->old_y,13,1);//Shadow First
+		renderer(pr->x_pos,pr->y_pos,13,0);
+		pr->old_x=pr->x_pos;
+		pr->old_y=pr->y_pos;
+		}
+}
+
 
 void make_enemy(enemy **em){
 	enemy *generated=(enemy *)malloc(sizeof(enemy));
@@ -305,32 +351,32 @@ int keycode_effect(player *first,player *second,unsigned int *arr, player_projec
 	for(i=0;i<4;i++){
 		if(arr[i]==0x04){
 			j=1;
-			move_player(first,first->x_pos-5,first->y_pos);
+			move_player(first,first->x_pos-10,first->y_pos);
 		}
 		if(arr[i]==0x07){
 			j=1;
-			move_player(first,first->x_pos+5,first->y_pos);
+			move_player(first,first->x_pos+10,first->y_pos);
 		}
 		if(arr[i]==0x1a){
 			if(can_fire_n == 0)
 			{
 				j=1;
-				fire_projectile(first, bullets);
+				*bullets = fire_projectile(first, *bullets);
 			}
 		}
 		if(arr[i]==0x50){
 			j=1;
-			move_player(second,second->x_pos-5,second->y_pos);
+			move_player(second,second->x_pos-10,second->y_pos);
 		}
 		if(arr[i]==0x4f){
 			j=1;
-			move_player(second,second->x_pos+5,second->y_pos);
+			move_player(second,second->x_pos+10,second->y_pos);
 		}
 		if(arr[i]==0x52){
 			if(can_fire_n == 0)
 			{
 				j=1;
-				fire_projectile(second, bullets);
+				*bullets = fire_projectile(second, *bullets);
 			}
 		}
 	}
@@ -344,20 +390,48 @@ void parse_keycode(unsigned int *arr,unsigned int keycode1,unsigned int keycode2
 }
 
 
-void fire_projectile(player *current, player_projectile **head)
+player_projectile* fire_projectile(player *current, player_projectile *head)
 {
 	player_projectile *new=(player_projectile*)malloc(sizeof(player_projectile));
-	new->x_pos=current->x_pos + (sizes[current->id][0])/2;
+	new->x_pos=current->x_pos + ((sizes[current->id][0])/2)-11;
 	new->y_pos=current->y_pos + 1;
 	new->old_x = new->x_pos;
 	new->old_y = new->y_pos;
-	new->next = *head;
-	*head = new;
+	new->next = head;
+	return new;
 }
 
-void check_projectiles()
+player_projectile * check_projectiles(player_projectile *curr, enemy *em)
 {
+	if (curr == NULL)
+	    return NULL;
 
+	  if (curr->y_pos==0 || hits_enemy(curr->x_pos,curr->y_pos,em)==1) {
+	    player_projectile *tempNext;
+	    tempNext = curr->next;
+	    renderer(curr->x_pos,curr->y_pos,13,1);//Render shadow
+	    free(curr);
+	    return tempNext;
+	  }
+	  curr->next = check_projectiles(curr->next, em);
+	  return curr;
+}
+
+int hits_enemy(int x, int y, enemy *em)
+{
+	while(em!=NULL)
+	{
+		if(x>(em->x_pos-23)&&x<(em->x_pos+sizes[em->id][0])&&y>(em->y_pos-32)&&y<(em->y_pos+sizes[em->id][1]))
+		{
+			em->health--;
+			return 1;
+		}
+		else
+		{
+			em=em->next;
+		}
+	}
+	return 0;
 }
 
 void move_player(player *current, int x_pos, int y_pos){
