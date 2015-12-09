@@ -3,7 +3,7 @@ module  Final_Project ( input logic         CLOCK_50,
                        input logic [3:0]    KEY, //bit 0 is set up as Reset
 							  output logic [6:0]  HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7,						
 							  // VGA Interface 
-							  output [8:0] LEDG,
+							  //output [8:0] LEDG,
 							  output [17:0] LEDR,
 							//  input [17:0] SW,
                        output [7:0]  VGA_R,					//VGA Red
@@ -121,8 +121,8 @@ module  Final_Project ( input logic         CLOCK_50,
 		burst_control burst(.Clk(Clk), .Reset(Reset_h), .VGA_Clk(VGA_CLK), .blitter_valid(blitter_valid),
 									  .valid(sdram_rvalid), .wait_req(sdram_wait), .red(VGA_R), .green(VGA_G), .blue(VGA_B),
 									  .address_in(a), .data_from_mem(sdram_dataout), .write_out(sdram_w),
-									  .read_out(sdram_r), .byte_enable(sdram_byteen), .address_out(sdram_address), .address_test(address),
-									  .data_to_sdram(sdram_datain), .data_to_fpga(data2), .x_pos(drawxsig), .y_pos(drawysig),
+									  .read_out(sdram_r), .byte_enable(sdram_byteen), .address_out(sdram_address),
+									  .data_to_sdram(sdram_datain), .x_pos(drawxsig), .y_pos(drawysig),
 									  .blitter_read(blitter_read), .blitter_write(blitter_write), .data_from_blitter(data_from_blitter),
 									  .address_from_blitter(address_from_blitter), .blitter_finished(burst_finished), .data_to_blitter(data_to_blitter)); 
 							

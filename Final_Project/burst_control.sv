@@ -3,8 +3,8 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 							input [31:0] data_from_mem,
 							output write_out, read_out,
 							output [3:0] byte_enable,
-							output [24:0] address_out, address_test,
-							output [31:0] data_to_sdram, data_to_fpga,
+							output [24:0] address_out,
+							output [31:0] data_to_sdram,
 							output [7:0] red, green, blue,
 							input [9:0] x_pos, y_pos,
 							
@@ -20,6 +20,7 @@ module burst_control(input Clk, VGA_Clk, Reset, wait_req, valid,
 				burst_req, burst_finished;	
 		logic [24:0] sdram_address, frame_address;
 		logic [31:0] read_data, fifo_data, blitter_data;
+		logic [9:0] num_words;
 		
 		
 		enum logic [2:0] {FIFO_INPUT, WAIT, BLITTER_READ, BLITTER_WRITE} state, next_state;

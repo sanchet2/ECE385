@@ -205,11 +205,14 @@ void render_projectile(player_projectile *pr){
 void make_enemy(enemy **em){
 	enemy *generated=(enemy *)malloc(sizeof(enemy));
 	generated->x_pos=rand()%500;
-	generated->y_pos=rand()%300;
+	generated->y_pos=rand()%30;
 	generated->old_x=generated->x_pos;
 	generated->old_y=generated->y_pos;
 	generated->health = 2;
-	generated->id=9;
+	generated->id=rand()%10+3;
+	if(generated->id==4){
+		generated->id=5;
+	}
 	generated->next = *em;
 	*em = generated;
 }
@@ -394,7 +397,7 @@ player_projectile* fire_projectile(player *current, player_projectile *head)
 {
 	player_projectile *new=(player_projectile*)malloc(sizeof(player_projectile));
 	new->x_pos=current->x_pos + ((sizes[current->id][0])/2)-11;
-	new->y_pos=current->y_pos + 1;
+	new->y_pos=current->y_pos + sizes[13][1];
 	new->old_x = new->x_pos;
 	new->old_y = new->y_pos;
 	new->next = head;

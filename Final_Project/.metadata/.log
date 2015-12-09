@@ -2219,3 +2219,33 @@ java.io.IOException: Cannot run program "C:\Users\zjsplingaire\Documents\GitHub\
 
 !ENTRY com.altera.sbtgui.launch 1 0 2015-12-08 23:47:20.929
 !MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449553603 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+!SESSION 2015-12-09 09:10:06.347 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/altera/15.0/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-09 09:10:20.732
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-09 09:13:26.495
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449553603]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-09 09:13:29.822
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449553603 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-09 09:19:14.439
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-09 09:19:16.346
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x810c8 --id=0x0 --timestamp=1449553603]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2015-12-09 09:19:20.044
+!MESSAGE Executing: [C:/altera/15.0/quartus\bin64\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x810c8 --id=0x0 --timestamp=1449553603 /cygdrive/c/Users/zjsplingaire/Documents/GitHub/ECE385/Final_Project/software/Final_Project_Code/Final_Project_Code.elf]
